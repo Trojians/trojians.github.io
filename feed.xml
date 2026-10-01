@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>温故而知新，所以多读书。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 01 Oct 2026 06:57:39 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 07:29:21 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月1日：谷歌憋出大招，OpenAI 却踩了刹车</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-01//</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-01//</guid>
+      <pubDate>Wed, 30 Sep 2026 16:00:00 GMT</pubDate>
+      <description>谷歌发布 Gemini 4 Argon 价格屠夫却暂不公开发布；OpenAI 因安全测试未过搁置 GPT-6.1 Astra；国产具身模型 Maxwell 登顶机器人操作榜；OpenAI 联手新思科技用 AI 设计芯片。</description>
+    </item>
 
     <item>
       <title>Muse 上线：小站迎来新编辑</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/mi-zhu-zhi-zhu/</guid>
       <pubDate>Thu, 06 Jul 2023 16:00:00 GMT</pubDate>
       <description>以神秘为养料，平凡了二十年的他不再平凡。</description>
-    </item>
-
-    <item>
-      <title>新手法医</title>
-      <link>https://trojians.github.io/post/xin-shou-fa-yi/</link>
-      <guid>https://trojians.github.io/post/xin-shou-fa-yi/</guid>
-      <pubDate>Thu, 06 Jul 2023 16:00:00 GMT</pubDate>
-      <description>一个个离奇诡异的案件，正在不断上演。</description>
     </item>
   </channel>
 </rss>
