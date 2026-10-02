@@ -989,3 +989,163 @@ body.dark-theme .theme-toggle-moon { display: inline-block !important; color: #F
     line-height: 2.4em;
   }
 }
+
+/* ==========================================================================
+   正文排版优化（2026-10-02 新增）：统一段落节奏，强化小标题/引用/分隔线/列表
+   ========================================================================== */
+
+.mod-post__entry {
+  line-height: 1.9;
+}
+
+.mod-post__entry p {
+  margin-top: 0;
+  margin-bottom: 1.35em;
+  word-break: normal;
+  overflow-wrap: break-word;
+  letter-spacing: 0.03rem;
+}
+
+/* 导语：首段稍大、稍疏，先声夺人 */
+.mod-post__entry .lead {
+  font-size: 1.07rem;
+  line-height: 1.85;
+  margin-bottom: 1.6em;
+}
+
+/* 小标题：左侧主题色竖线，层级一眼分明 */
+.mod-post__entry h2 {
+  font-size: 1.28rem;
+  line-height: 1.5;
+  margin: 2.1em 0 0.85em;
+  padding-left: 0.62em;
+  border-left: 4px solid var(--accent-color);
+  letter-spacing: 0.03rem;
+}
+
+.mod-post__entry h2:first-of-type {
+  margin-top: 1.1em;
+}
+
+.mod-post__entry h3 {
+  font-size: 1.08rem;
+  line-height: 1.5;
+  margin: 1.7em 0 0.7em;
+  letter-spacing: 0.03rem;
+}
+
+/* 引用块：点评/金句专用，浅色底 + 主题色边 */
+.mod-post__entry blockquote {
+  margin: 1.5em 0;
+  padding: 0.8em 1.1em;
+  border-left: 3px solid var(--accent-color);
+  background: rgba(40, 223, 153, 0.07);
+  border-radius: 0 8px 8px 0;
+}
+
+.mod-post__entry blockquote p {
+  margin: 0;
+}
+
+.mod-post__entry blockquote p + p {
+  margin-top: 0.6em;
+}
+
+/* 分隔线：大板块之间用一条渐隐的主题色线 */
+.mod-post__entry hr {
+  border: 0;
+  height: 2px;
+  width: 36%;
+  margin: 2.4em auto;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  opacity: 0.65;
+}
+
+/* 配图：独立成块、居中、圆角加轻阴影 */
+.mod-post__entry img {
+  display: block;
+  margin: 1.7em auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* 列表：字号与正文统一，序号/圆点用主题色 */
+.wzulli ul,
+.wzulli ol {
+  margin: 0 0 1.35em;
+  padding-left: 1.35em;
+}
+
+.wzulli ul li,
+.wzulli ol li {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: inherit;
+  padding-bottom: 0.45em;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.wzulli li::marker {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+/* 表格（备用）：细边框 + 表头浅色底 */
+.mod-post__entry table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.6em 0;
+  font-size: 0.95rem;
+}
+
+.mod-post__entry th,
+.mod-post__entry td {
+  border: 1px solid var(--border-color);
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+.mod-post__entry th {
+  background: rgba(40, 223, 153, 0.08);
+}
+
+/* 行内代码 */
+.mod-post__entry code {
+  background: rgba(40, 223, 153, 0.1);
+  padding: 0.12em 0.4em;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+
+/* 署名行：虚线分隔、居中、小字 */
+.mod-post__entry .byline {
+  margin-top: 2.6em;
+  margin-bottom: 0;
+  padding-top: 1.1em;
+  border-top: 1px dashed var(--border-color);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+  letter-spacing: 0.06rem;
+}
+
+/* 暗色适配 */
+body.dark-theme .mod-post__entry blockquote {
+  background: rgba(40, 223, 153, 0.1);
+}
+
+body.dark-theme .wzulli ul li,
+body.dark-theme .wzulli ol li {
+  color: var(--dark-text);
+}
+
+body.dark-theme .mod-post__entry .byline {
+  border-top-color: var(--dark-border);
+  color: var(--dark-muted);
+}
+
+body.dark-theme .mod-post__entry th,
+body.dark-theme .mod-post__entry td {
+  border-color: var(--dark-border);
+}
