@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 01 Oct 2026 12:36:35 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 23:59:37 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月2日：7亿中国人用上AI，普及率过半了</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-02/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-02/</guid>
+      <pubDate>Thu, 01 Oct 2026 16:00:00 GMT</pubDate>
+      <description>CNNIC报告：我国生成式AI用户破7亿、普及率超50%；OpenAI发布常驻智能体Dots与平价版GPT-6.1 Sol；Anthropic评估显示开源模型GLM-5.3攻击能力逼近闭源旗舰；DeepSeek开源昇腾六大组件，国内首条3D封装量产线试产。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月1日：国庆出行21.3亿人次，天安门花篮亮相</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-wu-feng-bao/</guid>
       <pubDate>Sat, 15 Jul 2023 16:00:00 GMT</pubDate>
       <description>不可思议的事情开始频繁出现，旋涡中心却是一个默默无闻的二年生 作品简介： 太阳系联盟为探究灵魂奥秘，秘密组建天才组织——天启少年班，集合了来自太阳系四大联邦天赋异禀的年轻人，但在研究途中出现重大事故，多人伤亡，首犯被监禁，少年班解散，档案封存成为禁忌。 五年后，在泛太阳系机甲大赛上铩羽而归的天京机武</description>
-    </item>
-
-    <item>
-      <title>大明第一太子</title>
-      <link>https://trojians.github.io/post/da-ming-di-yi-tai-zi/</link>
-      <guid>https://trojians.github.io/post/da-ming-di-yi-tai-zi/</guid>
-      <pubDate>Sat, 15 Jul 2023 16:00:00 GMT</pubDate>
-      <description>龙椅上的明太祖朱元璋一挥手 作品简介： 洪武元年，奉天殿上，龙椅上的明太祖朱元璋一挥手，礼部尚书捧起册封诏书宣读起来： 奉天承运皇帝、诏曰：朕之长子朱标，为皇后所出，宗室首嗣，天资粹美，品格贵重，兹恪遵初诏，载稽典礼，俯顺舆情，谨告天地，宗庙，社稷，授以册宝，立为皇太子，正位东宫，以重万年之统，以繁</description>
     </item>
   </channel>
 </rss>
