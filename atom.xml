@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 02 Oct 2026 12:04:39 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 23:58:59 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月3日：12万人因AI丢工作，谷歌新模型却先藏起来了</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-03/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-03/</guid>
+      <pubDate>Fri, 02 Oct 2026 16:00:00 GMT</pubDate>
+      <description>谷歌发布 Gemini 4 Argon 却只给少数安全伙伴试用；美国今年已有 12 万裁员归因于 AI、登顶裁员理由；Cloudflare 开源只做判断不写文章的 Clef；ChatGPT 上线虚拟试衣和文档扫描。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月2日：6.11万部网文参赛创新高，《万物希声》拿下特等奖</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/e-meng-liang-xi/</guid>
       <pubDate>Sat, 15 Jul 2023 16:00:00 GMT</pubDate>
       <description>睡梦中惊醒，家中出现一扇陌生的门…… 作品简介： 睡梦中惊醒，家中出现一扇陌生的门…… 噩梦世界中，江城把从壮汉那里得来的消息添油加醋得给胖子说了一遍，听得后者差点哭出来，“在这里死掉就会全家倒立流血暴毙？” “是这样的。” “那我看你怎么不太害怕？”胖子瞪大眼睛。 江城转过头，用十分正式的口吻说道</description>
-    </item>
-
-    <item>
-      <title>这个外挂过于中二</title>
-      <link>https://trojians.github.io/post/zhe-ge-wai-gua-guo-yu-zhong-er/</link>
-      <guid>https://trojians.github.io/post/zhe-ge-wai-gua-guo-yu-zhong-er/</guid>
-      <pubDate>Sat, 15 Jul 2023 16:00:00 GMT</pubDate>
-      <description>王侯将相宁有种乎？ 作品简介： 【王侯将相宁有种乎？看着那王座上微笑着的蠢女人，你的心中涌现出了一阵莫名的冲动】 “不不不！冲不动冲不动！”威廉的脑袋晃得好像一枚拨浪鼓。 【她都能做一国之主，凭什么我不能？只有我才能给这个即将走向毁灭的世界带来……】 喂，你不要乱讲啊！这世界挺好的，求你别乱加戏了行</description>
     </item>
   </channel>
 </rss>
