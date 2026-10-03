@@ -364,11 +364,11 @@
 .bwr-btn.on{background:#2e963d;border-color:#2e963d;color:#fff}
 .bwr-sel{margin-left:auto;font-size:13px;padding:5px 8px;border-radius:8px;border:1px solid rgba(127,127,127,.35);background:transparent;color:inherit}
 .bwr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:12px}
-.bwr-card{perspective:1200px;cursor:pointer;display:flex}
-.bwr-flip{position:relative;flex:1;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.4,.05,.2,1)}
+.bwr-card{perspective:1200px;cursor:pointer;display:flex;min-width:0}
+.bwr-flip{position:relative;flex:1;min-width:0;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.4,.05,.2,1)}
 .bwr-card.flipped .bwr-flip{transform:rotateY(180deg)}
 .bwr-face{backface-visibility:hidden;-webkit-backface-visibility:hidden;border:1px solid rgba(127,127,127,.25);border-radius:12px}
-.bwr-front{position:relative;height:100%;display:flex;flex-direction:column;gap:7px;padding:13px 14px;background:rgba(127,127,127,.04)}
+.bwr-front{position:relative;height:100%;min-width:0;overflow:hidden;display:flex;flex-direction:column;gap:7px;padding:13px 14px;background:rgba(127,127,127,.04)}
 .bwr-back{position:absolute;inset:0;transform:rotateY(180deg);overflow:hidden;display:flex;align-items:center;justify-content:center;background:#20242c}
 .bwr-backbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(16px) brightness(.65);transform:scale(1.25)}
 .bwr-backimg{position:relative;height:100%;max-width:94%;object-fit:contain;box-shadow:0 8px 30px rgba(0,0,0,.5)}
@@ -385,7 +385,7 @@
 .bwr-badge.ing{background:#e8930c}
 .bwr-badge.unk{background:#8a8a8a}
 .bwr-tagchip{font-size:12px;padding:2px 9px;border-radius:999px;background:rgba(46,150,61,.12);border:1px solid rgba(46,150,61,.35)}
-.bwr-intro{margin:0;font-size:13px;line-height:1.65;opacity:.62;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.bwr-intro{margin:0;font-size:13px;line-height:1.65;opacity:.62;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .bwr-score{display:flex;align-items:baseline;gap:8px;margin-top:auto;padding-top:8px}
 .bwr-num{font-size:22px;font-weight:700;color:#f7941d;line-height:1}
 .bwr-stars{color:#f7941d;font-size:15px;letter-spacing:2px}
@@ -428,7 +428,7 @@
 <div class="bwr-face bwr-front">
 <h3>《从1983开始》</h3>
 <p class="bwr-meta">作者：睡觉会变白</p>
-<div class="bwr-tags"><span class="bwr-tagchip">都市</span><span class="bwr-tagchip">都市生活</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">一个有点怀旧的故事。 …………………… 书友群旧群已满，新群：629116518</p>
+<div class="bwr-tags"><span class="bwr-tagchip">都市</span><span class="bwr-tagchip">都市生活</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">一个有点怀旧的故事。 书友群旧群已满，新群：629116518</p>
 <div class="bwr-score"><span class="bwr-num">5</span><span class="bwr-stars">★★★★★<span class="off"></span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -714,7 +714,7 @@
 <div class="bwr-face bwr-front">
 <h3>《神秘复苏》</h3>
 <p class="bwr-meta">作者：佛前献花</p>
-<div class="bwr-tags"><span class="bwr-tagchip">悬疑灵异</span><span class="bwr-tagchip">惊悚微恐</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">“我叫杨间，当你看到这句话的时候我已经死了......” 一张诡异的羊皮卷，一只窥视黑暗的眼睛，这是一个活下来的人经历的故事。 ——————</p>
+<div class="bwr-tags"><span class="bwr-tagchip">悬疑灵异</span><span class="bwr-tagchip">惊悚微恐</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">“我叫杨间，当你看到这句话的时候我已经死了......” 一张诡异的羊皮卷，一只窥视黑暗的眼睛，这是一个活下来的人经历的故事。</p>
 <div class="bwr-score"><span class="bwr-num">5</span><span class="bwr-stars">★★★★★<span class="off"></span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -846,7 +846,7 @@
 <div class="bwr-face bwr-front">
 <h3>《顾道长生》</h3>
 <p class="bwr-meta">作者：睡觉会变白</p>
-<div class="bwr-tags"><span class="bwr-tagchip">都市</span><span class="bwr-tagchip">异术超能</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">本以为是写实的都市生活，结果一言不合就改设定！ 灵气复苏，道法重现，这大概是一个现代文明转变成修真文明的故事。 ………… 本书仍然很墨迹 书友群：666-464-52。V群：465…</p>
+<div class="bwr-tags"><span class="bwr-tagchip">都市</span><span class="bwr-tagchip">异术超能</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">本以为是写实的都市生活，结果一言不合就改设定！ 灵气复苏，道法重现，这大概是一个现代文明转变成修真文明的故事。 本书仍然很墨迹 书友群：666-464-52。V群：465-455-…</p>
 <div class="bwr-score"><span class="bwr-num">5</span><span class="bwr-stars">★★★★★<span class="off"></span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -857,7 +857,7 @@
 <div class="bwr-face bwr-front">
 <h3>《1979黄金时代》</h3>
 <p class="bwr-meta">作者：睡觉会变白</p>
-<div class="bwr-tags"><span class="bwr-tagchip">都市</span><span class="bwr-tagchip">都市生活</span><span class="bwr-badge ing">连载中</span></div><p class="bwr-intro">这还是一个有点怀旧的故事，嗯………………</p>
+<div class="bwr-tags"><span class="bwr-tagchip">都市</span><span class="bwr-tagchip">都市生活</span><span class="bwr-badge ing">连载中</span></div><p class="bwr-intro">这还是一个有点怀旧的故事，嗯</p>
 <div class="bwr-score"><span class="bwr-num">4</span><span class="bwr-stars">★★★★<span class="off">★</span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -978,7 +978,7 @@
 <div class="bwr-face bwr-front">
 <h3>《全球进化》</h3>
 <p class="bwr-meta">作者：咬狗</p>
-<div class="bwr-tags"><span class="bwr-tagchip">科幻</span><span class="bwr-tagchip">末世危机</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">寒武纪生物大爆发，现今科学界最大的生命谜题———— 五亿多年前，地球的单细胞生命突然发生了类似于异变的进化，各种绚烂的生物“凭空”诞生，所有现今物种的祖先都在那个短暂的时期出现，各…</p>
+<div class="bwr-tags"><span class="bwr-tagchip">科幻</span><span class="bwr-tagchip">末世危机</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">寒武纪生物大爆发，现今科学界最大的生命谜题 五亿多年前，地球的单细胞生命突然发生了类似于异变的进化，各种绚烂的生物“凭空”诞生，所有现今物种的祖先都在那个短暂的时期出现，各个物种以…</p>
 <div class="bwr-score"><span class="bwr-num">4</span><span class="bwr-stars">★★★★<span class="off">★</span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -1165,7 +1165,7 @@
 <div class="bwr-face bwr-front">
 <h3>《恐怖广播》</h3>
 <p class="bwr-meta">作者：纯洁滴小龙</p>
-<div class="bwr-tags"><span class="bwr-tagchip">奇幻</span><span class="bwr-tagchip">黑暗幻想</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">“听众朋友们，欢迎收听【恐怖广播】，希望您能够好好享受我们节目陪伴你的时光，好了，下面，请您转过头，看一看您的身后，是不是有一张人脸正在微笑着看着你？” —————— 起点精品作者…</p>
+<div class="bwr-tags"><span class="bwr-tagchip">奇幻</span><span class="bwr-tagchip">黑暗幻想</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">“听众朋友们，欢迎收听【恐怖广播】，希望您能够好好享受我们节目陪伴你的时光，好了，下面，请您转过头，看一看您的身后，是不是有一张人脸正在微笑着看着你？” 起点精品作者，小龙出品，必…</p>
 <div class="bwr-score"><span class="bwr-num">4</span><span class="bwr-stars">★★★★<span class="off">★</span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -1352,7 +1352,7 @@
 <div class="bwr-face bwr-front">
 <h3>《深夜书屋》</h3>
 <p class="bwr-meta">作者：纯洁滴小龙</p>
-<div class="bwr-tags"><span class="bwr-tagchip">悬疑灵异</span><span class="bwr-tagchip">诡异神秘</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">一家只在深夜开门营业的书屋， 欢迎您的光临。 ——————【该作品简体版已出版，出版社天津人民出版社】—— 《vip全订书友群》：557560752（进群粉丝值验证） 《读书群》：…</p>
+<div class="bwr-tags"><span class="bwr-tagchip">悬疑灵异</span><span class="bwr-tagchip">诡异神秘</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">一家只在深夜开门营业的书屋， 欢迎您的光临。 【该作品简体版已出版，出版社天津人民出版社】—— 《vip全订书友群》：557560752（进群粉丝值验证） 《读书群》：523978…</p>
 <div class="bwr-score"><span class="bwr-num">4</span><span class="bwr-stars">★★★★<span class="off">★</span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -1583,7 +1583,7 @@
 <div class="bwr-face bwr-front">
 <h3>《重塑千禧年代》</h3>
 <p class="bwr-meta">作者：渔雪</p>
-<div class="bwr-tags"><span class="bwr-tagchip">都市</span><span class="bwr-tagchip">都市生活</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">千禧年，领导们正喊着GDP的口号，老板们还以带着秘书为荣，草莽们则猫在时代的浪潮里刀光剑影。 ……… 方卓重回2000年。 十年后，一群风投、私募联合起来气势汹汹的闯入集团总部，对…</p>
+<div class="bwr-tags"><span class="bwr-tagchip">都市</span><span class="bwr-tagchip">都市生活</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">千禧年，领导们正喊着GDP的口号，老板们还以带着秘书为荣，草莽们则猫在时代的浪潮里刀光剑影。 方卓重回2000年。 十年后，一群风投、私募联合起来气势汹汹的闯入集团总部，对惊愕的方…</p>
 <div class="bwr-score"><span class="bwr-num">4</span><span class="bwr-stars">★★★★<span class="off">★</span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -1693,7 +1693,7 @@
 <div class="bwr-face bwr-front">
 <h3>《一品修仙》</h3>
 <p class="bwr-meta">作者：不放心油条</p>
-<div class="bwr-tags"><span class="bwr-tagchip">仙侠</span><span class="bwr-tagchip">幻想修仙</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">新书《诡道之主》，请多多关注。 --------------------------------- 古老的仙道世界，历久弥新，一代代天骄英豪，你方唱罢我登台。 正是一个大时代沉寂许…</p>
+<div class="bwr-tags"><span class="bwr-tagchip">仙侠</span><span class="bwr-tagchip">幻想修仙</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">新书《诡道之主》，请多多关注。 古老的仙道世界，历久弥新，一代代天骄英豪，你方唱罢我登台。 正是一个大时代沉寂许久之时，一个穿越而来的少年，在曾经闻名天下，现已废弃多时的壶梁，探出…</p>
 <div class="bwr-score"><span class="bwr-num">3</span><span class="bwr-stars">★★★<span class="off">★★</span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -2232,7 +2232,7 @@
 <div class="bwr-face bwr-front">
 <h3>《文艺时代》</h3>
 <p class="bwr-meta">作者：睡觉会变白</p>
-<div class="bwr-tags"><span class="bwr-tagchip">都市文娱</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">他曾在一个小县城中看到一个名叫小武的小偷，也曾在苏州河边见识过一条金发的美人鱼，更是在一个小村子里看过一个汉子在被砍头前学驴叫…… 本书很墨迹~ —————————— 新书发布了《…</p>
+<div class="bwr-tags"><span class="bwr-tagchip">都市文娱</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">他曾在一个小县城中看到一个名叫小武的小偷，也曾在苏州河边见识过一条金发的美人鱼，更是在一个小村子里看过一个汉子在被砍头前学驴叫…… 本书很墨迹~ 新书发布了《顾道长生》</p>
 <div class="bwr-score"><span class="bwr-num">3</span><span class="bwr-stars">★★★<span class="off">★★</span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -2320,7 +2320,7 @@
 <div class="bwr-face bwr-front">
 <h3>《末日从噩梦开始》</h3>
 <p class="bwr-meta">作者：暗黑茄子</p>
-<div class="bwr-tags"><span class="bwr-tagchip">科幻</span><span class="bwr-tagchip">末世危机</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">茄子新书《禁锢之日》已上传，欢迎收藏支持 一段奇怪的轮回…… 一个虚假的世界…… 从被禁锢之日起，开始觉醒！ 请书友老爷们移步，收藏推荐！ ----------- 恐惧打破了梦和现…</p>
+<div class="bwr-tags"><span class="bwr-tagchip">科幻</span><span class="bwr-tagchip">末世危机</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">茄子新书《禁锢之日》已上传，欢迎收藏支持 一段奇怪的轮回…… 一个虚假的世界…… 从被禁锢之日起，开始觉醒！ 请书友老爷们移步，收藏推荐！ 恐惧打破了梦和现实的界限，分不清哪一个是…</p>
 <div class="bwr-score"><span class="bwr-num">3</span><span class="bwr-stars">★★★<span class="off">★★</span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -2518,7 +2518,7 @@
 <div class="bwr-face bwr-front">
 <h3>《问道红尘》</h3>
 <p class="bwr-meta">作者：姬叉</p>
-<div class="bwr-tags"><span class="bwr-tagchip">仙侠</span><span class="bwr-tagchip">古典仙侠</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">秦弈曾认为，修仙的人首要淡泊宁静，无欲无求，耐得住性子，经得住诱惑。 可最终发现，仙首先有个人字旁。 仙路苦寒，你我相拥取暖。 —————— PS：本书原名《仙子请自重》。</p>
+<div class="bwr-tags"><span class="bwr-tagchip">仙侠</span><span class="bwr-tagchip">古典仙侠</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">秦弈曾认为，修仙的人首要淡泊宁静，无欲无求，耐得住性子，经得住诱惑。 可最终发现，仙首先有个人字旁。 仙路苦寒，你我相拥取暖。 PS：本书原名《仙子请自重》。</p>
 <div class="bwr-score"><span class="bwr-num">3</span><span class="bwr-stars">★★★<span class="off">★★</span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -2694,7 +2694,7 @@
 <div class="bwr-face bwr-front">
 <h3>《仙箓》</h3>
 <p class="bwr-meta">作者：布谷聊</p>
-<div class="bwr-tags"><span class="bwr-tagchip">仙侠</span><span class="bwr-tagchip">古典仙侠</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">少为许道之士，极爱仙侠。 好精怪，好邪祟，好妖童，好媛女，好炼丹，好符咒，好灵宠，好道兵，好夜梦神女，好白骨骷髅。 兼以舍身饲妖，道心种魔，出走半生，惟求大逍遥。 —————— 一…</p>
+<div class="bwr-tags"><span class="bwr-tagchip">仙侠</span><span class="bwr-tagchip">古典仙侠</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">少为许道之士，极爱仙侠。 好精怪，好邪祟，好妖童，好媛女，好炼丹，好符咒，好灵宠，好道兵，好夜梦神女，好白骨骷髅。 兼以舍身饲妖，道心种魔，出走半生，惟求大逍遥。 一个少年道士炼气…</p>
 <div class="bwr-score"><span class="bwr-num">2</span><span class="bwr-stars">★★<span class="off">★★★</span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -2771,7 +2771,7 @@
 <div class="bwr-face bwr-front">
 <h3>《天书奇谭》</h3>
 <p class="bwr-meta">作者：楚白</p>
-<div class="bwr-tags"><span class="bwr-tagchip">仙侠</span><span class="bwr-tagchip">修真文明</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">“ 用清水蒸，肥嫩绵软好生吞； 用热油烹，爆鲜酥脆一口闷；  没味须腌制，三泡三晒配菜羹……” “茉莉！这歌词太奇怪了！你的三观有问题啊！”立志改邪归正重新做人的吴解大声喊道，“我…</p>
+<div class="bwr-tags"><span class="bwr-tagchip">仙侠</span><span class="bwr-tagchip">修真文明</span><span class="bwr-badge fin">已完结</span></div><p class="bwr-intro">“ 用清水蒸，肥嫩绵软好生吞； 用热油烹，爆鲜酥脆一口闷； 没味须腌制，三泡三晒配菜羹……” “茉莉！这歌词太奇怪了！你的三观有问题啊！”立志改邪归正重新做人的吴解大声喊道，“我们…</p>
 <div class="bwr-score"><span class="bwr-num">2</span><span class="bwr-stars">★★<span class="off">★★★</span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
@@ -2958,7 +2958,7 @@
 <div class="bwr-face bwr-front">
 <h3>《明尊》</h3>
 <p class="bwr-meta">作者：辰一十一</p>
-<div class="bwr-tags"><span class="bwr-tagchip">诸天无限</span><span class="bwr-tagchip">诸天</span><span class="bwr-badge ing">连载中</span></div><p class="bwr-intro">大哉乾元，万物资始，乃以统天。 无上明尊，时乘六龙，所其无逸。 ——————————————————— 这是一个土著主角的穿越者老爷爷苏醒，金手指成精了的故事。 …………………………</p>
+<div class="bwr-tags"><span class="bwr-tagchip">诸天无限</span><span class="bwr-tagchip">诸天</span><span class="bwr-badge ing">连载中</span></div><p class="bwr-intro">大哉乾元，万物资始，乃以统天。 无上明尊，时乘六龙，所其无逸。 这是一个土著主角的穿越者老爷爷苏醒，金手指成精了的故事。 我钱晨一路走来，从来只靠自己！ 太上爸爸救我！</p>
 <div class="bwr-score"><span class="bwr-num">2</span><span class="bwr-stars">★★<span class="off">★★★</span></span></div>
 <p class="bwr-cmt empty">短评待补</p>
 </div>
