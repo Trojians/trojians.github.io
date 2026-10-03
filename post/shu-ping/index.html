@@ -340,7 +340,7 @@
                 <div class="mod-post__meta">
                     <time datetime="2026-10-03">
                         2026-10-03
-                    </time> • 约 138 分钟 •
+                    </time> • 约 139 分钟 •
                         
                         
                         
@@ -5930,35 +5930,43 @@
 <script>(function(){
 var btns=document.querySelectorAll('.bwr-btn'),sel=document.getElementById('bwr-sort'),grid=document.getElementById('bwr-grid');
 var q=document.getElementById('bwr-q'),count=document.getElementById('bwr-count'),more=document.getElementById('bwr-more'),toast=document.getElementById('bwr-toast');
-var PAGE=60,shown=PAGE,toastTimer=null;
+var PAGE=60,shown=PAGE,toastTimer=null,typeTimer=null,composing=false;
 function showToast(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(function(){toast.classList.remove('show');},1800);}
-var byScoreDesc=function(a,b){return parseFloat(b.getAttribute('data-score'))-parseFloat(a.getAttribute('data-score'));};
+var cards=Array.prototype.map.call(grid.children,function(el){return {el:el,status:el.getAttribute('data-status'),score:parseFloat(el.getAttribute('data-score')),author:el.getAttribute('data-author')||'',genre:el.getAttribute('data-genre')||'',title:el.getAttribute('data-title')||'',hay:((el.getAttribute('data-title')||'')+' '+(el.getAttribute('data-author')||'')).toLowerCase()};});
+var byScoreDesc=function(a,b){return b.score-a.score;};
 var cmps={
   'default':byScoreDesc,
   'score':byScoreDesc,
-  'score-asc':function(a,b){return parseFloat(a.getAttribute('data-score'))-parseFloat(b.getAttribute('data-score'));},
-  'author':function(a,b){var r=a.getAttribute('data-author').localeCompare(b.getAttribute('data-author'),'zh');return r||byScoreDesc(a,b);},
-  'genre':function(a,b){var r=a.getAttribute('data-genre').localeCompare(b.getAttribute('data-genre'),'zh');return r||byScoreDesc(a,b);},
-  'title':function(a,b){var r=a.getAttribute('data-title').localeCompare(b.getAttribute('data-title'),'zh');return r||byScoreDesc(a,b);}
+  'score-asc':function(a,b){return a.score-b.score;},
+  'author':function(a,b){var r=a.author.localeCompare(b.author,'zh');return r||byScoreDesc(a,b);},
+  'genre':function(a,b){var r=a.genre.localeCompare(b.genre,'zh');return r||byScoreDesc(a,b);},
+  'title':function(a,b){var r=a.title.localeCompare(b.title,'zh');return r||byScoreDesc(a,b);}
 };
+var sortCache={};
+function ordered(){
+  var key=sel.value;
+  if(!sortCache[key]){
+    var arr=cards.slice();
+    arr.sort(cmps[key]||byScoreDesc);
+    sortCache[key]=arr;
+    var frag=document.createDocumentFragment();
+    arr.forEach(function(c){frag.appendChild(c.el);});
+    grid.appendChild(frag);
+  }
+  return sortCache[key];
+}
 function fmatch(c,f){
-  var s=c.getAttribute('data-status'),sc=parseFloat(c.getAttribute('data-score'));
-  return f==='all'||(f==='fin'&&s==='完结')||(f==='ing'&&s==='连载')||(f==='rated'&&sc>0)||(f==='five'&&sc>=5);
+  return f==='all'||(f==='fin'&&c.status==='完结')||(f==='ing'&&c.status==='连载')||(f==='rated'&&c.score>0)||(f==='five'&&c.score>=5);
 }
 function apply(reset){
   if(reset)shown=PAGE;
   var f=document.querySelector('.bwr-btn.on').getAttribute('data-f');
   var qq=q.value.replace(/\s+/g,'').toLowerCase();
-  var cards=Array.prototype.slice.call(grid.children);
-  var cmp=cmps[sel.value]||byScoreDesc;
-  cards.sort(cmp);
-  cards.forEach(function(c){grid.appendChild(c);});
-  var n=0;
-  cards.forEach(function(c){
-    var hit=fmatch(c,f);
-    if(hit&&qq){var t=(c.getAttribute('data-title')+' '+c.getAttribute('data-author')).toLowerCase();hit=t.indexOf(qq)>=0;}
-    if(hit){n++;c.style.display=n<=shown?'':'none';}
-    else{c.style.display='none';}
+  var arr=ordered(),n=0;
+  arr.forEach(function(c){
+    var hit=fmatch(c,f)&&(!qq||c.hay.indexOf(qq)>=0);
+    if(hit){n++;c.el.style.display=n<=shown?'':'none';}
+    else{c.el.style.display='none';}
   });
   count.textContent='共 '+n+' 本';
   if(n>shown){more.style.display='';more.textContent='显示更多（还剩 '+(n-shown)+' 本）';}
@@ -5966,7 +5974,13 @@ function apply(reset){
 }
 btns.forEach(function(b){b.addEventListener('click',function(){btns.forEach(function(x){x.classList.remove('on');});b.classList.add('on');apply(true);});});
 sel.addEventListener('change',function(){apply(true);});
-q.addEventListener('input',function(){apply(true);});
+q.addEventListener('compositionstart',function(){composing=true;});
+q.addEventListener('compositionend',function(){composing=false;apply(true);});
+q.addEventListener('input',function(){
+  if(composing)return;
+  clearTimeout(typeTimer);
+  typeTimer=setTimeout(function(){requestAnimationFrame(function(){apply(true);});},160);
+});
 more.addEventListener('click',function(){shown+=PAGE;apply(false);});
 if('IntersectionObserver' in window){
   var io=new IntersectionObserver(function(es){if(es[0].isIntersecting&&more.style.display!=='none'){shown+=PAGE;apply(false);}},{rootMargin:'300px'});
