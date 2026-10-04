@@ -397,10 +397,10 @@
 @media(min-width:900px){.bkfull .grid{grid-template-columns:repeat(3,1fr)}}
 @media(min-width:1200px){.bkfull .grid{grid-template-columns:repeat(4,1fr)}}
 @media(min-width:1600px){.bkfull .grid{grid-template-columns:repeat(5,1fr)}}.bkfull .scene{perspective:1500px;min-height:412px;animation:rise .55s cubic-bezier(.22,.8,.3,1) both;transition:transform .3s ease,filter .3s ease;outline:none}.bkfull .scene:hover{transform:translateY(-5px)}.bkfull .scene:focus-visible{box-shadow:0 0 0 2px var(--bg1),0 0 0 4.5px var(--amber);border-radius:18px}
-@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}.bkfull .scene.ant{filter:drop-shadow(0 20px 34px var(--glow,rgba(217,160,95,.35)))}.bkfull .scene.flip{filter:drop-shadow(0 24px 42px var(--glow,rgba(217,160,95,.35)))}.bkfull .halo{position:absolute;inset:-9%;border-radius:50%;pointer-events:none;opacity:0;z-index:0;
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}.bkfull .scene.ant{filter:drop-shadow(0 20px 34px var(--glow,rgba(217,160,95,.35)))}.bkfull .scene.bkflip{filter:drop-shadow(0 24px 42px var(--glow,rgba(217,160,95,.35)))}.bkfull .halo{position:absolute;inset:-9%;border-radius:50%;pointer-events:none;opacity:0;z-index:0;
   background:radial-gradient(closest-side,rgba(232,195,158,.55),rgba(217,160,95,.18) 55%,transparent 72%);filter:blur(10px)}.bkfull .scene.flipping .halo{animation:haloPulse var(--ritual,880ms) ease-out both}.bkfull .scene.is-back .halo{opacity:.16}
 @keyframes haloPulse{0%{opacity:0;transform:scale(.84)}30%{opacity:.5;transform:scale(.98)}58%{opacity:1;transform:scale(1.09)}100%{opacity:.16;transform:scale(1.03)}}.bkfull .card3d{position:relative;width:100%;height:100%;transform-style:preserve-3d;z-index:1;
-  --flip:0deg;--tx:0deg;--ty:0deg;transform:rotateY(var(--flip)) rotateX(var(--tx)) rotateY(var(--ty))}.bkfull .scene.is-back .card3d{--flip:180deg}.bkfull .scene.tilting .card3d{transition:transform .18s ease-out}.bkfull .scene.ant.dir-back .card3d{animation:antBack var(--ant-dur,260ms) ease-out both}.bkfull .scene.ant.dir-front .card3d{animation:antFront var(--ant-dur,120ms) ease-out both}.bkfull .scene.flip.dir-back .card3d{animation:spinBack2 .62s both}.bkfull .scene.flip.dir-front .card3d{animation:spinFront2 .62s both}
+  --flip:0deg;--tx:0deg;--ty:0deg;transform:rotateY(var(--flip)) rotateX(var(--tx)) rotateY(var(--ty))}.bkfull .scene.is-back .card3d{--flip:180deg}.bkfull .scene.tilting .card3d{transition:transform .18s ease-out}.bkfull .scene.ant.dir-back .card3d{animation:antBack var(--ant-dur,260ms) ease-out both}.bkfull .scene.ant.dir-front .card3d{animation:antFront var(--ant-dur,120ms) ease-out both}.bkfull .scene.bkflip.dir-back .card3d{animation:spinBack2 .62s both}.bkfull .scene.bkflip.dir-front .card3d{animation:spinFront2 .62s both}
 @keyframes antBack{
   0%{transform:translateY(0) scale(1) rotateY(0deg)}
   35%{transform:translateY(-6px) scale(1.03) rotateY(5deg) translateX(1.6px)}
@@ -436,7 +436,7 @@
 @media(pointer:fine){.bkfull .scene:hover .glare{opacity:1}}.bkfull .face{position:absolute;inset:0;border-radius:18px;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;
   border:1px solid var(--line);box-shadow:var(--card-shadow)}.bkfull .face::after{content:"";position:absolute;top:-10%;bottom:-10%;left:0;width:55%;pointer-events:none;opacity:0;z-index:3;
   transform:translateX(-240%) skewX(-16deg);
-  background:linear-gradient(90deg,transparent,var(--sheen) 42%,rgba(255,255,255,.8) 50%,var(--sheen) 58%,transparent)}.bkfull .scene.flip .face::after{animation:sheenSweep .62s ease-in-out both}
+  background:linear-gradient(90deg,transparent,var(--sheen) 42%,rgba(255,255,255,.8) 50%,var(--sheen) 58%,transparent)}.bkfull .scene.bkflip .face::after{animation:sheenSweep .62s ease-in-out both}
 @keyframes sheenSweep{0%{opacity:0;transform:translateX(-240%) skewX(-16deg)}15%{opacity:1}85%{opacity:1}100%{opacity:0;transform:translateX(340%) skewX(-16deg)}}.bkfull /* front — information face, .bkfull tarot-card dress */
 .front{background:
   radial-gradient(120% 60% at 50% -10%,rgba(232,195,158,.10),transparent 60%),
@@ -448,7 +448,7 @@
   display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.bkfull .back .bknote{position:absolute;left:16px;bottom:38px;z-index:3;color:rgba(240,230,210,.75);font-size:11px;letter-spacing:.22em}.bkfull .back .nocov{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--ink3);font-family:var(--serif);padding:24px;text-align:center}.bkfull .back .nocov .t{font-size:22px;color:var(--ink)}.bkfull /* empty / more / note / footer */
 .empty{display:none;text-align:center;padding:70px 20px 40px;color:var(--ink2)}.bkfull .empty .big{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--ink);margin-bottom:10px}.bkfull .empty.on{display:block}.bkfull .morewrap{text-align:center;padding:26px 0 6px}.bkfull .more{appearance:none;font:inherit;font-size:14px;letter-spacing:.1em;color:var(--ink);background:var(--panel);border:1px solid var(--line2);border-radius:999px;padding:12px 34px;cursor:pointer;transition:all .22s}.bkfull .more:hover{border-color:var(--amber);color:var(--amber)}.bkfull .note{margin:26px 0 0;color:var(--ink3);font-size:13px;line-height:1.9;letter-spacing:.03em}.bkfull .note b{color:var(--ink2)}.bkfull footer{display:flex;flex-wrap:wrap;gap:10px 28px;align-items:baseline;justify-content:space-between;margin-top:34px;padding:26px 0 46px;border-top:1px solid var(--line)}.bkfull footer .meta{color:var(--ink3);font-size:13px;letter-spacing:.14em}.bkfull footer .sign{font-family:var(--serif);font-size:17px;font-weight:700;letter-spacing:.06em}.bkfull footer .sign::after{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--amber);margin-left:10px;vertical-align:middle}
 
-@media (prefers-reduced-motion: reduce){.bkfull .mist i, .bkfull .scene, .bkfull .scene.flipping .halo, .bkfull .scene.flip .face::after{animation:none!important}.bkfull .scene.ant .card3d, .bkfull .scene.flip .card3d{animation:none!important}.bkfull .part{display:none!important}.bkfull .card3d{transition:opacity .01s}.bkfull .face{transition:opacity .25s ease}.bkfull .scene.is-back .front{opacity:0}.bkfull .scene:not(.is-back) .back{opacity:0}.bkfull .scene:hover{transform:none}html{scroll-behavior:auto}
+@media (prefers-reduced-motion: reduce){.bkfull .mist i, .bkfull .scene, .bkfull .scene.flipping .halo, .bkfull .scene.bkflip .face::after{animation:none!important}.bkfull .scene.ant .card3d, .bkfull .scene.bkflip .card3d{animation:none!important}.bkfull .part{display:none!important}.bkfull .card3d{transition:opacity .01s}.bkfull .face{transition:opacity .25s ease}.bkfull .scene.is-back .front{opacity:0}.bkfull .scene:not(.is-back) .back{opacity:0}.bkfull .scene:hover{transform:none}html{scroll-behavior:auto}
 }
 
 /* ===== blog port: full-screen layer + theme-leak shield + sticky offsets ===== */
@@ -710,10 +710,10 @@ function doFlip(scene){
     scene.classList.add('ant', toBack?'dir-back':'dir-front');
     setTimeout(function(){
       scene.classList.remove('ant');
-      scene.classList.add('flip');
+      scene.classList.add('bkflip');
       setTimeout(function(){ spawnBurst(scene); },285); /* the 90° reveal moment */
       setTimeout(function(){
-        scene.classList.remove('flipping','flip','dir-back','dir-front');
+        scene.classList.remove('flipping','bkflip','dir-back','dir-front');
         scene.classList.toggle('is-back',toBack);
       },FLIP_MS+60);
     },antMs);
