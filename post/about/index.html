@@ -339,106 +339,153 @@
 
                 <div class="mod-post__entry wzulli">
                     <style>
-.bw-about{position:relative;border-radius:24px;padding:26px 22px 22px;color:#fff;background:
- radial-gradient(600px 300px at 85% -50px,rgba(255,255,255,.28),rgba(255,255,255,0) 60%),
- radial-gradient(500px 260px at 8% 0,rgba(255,214,170,.20),rgba(255,214,170,0) 60%),
- linear-gradient(180deg,#152a44 0%,#274a6b 30%,#3f6d96 55%,#7ba7c2 80%,#c3d5de 100%);
- box-shadow:0 24px 60px rgba(18,42,66,.35);overflow:hidden}
-.bw-about *{box-sizing:border-box}
-.bw-about .bw-grid{display:flex;flex-wrap:wrap;gap:14px}
-.bw-about .bw-card{background:rgba(255,255,255,.13);-webkit-backdrop-filter:blur(16px) saturate(160%);backdrop-filter:blur(16px) saturate(160%);border:1px solid rgba(255,255,255,.32);border-radius:18px;padding:18px 20px;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 10px 30px rgba(10,30,50,.22);width:100%}
-.bw-about .bw-half{flex:1 1 240px;width:auto}
-.bw-about .bw-label{font-size:10px;letter-spacing:.16em;color:rgba(255,255,255,.66);text-transform:uppercase;margin:0 0 10px}
-.bw-about h2{color:#fff!important;border:none!important;padding:0!important;margin:0 0 8px!important;font-size:17px;letter-spacing:.02em}
-.bw-about p{color:rgba(255,255,255,.92);margin:0 0 8px;line-height:1.75}
-.bw-about p:last-child{margin-bottom:0}
-.bw-about a{color:#fff;text-decoration:underline;text-underline-offset:3px}
-.bw-about .bw-hero{text-align:center;padding:28px 20px 24px}
-.bw-about .bw-avatar{width:88px;height:88px;border-radius:50%;border:2px solid rgba(255,255,255,.75);box-shadow:0 8px 24px rgba(10,30,50,.35);margin:0 auto 12px;display:block;object-fit:cover}
-.bw-about .bw-name{font-size:26px;font-weight:600;letter-spacing:.04em;margin:0 0 6px;color:#fff}
-.bw-about .bw-tag{color:rgba(255,255,255,.85);margin:0}
-.bw-about .bw-pills{margin-top:14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-.bw-about .bw-pill{font-size:12px;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.30);border-radius:999px;padding:4px 12px}
-.bw-about .bw-clock{text-align:center}
-.bw-about .bw-time{font-size:40px;font-weight:600;letter-spacing:.03em;line-height:1.1;color:#fff;font-variant-numeric:tabular-nums}
-.bw-about .bw-date{color:rgba(255,255,255,.78);font-size:13px;margin-top:4px}
-.bw-about .bw-shifts{display:flex;flex-direction:column;gap:8px;margin-top:4px}
-.bw-about .bw-shift{display:flex;align-items:baseline;gap:10px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.20);border-radius:12px;padding:9px 14px}
-.bw-about .bw-shift b{color:#fff;font-variant-numeric:tabular-nums}
-.bw-about .bw-shift span{color:rgba(255,255,255,.85)}
-.bw-about .bw-shift small{color:rgba(255,255,255,.62);margin-left:auto;text-align:right}
-.bw-about .bw-tl{list-style:none;margin:4px 0 0;padding:0}
-.bw-about .bw-tl li{position:relative;padding:0 0 12px 20px;color:rgba(255,255,255,.92);list-style:none}
-.bw-about .bw-tl li:last-child{padding-bottom:0}
-.bw-about .bw-tl li:before{content:"";position:absolute;left:2px;top:7px;width:8px;height:8px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.25)}
-.bw-about .bw-tl li:after{content:"";position:absolute;left:5.5px;top:20px;bottom:2px;width:1px;background:rgba(255,255,255,.30)}
-.bw-about .bw-tl li:last-child:after{display:none}
-.bw-about .bw-tl b{color:#fff}
-.bw-about .bw-vx{font-size:15px;word-break:break-all}
-@media (max-width:560px){.bw-about{padding:18px 12px 14px}.bw-about .bw-time{font-size:32px}}
+.baw{position:relative;overflow:hidden;border-radius:28px;color:#edf2f5;
+ background:
+ radial-gradient(720px 340px at 88% -60px,rgba(255,255,255,.16),rgba(255,255,255,0) 62%),
+ radial-gradient(560px 300px at 4% 12%,rgba(232,195,158,.10),rgba(232,195,158,0) 60%),
+ linear-gradient(163deg,#0a1424 0%,#102238 34%,#1c3a56 64%,#31536f 100%);
+ box-shadow:0 30px 80px rgba(8,24,44,.45),inset 0 1px 0 rgba(255,255,255,.08);
+ padding:clamp(30px,6vw,64px) clamp(22px,5.4vw,60px) clamp(26px,4vw,44px);
+ font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+ line-height:1.8;-webkit-font-smoothing:antialiased}
+.baw *{box-sizing:border-box;margin:0;padding:0}
+.baw ::selection{background:rgba(232,195,158,.35)}
+.baw-mist{position:absolute;border-radius:50%;filter:blur(46px);pointer-events:none;opacity:.55}
+.baw-mist.a{width:480px;height:300px;top:-110px;right:-90px;background:radial-gradient(closest-side,rgba(190,216,232,.34),rgba(190,216,232,0));animation:bawDrift 26s ease-in-out infinite alternate}
+.baw-mist.b{width:420px;height:280px;bottom:-120px;left:-80px;background:radial-gradient(closest-side,rgba(232,195,158,.16),rgba(232,195,158,0));animation:bawDrift 32s ease-in-out infinite alternate-reverse}
+@keyframes bawDrift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(-46px,26px,0) scale(1.12)}}
+.baw-mark{position:absolute;top:-38px;right:6px;font-family:"Noto Serif SC","Songti SC","STSong",serif;font-size:clamp(190px,30vw,300px);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.055);pointer-events:none;user-select:none}
+.baw-side{position:absolute;top:120px;right:14px;writing-mode:vertical-rl;letter-spacing:.5em;font-size:11px;color:rgba(255,255,255,.34);pointer-events:none;user-select:none}
+.baw-in{position:relative;z-index:1}
+@keyframes bawRise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.baw-rv{animation:bawRise .9s cubic-bezier(.22,.8,.3,1) both}
+.baw-kicker{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.38em;text-transform:uppercase;color:rgba(237,242,245,.62)}
+.baw-kicker:before{content:"";width:34px;height:1px;background:#e8c39e}
+.baw-kicker .dot{width:6px;height:6px;border-radius:50%;background:#e8c39e;animation:bawPulse 2.6s ease-in-out infinite}
+@keyframes bawPulse{0%,100%{box-shadow:0 0 0 0 rgba(232,195,158,.45)}50%{box-shadow:0 0 0 7px rgba(232,195,158,0)}}
+.baw-hero{padding:26px 0 8px}
+.baw-ava{width:92px;height:92px;border-radius:50%;object-fit:cover;display:block;border:1px solid rgba(255,255,255,.5);box-shadow:0 0 0 6px rgba(255,255,255,.06),0 18px 40px rgba(4,14,28,.5);animation:bawFloat 7s ease-in-out infinite}
+@keyframes bawFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.baw-name{font-family:"Noto Serif SC","Songti SC","STSong",serif;font-size:clamp(64px,13vw,118px);font-weight:600;line-height:1.08;letter-spacing:.05em;margin:20px 0 4px;
+ background:linear-gradient(180deg,#ffffff 20%,rgba(214,228,238,.62) 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.baw-tag{font-size:clamp(15px,2.4vw,18px);color:rgba(237,242,245,.88);letter-spacing:.02em}
+.baw-meta{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin-top:22px;font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:12.5px;letter-spacing:.14em;color:rgba(237,242,245,.66);font-variant-numeric:tabular-nums}
+.baw-meta .sep{width:26px;height:1px;background:rgba(255,255,255,.25)}
+.baw-pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.baw-pill{font-size:12.5px;letter-spacing:.05em;color:rgba(237,242,245,.92);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 14px;background:rgba(255,255,255,.05);transition:all .35s ease;cursor:default}
+.baw-pill:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.55);transform:translateY(-2px)}
+.baw-rule{height:1px;border:0;margin:clamp(30px,5vw,48px) 0;background:linear-gradient(90deg,rgba(255,255,255,.4),rgba(255,255,255,.08) 55%,rgba(255,255,255,0))}
+.baw-sec{margin-top:clamp(30px,5vw,46px)}
+.baw-lab{display:flex;align-items:baseline;gap:14px;margin-bottom:16px}
+.baw-no{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:12px;color:#e8c39e;letter-spacing:.2em}
+.baw-lab h2{font-family:"Noto Serif SC","Songti SC","STSong",serif;font-size:clamp(21px,3.4vw,27px);font-weight:600;letter-spacing:.06em;color:#fff!important;border:none!important;padding:0!important;margin:0!important}
+.baw-lab .en{margin-left:auto;font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:rgba(237,242,245,.42)}
+.baw-lead{font-family:"Noto Serif SC","Songti SC","STSong",serif;font-size:clamp(19px,3.2vw,25px);line-height:1.85;letter-spacing:.02em;color:#f4f7f9;max-width:34em}
+.baw-body{color:rgba(237,242,245,.84);font-size:15px;max-width:38em}
+.baw-body p{margin:0 0 10px}
+.baw a{color:#fff;text-decoration:none;background-image:linear-gradient(#e8c39e,#e8c39e);background-size:0% 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .45s ease;padding-bottom:2px}
+.baw a:hover{background-size:100% 1px}
+.baw-shifts{border-top:1px solid rgba(255,255,255,.16)}
+.baw-shift{display:flex;align-items:baseline;gap:clamp(14px,3vw,30px);padding:16px 6px;border-bottom:1px solid rgba(255,255,255,.16);transition:all .35s ease}
+.baw-shift:hover{background:rgba(255,255,255,.05);padding-left:16px}
+.baw-shift .t{font-family:"Noto Serif SC","Songti SC","STSong",serif;font-size:clamp(28px,5vw,42px);line-height:1;color:#fff;font-variant-numeric:tabular-nums;min-width:2.9em}
+.baw-shift .n{font-size:clamp(16px,2.6vw,20px);letter-spacing:.04em;color:#fff}
+.baw-shift .d{margin-left:auto;font-size:13px;color:rgba(237,242,245,.6);letter-spacing:.06em;text-align:right}
+.baw-duo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,4vw,44px)}
+.baw-card{border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:22px 24px;background:linear-gradient(170deg,rgba(255,255,255,.09),rgba(255,255,255,.03));-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transition:all .4s ease}
+.baw-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.34);box-shadow:0 22px 44px rgba(4,14,28,.35)}
+.baw-tl{list-style:none}
+.baw-tl li{position:relative;padding:0 0 20px 26px;list-style:none}
+.baw-tl li:last-child{padding-bottom:2px}
+.baw-tl li:before{content:"";position:absolute;left:3px;top:9px;width:7px;height:7px;border-radius:50%;background:#e8c39e;box-shadow:0 0 0 4px rgba(232,195,158,.18)}
+.baw-tl li:after{content:"";position:absolute;left:6px;top:24px;bottom:0;width:1px;background:linear-gradient(180deg,rgba(255,255,255,.35),rgba(255,255,255,.06))}
+.baw-tl li:last-child:after{display:none}
+.baw-tl .y{font-family:"Noto Serif SC","Songti SC","STSong",serif;font-size:19px;color:#fff;letter-spacing:.02em}
+.baw-tl .e{color:rgba(237,242,245,.78);font-size:14px}
+.baw-vx{border:1px dashed rgba(255,255,255,.3);border-radius:16px;padding:18px 22px;display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;background:rgba(255,255,255,.04)}
+.baw-vx .k{font-size:11px;letter-spacing:.3em;color:rgba(237,242,245,.55);text-transform:uppercase}
+.baw-vx .v{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:16px;color:#fff;word-break:break-all;letter-spacing:.03em}
+.baw-vx .n{font-size:12.5px;color:rgba(237,242,245,.55)}
+.baw-foot{margin-top:clamp(34px,5vw,52px);display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;font-size:12px;letter-spacing:.22em;color:rgba(237,242,245,.45);text-transform:uppercase}
+@media (max-width:640px){
+ .baw-duo{grid-template-columns:1fr}
+ .baw-side{display:none}
+ .baw-shift .d{display:none}
+ .baw-mark{font-size:170px;top:-20px}
+}
+@media (prefers-reduced-motion:reduce){
+ .baw-mist,.baw-ava,.baw-kicker .dot{animation:none!important}
+ .baw-rv{animation:none!important}
+ .baw *{transition:none!important}
+}
 </style>
 
-<div class="bw-about">
-<div class="bw-grid">
-  <div class="bw-card bw-hero">
-    <img class="bw-avatar" src="https://trojians.github.io/images/avatar.png?v=1790857253371" alt="白雾的头像">
-    <p class="bw-name">白雾</p>
-    <p class="bw-tag">欢迎来到我的小站呀，我是白雾，很高兴遇见你！🤝</p>
-    <div class="bw-pills"><span class="bw-pill">🏠 分享小站</span><span class="bw-pill">📰 每日三更</span><span class="bw-pill">📚 小说 · 科技 · 热榜</span></div>
-  </div>
+<div class="baw">
+<span class="baw-mist a"></span><span class="baw-mist b"></span>
+<span class="baw-mark">雾</span>
+<span class="baw-side">白雾的分享小站</span>
+<div class="baw-in">
 
-  <div class="bw-card bw-clock">
-    <p class="bw-label">Beijing · UTC+8</p>
-    <div class="bw-time" id="bw-clock">--:--:--</div>
-    <div class="bw-date" id="bw-date">加载中…</div>
-  </div>
+  <div class="baw-kicker baw-rv"><span class="dot"></span><span>About · 关于</span></div>
 
-  <div class="bw-card">
-    <p class="bw-label">About</p>
-    <h2>🏠 关于本站</h2>
-    <p>一个分享和搜集的网站，一个杂货铺，一个树洞，一个需要经营的地方。</p>
-    <p>以前的老资源——完结小说、电子书、盐选文章、试卷合集——都收在「<a href="/post/zi-yuan-he-ji/">资源合集</a>」里了。</p>
-  </div>
-
-  <div class="bw-card">
-    <p class="bw-label">Daily</p>
-    <h2>📰 每日三更</h2>
-    <div class="bw-shifts">
-      <div class="bw-shift"><b>08:00</b><span>AI 早报</span><small>科技圈新鲜事</small></div>
-      <div class="bw-shift"><b>12:00</b><span>热榜日报</span><small>全网热榜精选</small></div>
-      <div class="bw-shift"><b>20:00</b><span>书荒日报</span><small>小说推荐不断更</small></div>
+  <div class="baw-hero">
+    <img class="baw-ava baw-rv" style="animation-delay:.05s" src="https://trojians.github.io/images/avatar.png?v=1790857253371" alt="白雾的头像">
+    <h1 class="baw-name baw-rv" style="animation-delay:.12s">白雾</h1>
+    <p class="baw-tag baw-rv" style="animation-delay:.2s">欢迎来到我的小站呀，我是白雾，很高兴遇见你！🤝</p>
+    <div class="baw-meta baw-rv" style="animation-delay:.28s">
+      <span>BEIJING · UTC+8</span><span class="sep"></span>
+      <span id="baw-clock">--:--:--</span><span class="sep"></span>
+      <span id="baw-date">加载中…</span>
     </div>
+    <div class="baw-pills baw-rv" style="animation-delay:.36s"><span class="baw-pill">🏠 分享小站</span><span class="baw-pill">📰 每日三更</span><span class="baw-pill">📚 小说 · 科技 · 热榜</span></div>
   </div>
 
-  <div class="bw-card bw-half">
-    <p class="bw-label">Who</p>
-    <h2>👨‍💻 博主是谁</h2>
-    <p>上面有写🖕</p>
+  <hr class="baw-rule">
+
+  <section class="baw-sec baw-rv" style="animation-delay:.1s">
+    <div class="baw-lab"><span class="baw-no">01</span><h2>关于本站</h2><span class="en">The Site</span></div>
+    <p class="baw-lead">一个分享和搜集的网站，一个杂货铺，一个树洞，一个需要经营的地方。</p>
+    <div class="baw-body" style="margin-top:14px"><p>以前的老资源——完结小说、电子书、盐选文章、试卷合集——都收在「<a href="/post/zi-yuan-he-ji/">资源合集</a>」里了。</p></div>
+  </section>
+
+  <section class="baw-sec baw-rv" style="animation-delay:.16s">
+    <div class="baw-lab"><span class="baw-no">02</span><h2>每日三更</h2><span class="en">Daily, Three Times</span></div>
+    <div class="baw-shifts">
+      <div class="baw-shift"><span class="t">08:00</span><span class="n">AI 早报</span><span class="d">科技圈新鲜事</span></div>
+      <div class="baw-shift"><span class="t">12:00</span><span class="n">热榜日报</span><span class="d">全网热榜精选</span></div>
+      <div class="baw-shift"><span class="t">20:00</span><span class="n">书荒日报</span><span class="d">小说推荐不断更</span></div>
+    </div>
+  </section>
+
+  <div class="baw-duo" style="margin-top:clamp(30px,5vw,46px)">
+    <section class="baw-card baw-rv" style="animation-delay:.2s">
+      <div class="baw-lab"><span class="baw-no">03</span><h2>博主是谁</h2><span class="en">Who</span></div>
+      <p class="baw-body">上面有写🖕</p>
+    </section>
+    <section class="baw-card baw-rv" style="animation-delay:.26s">
+      <div class="baw-lab"><span class="baw-no">04</span><h2>兴趣爱好</h2><span class="en">Interests</span></div>
+      <p class="baw-body">喜欢搜索一切感兴趣的东西，喜欢看小说，喜欢极客，喜欢分享。</p>
+    </section>
   </div>
 
-  <div class="bw-card bw-half">
-    <p class="bw-label">Interests</p>
-    <h2>⛹ 兴趣爱好</h2>
-    <p>喜欢搜索一切感兴趣的东西，喜欢看小说，喜欢极客，喜欢分享。</p>
-  </div>
-
-  <div class="bw-card bw-half">
-    <p class="bw-label">Timeline</p>
-    <h2>📆 出发时间</h2>
-    <ul class="bw-tl">
-      <li><b>2023年4月7日</b> — 重新开始于这一天</li>
-      <li><b>2026年10月1日</b> — 每日三更改版</li>
+  <section class="baw-sec baw-rv" style="animation-delay:.3s">
+    <div class="baw-lab"><span class="baw-no">05</span><h2>出发时间</h2><span class="en">Timeline</span></div>
+    <ul class="baw-tl">
+      <li><span class="y">2023年4月7日</span><br><span class="e">重新开始于这一天</span></li>
+      <li><span class="y">2026年10月1日</span><br><span class="e">每日三更改版</span></li>
     </ul>
-  </div>
+  </section>
 
-  <div class="bw-card bw-half">
-    <p class="bw-label">Contact</p>
-    <h2>📬 联系我呀</h2>
-    <p class="bw-vx">VX：dHJvamlhbnM4MDIz👈（Base64）</p>
-  </div>
+  <section class="baw-sec baw-rv" style="animation-delay:.36s">
+    <div class="baw-lab"><span class="baw-no">06</span><h2>联系我呀</h2><span class="en">Contact</span></div>
+    <div class="baw-vx"><span class="k">VX</span><span class="v">dHJvamlhbnM4MDIz</span><span class="n">👈（Base64）</span></div>
+  </section>
+
+  <div class="baw-foot"><span>Bai Wu</span><span>Est. 2023</span></div>
+
 </div>
 </div>
-<script>(function(){function p(n){return (n<10?"0":"")+n}function t(){var now=new Date();var utc=now.getTime()+now.getTimezoneOffset()*60000;var d=new Date(utc+8*3600000);var e=document.getElementById("bw-clock");if(e){e.textContent=p(d.getHours())+":"+p(d.getMinutes())+":"+p(d.getSeconds());}var w=["周日","周一","周二","周三","周四","周五","周六"];var de=document.getElementById("bw-date");if(de){de.textContent=d.getFullYear()+" 年 "+(d.getMonth()+1)+" 月 "+d.getDate()+" 日 · "+w[d.getDay()];}}t();setInterval(t,1000);})();</script>
+<script>(function(){function p(n){return (n<10?"0":"")+n}function t(){var now=new Date();var utc=now.getTime()+now.getTimezoneOffset()*60000;var d=new Date(utc+8*3600000);var e=document.getElementById("baw-clock");if(e){e.textContent=p(d.getHours())+":"+p(d.getMinutes())+":"+p(d.getSeconds());}var w=["周日","周一","周二","周三","周四","周五","周六"];var de=document.getElementById("baw-date");if(de){de.textContent=d.getFullYear()+" 年 "+(d.getMonth()+1)+" 月 "+d.getDate()+" 日 · "+w[d.getDay()];}}t();setInterval(t,1000);})();</script>
 
                 </div>
 
