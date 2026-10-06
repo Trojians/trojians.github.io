@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 05 Oct 2026 12:03:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 00:18:50 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月6日：美中AI差距只剩3%，五角大楼却把Claude请出了门</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-06/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-06/</guid>
+      <pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate>
+      <description>彭博称美中顶尖AI模型差距收窄至3%；五角大楼宣布停用Anthropic的Claude；谷歌因AI垃圾报告暂停开源漏洞赏金；华为与高通达成含5G与AI的多年专利协议。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月5日：人民日报点名离谱网文，这4本待改编的好书先码住</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/zhe-ge-bei-song-you-dian-guai/</guid>
       <pubDate>Sat, 15 Jul 2023 16:00:00 GMT</pubDate>
       <description>主角表示，这很不对劲，他决定，要把包龙图变成自己印象中那个包黑碳 作品简介： 主角来到北宋，发现这时代和他学过的历史有所出入。 这里有男丁稀少，靠孤儿寡母撑门面的天波杨府。 有凭着丹书铁卷横行民间的柴王府。 八贤王和庞太师天天在朝堂上对喷。 带着整个文臣集团分成两派互相骂街。 赵祯每天就磕着瓜子坐在</description>
-    </item>
-
-    <item>
-      <title>陈医生，别怂！</title>
-      <link>https://trojians.github.io/post/chen-yi-sheng-bie-song/</link>
-      <guid>https://trojians.github.io/post/chen-yi-sheng-bie-song/</guid>
-      <pubDate>Sat, 15 Jul 2023 16:00:00 GMT</pubDate>
-      <description>我若为医，便要做那顶天立地，不为苟且，光明磊落的医！ 作品简介： 【叮！你收到了来自患者的恶意投诉，获得系统补偿奖励！】 如果你有一个差评补偿系统，你会选择成为什么样的人？！ 陈南选择做一个好人。 一个敢说真话的人。 一个光明磊落的人。 一个不畏强权的人。 一个绝不妥协的人。 一个面对这群魔乱舞时代</description>
     </item>
   </channel>
 </rss>
