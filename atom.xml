@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 07 Oct 2026 04:05:12 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 12:07:31 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-07/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-07/</guid>
+      <pubDate>Tue, 06 Oct 2026 16:00:00 GMT</pubDate>
+      <description>番茄小说新版福利10月1日起全面生效，完本签约与品质奖励门槛双升；第三届天马文学奖5部获奖作品揭晓；现实题材征文大赛6.11万部参赛创纪录，第十一届同步启动。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月7日：返程最高峰杀到，国足却创下29年首败</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-01/</guid>
       <pubDate>Wed, 30 Sep 2026 16:00:00 GMT</pubDate>
       <description>书荒日报第一期：《小说选刊》新设&quot;众选佳作&quot;栏目首次收录网文《十日终焉》；本周 4 本潜力新书推荐；赤戟的书荒救济所、艾儿天空、开源阅读三个公众号纳入每日扫描。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月1日：谷歌憋出大招，OpenAI 却踩了刹车</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-01/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-01/</guid>
-      <pubDate>Wed, 30 Sep 2026 16:00:00 GMT</pubDate>
-      <description>每天 3 分钟，带你看完 AI 圈最重要的事。今天是 2026 年 10 月 1 日。 1. 谷歌发布 Gemini 4 Argon，价格只要对手五分之一 沉寂 7 个月，Google DeepMind 在今天凌晨掏出了 Gemini 4 系列首款旗舰模型 Argon。智能指数 53 分追平 GPT</description>
     </item>
   </channel>
 </rss>
