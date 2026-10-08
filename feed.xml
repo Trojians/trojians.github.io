@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 07 Oct 2026 12:07:31 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 23:58:55 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月8日：中国一个月连发16个新模型，美国这边先把小模型价格砍了75%</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-08/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-08/</guid>
+      <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Anthropic 小模型降价约75%、Mistral 放出万亿参数预览、OpenAI 一次公开722篇数学稿，中国9月连发16个模型——今天拼的都是又快又便宜。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-10-01/</guid>
       <pubDate>Wed, 30 Sep 2026 16:00:00 GMT</pubDate>
       <description>热榜日报第一期：国庆7天预计21.3亿人次出行，天安门&quot;祝福祖国&quot;花篮亮相；女儿接过因公殉职父亲警号重回刑侦岗；问界新M8预售38.98万起；特朗普AI会议黄仁勋马斯克分坐两边；希腊爆炸4名美国游客死亡。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月1日：网文登上《小说选刊》，本周 4 本潜力新书</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-01/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-01/</guid>
-      <pubDate>Wed, 30 Sep 2026 16:00:00 GMT</pubDate>
-      <description>书荒日报第一期：《小说选刊》新设&quot;众选佳作&quot;栏目首次收录网文《十日终焉》；本周 4 本潜力新书推荐；赤戟的书荒救济所、艾儿天空、开源阅读三个公众号纳入每日扫描。</description>
     </item>
   </channel>
 </rss>
