@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 07 Oct 2026 23:58:55 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 04:02:56 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 10月8日：节后机票大跳水比高铁还便宜，长春大冬会火炬「吉翔」亮相</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-10-08/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-08/</guid>
+      <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
+      <description>彭玉离世登顶热搜，缅北电诈纪录片再揭明家案；长春大冬会火炬「吉翔」发布，节后机票跳水至259元，水贝金镯子卖断货。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 10月8日：中国一个月连发16个新模型，美国这边先把小模型价格砍了75%</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-02/</guid>
       <pubDate>Thu, 01 Oct 2026 16:00:00 GMT</pubDate>
       <description>CNNIC报告：我国生成式AI用户破7亿、普及率超50%；OpenAI发布常驻智能体Dots与平价版GPT-6.1 Sol；Anthropic评估显示开源模型GLM-5.3攻击能力逼近闭源旗舰；DeepSeek开源昇腾六大组件，国内首条3D封装量产线试产。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 10月1日：国庆出行21.3亿人次，天安门花篮亮相</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-10-01/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-01/</guid>
-      <pubDate>Wed, 30 Sep 2026 16:00:00 GMT</pubDate>
-      <description>热榜日报第一期：国庆7天预计21.3亿人次出行，天安门&quot;祝福祖国&quot;花篮亮相；女儿接过因公殉职父亲警号重回刑侦岗；问界新M8预售38.98万起；特朗普AI会议黄仁勋马斯克分坐两边；希腊爆炸4名美国游客死亡。</description>
     </item>
   </channel>
 </rss>
