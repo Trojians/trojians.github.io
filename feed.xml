@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 08 Oct 2026 12:27:04 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 23:59:52 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月9日：三星利润暴涨782%，谷歌直接把智能体塞进邮箱</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-09/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-09/</guid>
+      <pubDate>Thu, 08 Oct 2026 16:00:00 GMT</pubDate>
+      <description>谷歌推出能干活的 Gemini 办公智能体，GPT-6 向免费用户开放，三星与台积电同日刷新纪录，微软则把智能体搬回本地电脑。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月8日：网文登上《小说选刊》，《夜无疆》终夺起点九月月票第一</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-03/</guid>
       <pubDate>Fri, 02 Oct 2026 16:00:00 GMT</pubDate>
       <description>谷歌发布 Gemini 4 Argon 却只给少数安全伙伴试用；美国今年已有 12 万裁员归因于 AI、登顶裁员理由；Cloudflare 开源只做判断不写文章的 Clef；ChatGPT 上线虚拟试衣和文档扫描。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月2日：6.11万部网文参赛创新高，《万物希声》拿下特等奖</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-02/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-02/</guid>
-      <pubDate>Thu, 01 Oct 2026 16:00:00 GMT</pubDate>
-      <description>第十届现实题材网络文学征文大赛颁奖：5.78万名作家、6.11万部作品参赛双创历史新高，《万物希声》获特等奖、《风华年代》获一等奖，超八成获奖作品进入IP开发；本期速递四本获奖作，另附三号最新动态。</description>
     </item>
   </channel>
 </rss>
