@@ -330,6 +330,29 @@
 </header>
 <!-- <a href="#" id="back-to-top" style="display: inline;"> ^ </a> -->
 
+            <style>
+                .mod-head.bw-sticky{position:sticky;top:0;z-index:900;background:var(--bg-color,#fff);border-bottom:1px solid var(--border-color,rgba(0,0,0,.06));transition:transform .34s ease;margin-top:0;padding-top:22px}
+                .mod-head.bw-hide{transform:translateY(-110%)}
+                @media (prefers-reduced-motion: reduce){.mod-head.bw-sticky{transition:none}}
+            </style>
+            <script>
+            (function(){
+                var h=document.querySelector('.mod-head'); if(!h) return;
+                h.classList.add('bw-sticky');
+                var lastY=window.scrollY||0, ticking=false;
+                window.addEventListener('scroll', function(){
+                    if(ticking) return; ticking=true;
+                    requestAnimationFrame(function(){
+                        ticking=false;
+                        var y=window.scrollY||0;
+                        if(y>160 && y>lastY+4){ h.classList.add('bw-hide'); }
+                        else if(y<lastY-4 || y<=160){ h.classList.remove('bw-hide'); }
+                        lastY=y;
+                    });
+                }, {passive:true});
+            })();
+            </script>
+
             <article class="mod-post mod-post__type-post">
                 <header>
                     <h1 class="mod-post__title">
@@ -340,7 +363,7 @@
                 <div class="mod-post__meta">
                     <time datetime="2026-10-03">
                         2026-10-03
-                    </time> • 约 506 分钟 •
+                    </time> • 约 509 分钟 •
                         
                         
                         
@@ -479,12 +502,22 @@
 .bkfull .bktop.open .bkmb-ico span:nth-child(1){transform:translateY(6.1px) rotate(45deg)}
 .bkfull .bktop.open .bkmb-ico span:nth-child(2){opacity:0}
 .bkfull .bktop.open .bkmb-ico span:nth-child(3){transform:translateY(-6.1px) rotate(-45deg)}
-.bkfull .bkmpanel{display:block;max-height:0;overflow:hidden;opacity:0;transition:max-height .38s ease,opacity .3s}
-.bkfull .bktop.open .bkmpanel{max-height:330px;opacity:1}
-.bkfull .bkmpanel a{display:flex;align-items:center;height:56px;padding:0 clamp(16px,3vw,48px);color:#bccbe2;text-decoration:none;font-size:15px;letter-spacing:.1em;border-top:1px solid rgba(160,195,230,.12)}
-.bkfull .bkmpanel a.here{color:#e8c39e}
+.bkfull .bkbar{position:relative;z-index:2}
+.bkfull .bkmpanel{counter-reset:mi;display:flex;flex-direction:column;justify-content:center;position:absolute;top:0;left:0;right:0;height:100dvh;z-index:1;padding:84px clamp(22px,6vw,44px) 30px;background:linear-gradient(160deg,var(--bg1),var(--bg0) 72%);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .38s ease,visibility 0s linear .38s}
+.bkfull .bktop.open .bkmpanel{opacity:1;visibility:visible;pointer-events:auto;transition:opacity .38s ease,visibility 0s}
+.bkfull .bkmpanel a{display:flex;align-items:baseline;gap:14px;padding:12px 0;color:var(--ink);text-decoration:none;font-family:var(--serif);font-size:27px;font-weight:700;letter-spacing:.06em;opacity:0;transform:translateY(16px);transition:opacity .4s ease,transform .4s ease,color .3s}
+.bkfull .bkmpanel a::before{counter-increment:mi;content:counter(mi,decimal-leading-zero);font-family:var(--sans);font-size:12px;font-weight:400;letter-spacing:.2em;color:var(--amber)}
+.bkfull .bktop.open .bkmpanel a{opacity:1;transform:none}
+.bkfull .bktop.open .bkmpanel a:nth-child(1){transition-delay:.06s}
+.bkfull .bktop.open .bkmpanel a:nth-child(2){transition-delay:.12s}
+.bkfull .bktop.open .bkmpanel a:nth-child(3){transition-delay:.18s}
+.bkfull .bktop.open .bkmpanel a:nth-child(4){transition-delay:.24s}
+.bkfull .bktop.open .bkmpanel a:nth-child(5){transition-delay:.30s}
+.bkfull .bkmpanel a.here{color:var(--amber)}
+.bkfull .bkmp-foot{margin-top:26px;font-size:13px;letter-spacing:.12em;color:var(--ink3);opacity:0;transition:opacity .4s ease .36s}
+.bkfull .bktop.open .bkmp-foot{opacity:1}
 }
-@media (prefers-reduced-motion: reduce){.bkfull .bkmpanel{transition:none}.bkfull .bknav a::after{transition:none}}
+@media (prefers-reduced-motion: reduce){.bkfull .bkmpanel,.bkfull .bkmpanel a,.bkfull .bkmp-foot{transition:none}.bkfull .bknav a::after{transition:none}}
 
 /* ===== blog port: shield card images from theme entry-img rules (margin/radius/shadow/dark-dim) ===== */
 .bkfull .face img{margin:0;max-width:none;border-radius:0;box-shadow:none;opacity:1}
@@ -508,6 +541,7 @@
     <a href="https://trojians.github.io/post/re-bang-li-shi/">热榜历史</a>
     <a href="https://trojians.github.io/post/zi-yuan-he-ji/">资源合集</a>
     <a href="https://trojians.github.io/post/about/">关于</a>
+    <p class="bkmp-foot">雾散之后，都是好天气。</p>
   </nav>
 </header>
 <div class="mist" aria-hidden="true"><i class="m1"></i><i class="m2"></i><i class="m3"></i></div>
@@ -774,7 +808,7 @@ apply();
   var bar=document.getElementById('bktop'), btn=document.getElementById('bkmenu-btn'), panel=document.getElementById('bkmpanel');
   if(!bar||!btn||!panel)return;
   function isOpen(){return bar.classList.contains('open');}
-  function set(open){bar.classList.toggle('open',open);btn.setAttribute('aria-expanded',open?'true':'false');}
+  function set(open){bar.classList.toggle('open',open);btn.setAttribute('aria-expanded',open?'true':'false');var f=bar.closest('.bkfull');if(f)f.style.overflowY=open?'hidden':'';}
   btn.addEventListener('click',function(e){e.stopPropagation();set(!isOpen());});
   document.addEventListener('click',function(e){if(isOpen()&&!bar.contains(e.target))set(false);});
   document.addEventListener('keydown',function(e){if((e.key==='Escape'||e.key==='Esc')&&isOpen()){set(false);btn.focus();}});

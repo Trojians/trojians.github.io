@@ -396,6 +396,7 @@ html,body{overflow:hidden!important}
         -webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);
         border-bottom:1px solid rgba(188,203,226,.08);
       }.bwfull .bar{
+        position:relative;z-index:2;
         display:flex;align-items:center;justify-content:space-between;
         padding:16px clamp(20px,4vw,52px);
       }.bwfull /* mobile menu — enabled only at ≤760px (see media query) */
@@ -531,21 +532,24 @@ html,body{overflow:hidden!important}
         }.bwfull .mb-ico{display:flex;flex-direction:column;gap:5px;width:22px;flex:none}.bwfull .mb-ico span{display:block;height:1.5px;background:currentColor;border-radius:2px;
           transition:transform .35s cubic-bezier(.22,1,.36,1),opacity .3s}.bwfull .topbar.open .mb-ico span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}.bwfull .topbar.open .mb-ico span:nth-child(2){opacity:0}.bwfull .topbar.open .mb-ico span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}.bwfull /* --- mobile nav panel: fog-glass, .bwfull hairline rows, .bwfull smooth unfold --- */
         .mpanel{
-          display:block;max-height:0;overflow:hidden;opacity:0;visibility:hidden;
-          border-top:1px solid transparent;
-          transition:max-height .5s cubic-bezier(.22,1,.36,1),opacity .4s ease,border-color .4s,visibility 0s linear .5s;
+          display:flex;flex-direction:column;justify-content:center;position:absolute;top:0;left:0;right:0;height:100dvh;z-index:1;
+          padding:96px clamp(22px,6vw,52px) 34px;
+          background:linear-gradient(165deg,rgba(9,20,38,.97),rgba(4,9,19,.985));
+          opacity:0;visibility:hidden;pointer-events:none;
+          transition:opacity .42s ease,visibility 0s linear .42s;
         }.bwfull .topbar.open .mpanel{
-          max-height:300px;opacity:1;visibility:visible;
-          border-top-color:rgba(188,203,226,.1);
-          transition:max-height .5s cubic-bezier(.22,1,.36,1),opacity .4s ease,border-color .4s,visibility 0s;
+          opacity:1;visibility:visible;pointer-events:auto;
+          transition:opacity .42s ease,visibility 0s;
         }.bwfull .mpanel a{
           display:flex;align-items:center;justify-content:space-between;
-          min-height:44px;padding:15px clamp(20px,4vw,52px);
-          font-size:15px;letter-spacing:.3em;color:var(--ink-2);text-decoration:none;
-          border-bottom:1px solid rgba(188,203,226,.07);
-          transition:color .3s,background .3s;
-        }.bwfull .mpanel a:last-child{border-bottom:0}.bwfull .mpanel a:hover, .bwfull .mpanel a:active{color:#fff;background:rgba(148,178,226,.07)}.bwfull .mpanel a .arr{font-family:var(--serif);font-size:17px;color:var(--amber);letter-spacing:0}.bwfull .mpanel a.here{color:var(--amber)}.bwfull /* panel open: hero yields space so the panel never covers the title */
-        .hero{transition:padding-top .5s cubic-bezier(.22,1,.36,1)}body.menu-open .hero{padding-top:416px}.bwfull .side-note{display:none}.bwfull .sec{grid-template-columns:1fr;gap:18px}.bwfull .sec-no{font-size:64px}.bwfull .sec-no small{display:inline-block;margin:0 0 0 18px;vertical-align:super}.bwfull section{padding-top:104px}.bwfull .drow{grid-template-columns:auto 1fr auto;gap:6px 18px;padding-left:2px;padding-right:2px}.bwfull .ddesc{display:none}.bwfull .drow:hover{transform:none}.bwfull .darrow{opacity:.85;transform:none;font-size:20px}.bwfull .tl::before{left:6px;right:auto;top:0;bottom:0;width:1px;height:auto;
+          padding:13px 0;
+          font-family:var(--serif);font-size:26px;font-weight:700;letter-spacing:.14em;color:var(--ink-2);text-decoration:none;
+          opacity:0;transform:translateY(16px);
+          transition:opacity .4s ease,transform .4s ease,color .3s;
+        }.bwfull .topbar.open .mpanel a{opacity:1;transform:none}
+        .bwfull .topbar.open .mpanel a:nth-child(1){transition-delay:.06s}.bwfull .topbar.open .mpanel a:nth-child(2){transition-delay:.12s}.bwfull .topbar.open .mpanel a:nth-child(3){transition-delay:.18s}.bwfull .topbar.open .mpanel a:nth-child(4){transition-delay:.24s}.bwfull .topbar.open .mpanel a:nth-child(5){transition-delay:.30s}
+        .bwfull .mpanel .mp-foot{margin-top:26px;font-size:13px;letter-spacing:.12em;color:var(--ink-2);opacity:0;transition:opacity .4s ease .36s}.bwfull .topbar.open .mpanel .mp-foot{opacity:.75}.bwfull .mpanel a:last-child{border-bottom:0}.bwfull .mpanel a:hover, .bwfull .mpanel a:active{color:#fff;background:rgba(148,178,226,.07)}.bwfull .mpanel a .arr{font-family:var(--serif);font-size:17px;color:var(--amber);letter-spacing:0}.bwfull .mpanel a.here{color:var(--amber)}.bwfull /* panel open: hero yields space so the panel never covers the title */
+        .hero{transition:padding-top .5s cubic-bezier(.22,1,.36,1)}body.menu-open .hero{padding-top:0}.bwfull .side-note{display:none}.bwfull .sec{grid-template-columns:1fr;gap:18px}.bwfull .sec-no{font-size:64px}.bwfull .sec-no small{display:inline-block;margin:0 0 0 18px;vertical-align:super}.bwfull section{padding-top:104px}.bwfull .drow{grid-template-columns:auto 1fr auto;gap:6px 18px;padding-left:2px;padding-right:2px}.bwfull .ddesc{display:none}.bwfull .drow:hover{transform:none}.bwfull .darrow{opacity:.85;transform:none;font-size:20px}.bwfull .tl::before{left:6px;right:auto;top:0;bottom:0;width:1px;height:auto;
           background:linear-gradient(180deg,var(--amber),rgba(232,195,158,.1))}.bwfull .tl-nodes{grid-template-columns:1fr;gap:24px}.bwfull .tnode{padding:0 0 0 30px}.bwfull .tnode::before{top:12px}.bwfull .avatar{width:86px;height:86px}.bwfull .watermark{font-size:66vw;top:-2vh;right:-12vw}.bwfull .baiwu{font-size:34vw}.bwfull .clock .date{letter-spacing:.16em;text-indent:.16em;font-size:11.5px}.bwfull .foot-row{flex-direction:column;align-items:center;text-align:center;gap:10px}.bwfull .foot-sub{text-align:center}.bwfull .kicker{letter-spacing:.34em;text-indent:.34em;font-size:11px}.bwfull .kicker::before, .bwfull .kicker::after{width:22px}
       }
 
@@ -587,6 +591,7 @@ html,body{overflow:hidden!important}
         <a href="https://trojians.github.io/post/re-bang-li-shi/">热榜历史<span class="arr" aria-hidden="true">→</span></a>
         <a href="https://trojians.github.io/post/zi-yuan-he-ji/">资源合集<span class="arr" aria-hidden="true">→</span></a>
         <a class="here" href="https://trojians.github.io/post/about/">关于<span class="arr" aria-hidden="true">→</span></a>
+        <p class="mp-foot">雾散之后，都是好天气。</p>
       </nav>
     </header>
 
@@ -922,6 +927,7 @@ html,body{overflow:hidden!important}
         function setMenu(open){
           topbar.classList.toggle('open',open);
           document.body.classList.toggle('menu-open',open);
+          var bwf=document.querySelector('.bwfull'); if(bwf){bwf.style.overflowY=open?'hidden':'';}
           menuBtn.setAttribute('aria-expanded',open?'true':'false');
         }
         menuBtn.addEventListener('click',function(e){

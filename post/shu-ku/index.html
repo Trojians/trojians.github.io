@@ -269,7 +269,25 @@
 </head>
 
 <body>
-<style>.muted{opacity:.62}</style>
+<style>
+.muted{opacity:.62}
+.sk-tools{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap;margin-bottom:1.2rem}
+.sk-tools input{flex:1;min-width:200px}
+.sk-seg{display:inline-flex;border:1px solid var(--border-color,#e5e5e5);border-radius:99px;overflow:hidden;flex:none}
+.sk-seg button{border:0;background:transparent;padding:.5rem 1rem;font-size:.88rem;cursor:pointer;color:inherit;opacity:.6;transition:background .25s,color .25s,opacity .25s;font:inherit}
+.sk-seg button.on{background:#2e6f6a;color:#fff;opacity:1}
+#shuku-list.sk-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+#shuku-list.sk-grid .shuku-card{margin-bottom:0}
+@media (max-width:640px){#shuku-list.sk-grid{grid-template-columns:1fr}}
+.shuku-card{cursor:pointer;transition:box-shadow .25s}
+.shuku-card:hover{box-shadow:0 6px 18px rgba(34,48,58,.09)}
+.sk-chev{float:right;opacity:.45;font-size:.85rem;transition:transform .3s;margin-top:.2rem}
+.shuku-card.open .sk-chev{transform:rotate(180deg)}
+.sk-detail{display:grid;grid-template-rows:0fr;transition:grid-template-rows .38s ease}
+.sk-detail>div{overflow:hidden}
+.shuku-card.open .sk-detail{grid-template-rows:1fr}
+@media (prefers-reduced-motion: reduce){.sk-detail,.sk-chev,.shuku-card{transition:none}}
+</style>
 
 <script>
     (function () {
@@ -339,509 +357,615 @@
 
     <article class="mod-archive">
         <div class="mod-archive__item">
-            <div style="margin-bottom: 1.2rem;">
+            <div class="sk-tools">
                 <input id="shuku-search" type="search" placeholder="搜书名 / 作者 / 题材…"
-                    style="width: 100%; max-width: 420px; padding: 0.55rem 0.9rem; border: 1px solid var(--border-color, #e5e5e5); border-radius: 8px; font-size: 0.95rem; background: var(--bg-color, #fff); color: inherit;" />
+                    style="padding: 0.55rem 0.9rem; border: 1px solid var(--border-color, #e5e5e5); border-radius: 8px; font-size: 0.95rem; background: var(--bg-color, #fff); color: inherit;" />
+                <div class="sk-seg" role="group" aria-label="视图切换">
+                    <button type="button" id="sk-view-list" class="on">列表</button>
+                    <button type="button" id="sk-view-grid">网格</button>
+                </div>
             </div>
 
             <div id="shuku-list">
                 
                 <div class="shuku-card" data-key="夜无疆 辰东 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《夜无疆》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：辰东
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">九月月票第一，辰东新书终于登顶，想看大神新作当前状态的，从它开始不会错。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-08">书荒日报 · 10月8日：网文登上《小说选刊》，《夜无疆》终夺起点九月月票第一</a>（2026-10-08）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">九月月票第一，辰东新书终于登顶，想看大神新作当前状态的，从它开始不会错。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-08">书荒日报 · 10月8日：网文登上《小说选刊》，《夜无疆》终夺起点九月月票第一</a>（2026-10-08）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="玄鉴仙族 季越人 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《玄鉴仙族》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：季越人
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">家族修仙长篇，稳居前三，世界观与群像慢慢铺开，适合喜欢细水长流的读者。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-08">书荒日报 · 10月8日：网文登上《小说选刊》，《夜无疆》终夺起点九月月票第一</a>（2026-10-08）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">家族修仙长篇，稳居前三，世界观与群像慢慢铺开，适合喜欢细水长流的读者。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-08">书荒日报 · 10月8日：网文登上《小说选刊》，《夜无疆》终夺起点九月月票第一</a>（2026-10-08）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="没钱修什么仙？ 熊狼狗 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《没钱修什么仙？》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：熊狼狗
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">修仙题材里的现实感写法，同样位列前三，轻松与扎心并存。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-08">书荒日报 · 10月8日：网文登上《小说选刊》，《夜无疆》终夺起点九月月票第一</a>（2026-10-08）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">修仙题材里的现实感写法，同样位列前三，轻松与扎心并存。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-08">书荒日报 · 10月8日：网文登上《小说选刊》，《夜无疆》终夺起点九月月票第一</a>（2026-10-08）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="请勿高考时渡劫 白乌鸦 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《请勿高考时渡劫》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：白乌鸦
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">作者的新书，冲进前十，书名就是钩子，适合想换口味时开一本。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-08">书荒日报 · 10月8日：网文登上《小说选刊》，《夜无疆》终夺起点九月月票第一</a>（2026-10-08）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">作者的新书，冲进前十，书名就是钩子，适合想换口味时开一本。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-08">书荒日报 · 10月8日：网文登上《小说选刊》，《夜无疆》终夺起点九月月票第一</a>（2026-10-08）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="剑烛大荒 爱潜水的乌贼 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《剑烛大荒》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：爱潜水的乌贼
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">乌贼新作重回前十，设定与悬念是老强项，老读者可以直接跟上。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-08">书荒日报 · 10月8日：网文登上《小说选刊》，《夜无疆》终夺起点九月月票第一</a>（2026-10-08）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">乌贼新作重回前十，设定与悬念是老强项，老读者可以直接跟上。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-08">书荒日报 · 10月8日：网文登上《小说选刊》，《夜无疆》终夺起点九月月票第一</a>（2026-10-08）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="十日终焉 杀虫队队员 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《十日终焉》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：杀虫队队员
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">无限流悬疑，以谎言类游戏切入生存对局，群像和谜题是看点，还入选了《小说选刊》新设的“众选佳作”栏目。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-07">书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</a>（2026-10-07）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">无限流悬疑，以谎言类游戏切入生存对局，群像和谜题是看点，还入选了《小说选刊》新设的“众选佳作”栏目。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-07">书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</a>（2026-10-07）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="剑来 烽火戏诸侯 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《剑来》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：烽火戏诸侯
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">东方仙侠长篇，江湖与庙堂交织，世界观恢弘，想补经典长篇的可以从它开始。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-07">书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</a>（2026-10-07）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">东方仙侠长篇，江湖与庙堂交织，世界观恢弘，想补经典长篇的可以从它开始。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-07">书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</a>（2026-10-07）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="一路奔北 人间需要情绪稳定 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《一路奔北》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：人间需要情绪稳定
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">现实题材，写青年科研团队攻关北斗卫星导航的故事，科技线和人物线并行。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-07">书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</a>（2026-10-07）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">现实题材，写青年科研团队攻关北斗卫星导航的故事，科技线和人物线并行。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-07">书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</a>（2026-10-07）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="飞流之上 阿彩 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《飞流之上》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：阿彩
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">现实题材，写90后青年返乡、老瓷村在新时代里的变化，乡土味和青春气都有。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-07">书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</a>（2026-10-07）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">现实题材，写90后青年返乡、老瓷村在新时代里的变化，乡土味和青春气都有。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-07">书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</a>（2026-10-07）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="天才俱乐部 城城与蝉 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《天才俱乐部》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：城城与蝉
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">科幻悬疑向的人气完本，和《十日终焉》一起入选本届获奖名单，适合喜欢烧脑设定的读者。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-07">书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</a>（2026-10-07）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">科幻悬疑向的人气完本，和《十日终焉》一起入选本届获奖名单，适合喜欢烧脑设定的读者。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-07">书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</a>（2026-10-07）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="弥天记 田甜 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《弥天记》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：田甜
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">作者是第二届两岸网络文学大赛一等奖获得者，这次大赛现场发布了它的AI漫剧成果，想先读为快的可以提前码住原著。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-06">书荒日报 · 10月6日：AI漫剧冲向400亿，3.5万部漫威漫画也要换新家</a>（2026-10-06）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">作者是第二届两岸网络文学大赛一等奖获得者，这次大赛现场发布了它的AI漫剧成果，想先读为快的可以提前码住原著。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-06">书荒日报 · 10月6日：AI漫剧冲向400亿，3.5万部漫威漫画也要换新家</a>（2026-10-06）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="第几只羔羊  "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《第几只羔羊》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         
                         
                     </div>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-06">书荒日报 · 10月6日：AI漫剧冲向400亿，3.5万部漫威漫画也要换新家</a>（2026-10-06）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-06">书荒日报 · 10月6日：AI漫剧冲向400亿，3.5万部漫威漫画也要换新家</a>（2026-10-06）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="尘幻传说  "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《尘幻传说》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         
                         
                     </div>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-06">书荒日报 · 10月6日：AI漫剧冲向400亿，3.5万部漫威漫画也要换新家</a>（2026-10-06）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-06">书荒日报 · 10月6日：AI漫剧冲向400亿，3.5万部漫威漫画也要换新家</a>（2026-10-06）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="归墟 泫九 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《归墟》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：泫九
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">独立创作者一人包办世界观、剧本到画面与剪辑的科幻作品，全网播放量破亿，还登上过红果AI剧收藏榜首位。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-06">书荒日报 · 10月6日：AI漫剧冲向400亿，3.5万部漫威漫画也要换新家</a>（2026-10-06）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">独立创作者一人包办世界观、剧本到画面与剪辑的科幻作品，全网播放量破亿，还登上过红果AI剧收藏榜首位。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-06">书荒日报 · 10月6日：AI漫剧冲向400亿，3.5万部漫威漫画也要换新家</a>（2026-10-06）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="发配边关，罪妻开荒养出战神  "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《发配边关，罪妻开荒养出战神》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         
                         
                     </div>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-06">书荒日报 · 10月6日：AI漫剧冲向400亿，3.5万部漫威漫画也要换新家</a>（2026-10-06）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-06">书荒日报 · 10月6日：AI漫剧冲向400亿，3.5万部漫威漫画也要换新家</a>（2026-10-06）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="冒姓琅琊  "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《冒姓琅琊》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         
                         
                     </div>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-05">书荒日报 · 10月5日：人民日报点名离谱网文，这4本待改编的好书先码住</a>（2026-10-05）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-05">书荒日报 · 10月5日：人民日报点名离谱网文，这4本待改编的好书先码住</a>（2026-10-05）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="从红月开始 黑山老鬼 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《从红月开始》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：黑山老鬼
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">改编作品已开启预约。红月题材辨识度极高，想在剧开播前先读原著的，现在正是时候。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-05">书荒日报 · 10月5日：人民日报点名离谱网文，这4本待改编的好书先码住</a>（2026-10-05）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">改编作品已开启预约。红月题材辨识度极高，想在剧开播前先读原著的，现在正是时候。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-05">书荒日报 · 10月5日：人民日报点名离谱网文，这4本待改编的好书先码住</a>（2026-10-05）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="我们生活在南京 天瑞说符 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《我们生活在南京》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：天瑞说符
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">改编作品同样开启预约。南京在地感加科幻设定，是阅文创新题材里常被点名的一本。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-05">书荒日报 · 10月5日：人民日报点名离谱网文，这4本待改编的好书先码住</a>（2026-10-05）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">改编作品同样开启预约。南京在地感加科幻设定，是阅文创新题材里常被点名的一本。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-05">书荒日报 · 10月5日：人民日报点名离谱网文，这4本待改编的好书先码住</a>（2026-10-05）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="末日乐园 须尾俱全 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《末日乐园》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：须尾俱全
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">改编作品定名《明日乐园》并已开启预约。末世无限流老口碑，假期囤文一口气读最过瘾。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-05">书荒日报 · 10月5日：人民日报点名离谱网文，这4本待改编的好书先码住</a>（2026-10-05）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">改编作品定名《明日乐园》并已开启预约。末世无限流老口碑，假期囤文一口气读最过瘾。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-05">书荒日报 · 10月5日：人民日报点名离谱网文，这4本待改编的好书先码住</a>（2026-10-05）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="今天也没变成玩偶呢 花花了 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《今天也没变成玩偶呢》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：花花了
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">与上面几本同批开启预约。书名自带悬念，适合喜欢脑洞设定的读者先码住。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-05">书荒日报 · 10月5日：人民日报点名离谱网文，这4本待改编的好书先码住</a>（2026-10-05）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">与上面几本同批开启预约。书名自带悬念，适合喜欢脑洞设定的读者先码住。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-05">书荒日报 · 10月5日：人民日报点名离谱网文，这4本待改编的好书先码住</a>（2026-10-05）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="当我写了个bug却变成核心玩法 青衫取醉 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《当我写了个BUG却变成核心玩法》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：青衫取醉
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">游戏文新书，最新追踪显示已经突破万订。书名就是钩子，把BUG写成玩法，游戏迷很难不点进去看看。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-04">书荒日报 · 10月4日：《十日终焉》登上《小说选刊》，网文这次被传统文学看见了</a>（2026-10-04）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">游戏文新书，最新追踪显示已经突破万订。书名就是钩子，把BUG写成玩法，游戏迷很难不点进去看看。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-04">书荒日报 · 10月4日：《十日终焉》登上《小说选刊》，网文这次被传统文学看见了</a>（2026-10-04）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="阵问长生 观虚 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《阵问长生》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：观虚
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">阵法修仙文，上架11个月从首订四百一路写到万订，是起点第1197本拿到万订徽章的作品，慢热逆袭的典型。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-04">书荒日报 · 10月4日：《十日终焉》登上《小说选刊》，网文这次被传统文学看见了</a>（2026-10-04）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">阵法修仙文，上架11个月从首订四百一路写到万订，是起点第1197本拿到万订徽章的作品，慢热逆袭的典型。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-04">书荒日报 · 10月4日：《十日终焉》登上《小说选刊》，网文这次被传统文学看见了</a>（2026-10-04）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="儒道至圣  "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《儒道至圣》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         
                         
                     </div>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-04">书荒日报 · 10月4日：《十日终焉》登上《小说选刊》，网文这次被传统文学看见了</a>（2026-10-04）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-04">书荒日报 · 10月4日：《十日终焉》登上《小说选刊》，网文这次被传统文学看见了</a>（2026-10-04）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="从聊斋开始做狐仙  "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《从聊斋开始做狐仙》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         
                         
                     </div>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-04">书荒日报 · 10月4日：《十日终焉》登上《小说选刊》，网文这次被传统文学看见了</a>（2026-10-04）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-04">书荒日报 · 10月4日：《十日终焉》登上《小说选刊》，网文这次被传统文学看见了</a>（2026-10-04）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="兰香缘 禾晏山 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《兰香缘》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：禾晏山
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">改编剧《兰香如故》正在热播，原著已被剧迷读回起点女生双榜第一。想知道荧屏之外的完整故事，先补它准没错。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-03">书荒日报 · 10月3日：热度破32000登顶年冠，《兰香缘》被剧迷读回双榜第一</a>（2026-10-03）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">改编剧《兰香如故》正在热播，原著已被剧迷读回起点女生双榜第一。想知道荧屏之外的完整故事，先补它准没错。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-03">书荒日报 · 10月3日：热度破32000登顶年冠，《兰香缘》被剧迷读回双榜第一</a>（2026-10-03）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="1984：从川菜馆开始 轻语江湖 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《1984：从川菜馆开始》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：轻语江湖
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">刚拿下成都国际数字文创大赛网络文学赛道一等奖。写主人公在上世纪80年代接手一家濒临破产的川菜馆，一路把饭店开到成都、成为川菜大师；短剧和有声小说已经发布。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-03">书荒日报 · 10月3日：热度破32000登顶年冠，《兰香缘》被剧迷读回双榜第一</a>（2026-10-03）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">刚拿下成都国际数字文创大赛网络文学赛道一等奖。写主人公在上世纪80年代接手一家濒临破产的川菜馆，一路把饭店开到成都、成为川菜大师；短剧和有声小说已经发布。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-03">书荒日报 · 10月3日：热度破32000登顶年冠，《兰香缘》被剧迷读回双榜第一</a>（2026-10-03）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="万物希声 眉师娘 现实题材"
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《万物希声》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：眉师娘
                          · 题材：现实题材
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">本届特等奖。把恢复高考、特区建设这些大节点，落进一个普通家庭的日常选择里，被称为“江南小镇的微观史诗”。作者此前已两度在这项赛事获奖，稳定性不用担心。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-02">书荒日报 · 10月2日：6.11万部网文参赛创新高，《万物希声》拿下特等奖</a>（2026-10-02）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">本届特等奖。把恢复高考、特区建设这些大节点，落进一个普通家庭的日常选择里，被称为“江南小镇的微观史诗”。作者此前已两度在这项赛事获奖，稳定性不用担心。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-02">书荒日报 · 10月2日：6.11万部网文参赛创新高，《万物希声》拿下特等奖</a>（2026-10-02）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="风华年代 一醉风雨 现实题材"
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《风华年代》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：一醉风雨
                          · 题材：现实题材
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">一等奖。写改革开放以来快递物流业的草根创业史，从人力运货写到民营快递走向国际，作者有亲身经历，行业现场感拉满。目前已完成电影版权与出版授权。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-02">书荒日报 · 10月2日：6.11万部网文参赛创新高，《万物希声》拿下特等奖</a>（2026-10-02）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">一等奖。写改革开放以来快递物流业的草根创业史，从人力运货写到民营快递走向国际，作者有亲身经历，行业现场感拉满。目前已完成电影版权与出版授权。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-02">书荒日报 · 10月2日：6.11万部网文参赛创新高，《万物希声》拿下特等奖</a>（2026-10-02）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="第四极有光 现实题材 "
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《第四极有光》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：现实题材
                         
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">二等奖。主角是深海探测一线的中年科研工作者，题材在网文里相当稀缺，还是上海市“创新行动计划”科普专项项目，想换口味的优先看它。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-02">书荒日报 · 10月2日：6.11万部网文参赛创新高，《万物希声》拿下特等奖</a>（2026-10-02）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">二等奖。主角是深海探测一线的中年科研工作者，题材在网文里相当稀缺，还是上海市“创新行动计划”科普专项项目，想换口味的优先看它。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-02">书荒日报 · 10月2日：6.11万部网文参赛创新高，《万物希声》拿下特等奖</a>（2026-10-02）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="浓情绮梦坊 和晓 现实题材"
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《浓情绮梦坊》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：和晓
                          · 题材：现实题材
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">二等奖。38.8万字，写上海石库门里五户人家近四十年的邻里与命运，柴米油盐里折射一座城的变迁，已实现出版授权。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-02">书荒日报 · 10月2日：6.11万部网文参赛创新高，《万物希声》拿下特等奖</a>（2026-10-02）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">二等奖。38.8万字，写上海石库门里五户人家近四十年的邻里与命运，柴米油盐里折射一座城的变迁，已实现出版授权。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-02">书荒日报 · 10月2日：6.11万部网文参赛创新高，《万物希声》拿下特等奖</a>（2026-10-02）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="历史乐园：从万历援朝开始 高飞的野牛 诸天"
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《历史乐园：从万历援朝开始》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：高飞的野牛
                          · 题材：诸天
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">末世三年的主角死于尸口，被拉进&#34;历史乐园&#34;，从万历援朝开始亲历一个个真实历史乱世。爽点不是系统发奖励，而是主角在军营里一步步杀出来的，观感扎实。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-01">书荒日报 · 10月1日：网文登上《小说选刊》，本周 4 本潜力新书</a>（2026-10-01）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">末世三年的主角死于尸口，被拉进&#34;历史乐园&#34;，从万历援朝开始亲历一个个真实历史乱世。爽点不是系统发奖励，而是主角在军营里一步步杀出来的，观感扎实。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-01">书荒日报 · 10月1日：网文登上《小说选刊》，本周 4 本潜力新书</a>（2026-10-01）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="万生痴魔 沙拉古斯 东方玄幻"
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《万生痴魔》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：沙拉古斯
                          · 题材：东方玄幻
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">设定很新鲜，&#34;种个蛤蟆变火车，种颗毛豆变老虎&#34;，木匠铁匠裁缝厨子各显神通，偏轻松向，文笔好、主角智商在线。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-01">书荒日报 · 10月1日：网文登上《小说选刊》，本周 4 本潜力新书</a>（2026-10-01）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">设定很新鲜，&#34;种个蛤蟆变火车，种颗毛豆变老虎&#34;，木匠铁匠裁缝厨子各显神通，偏轻松向，文笔好、主角智商在线。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-01">书荒日报 · 10月1日：网文登上《小说选刊》，本周 4 本潜力新书</a>（2026-10-01）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="觉醒纪元：人造天体 超限者 科幻"
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《觉醒纪元：人造天体》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：超限者
                          · 题材：科幻
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">&#34;有些人生来就该站在光里，有些人生来就该活在光的阴影下&#34;——资源有限、必须有人被淘汰的秩序下，一个年轻人选择让被牺牲的人站起来。科幻外壳，叩问人性与正义。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-01">书荒日报 · 10月1日：网文登上《小说选刊》，本周 4 本潜力新书</a>（2026-10-01）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">&#34;有些人生来就该站在光里，有些人生来就该活在光的阴影下&#34;——资源有限、必须有人被淘汰的秩序下，一个年轻人选择让被牺牲的人站起来。科幻外壳，叩问人性与正义。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-01">书荒日报 · 10月1日：网文登上《小说选刊》，本周 4 本潜力新书</a>（2026-10-01）
+                        </div>
+                    </div></div>
                 </div>
                 
                 <div class="shuku-card" data-key="律师：从合法报复出轨开始！ 青衫仗剑行天涯 都市"
                     style="border: 1px solid var(--border-color, #eee); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
+                    <span class="sk-chev" aria-hidden="true">▾</span>
                     <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;">《律师：从合法报复出轨开始！》</div>
-                    <div class="muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div class="muted" style="font-size: 0.85rem;">
                         作者：青衫仗剑行天涯
                          · 题材：都市
                     </div>
-                    
-                    <p style="margin: 0 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">主角穿越成律师，金手指是&#34;让客户满意就抽奖励&#34;，专给被绿的委托人提供&#34;翻遍刑法典都找不出毛病&#34;的合法报复方案。节奏快、反套路，职业文的稳重加都市文的爽感。</p>
-                    
-                    <div class="muted" style="font-size: 0.8rem;">
-                        收录自 <a href="/post/shu-huang-ri-bao-10-01">书荒日报 · 10月1日：网文登上《小说选刊》，本周 4 本潜力新书</a>（2026-10-01）
-                    </div>
+                    <div class="sk-detail"><div>
+                        
+                        <p style="margin: 0.6rem 0 0.5rem; font-size: 0.92rem; line-height: 1.7;">主角穿越成律师，金手指是&#34;让客户满意就抽奖励&#34;，专给被绿的委托人提供&#34;翻遍刑法典都找不出毛病&#34;的合法报复方案。节奏快、反套路，职业文的稳重加都市文的爽感。</p>
+                        
+                        <div class="muted" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                            收录自 <a href="/post/shu-huang-ri-bao-10-01">书荒日报 · 10月1日：网文登上《小说选刊》，本周 4 本潜力新书</a>（2026-10-01）
+                        </div>
+                    </div></div>
                 </div>
                 
 
@@ -855,9 +979,12 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var input = document.getElementById('shuku-search');
+    var list = document.getElementById('shuku-list');
     var cards = Array.prototype.slice.call(document.querySelectorAll('.shuku-card'));
     var empty = document.getElementById('shuku-empty');
-    if (!input) return;
+    if (!input || !list) return;
+
+    /* 搜索过滤 */
     input.addEventListener('input', function () {
         var kw = input.value.trim().toLowerCase();
         var shown = 0;
@@ -868,6 +995,29 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         empty.style.display = shown === 0 ? '' : 'none';
     });
+
+    /* 就地展开（点原文链接不触发） */
+    list.addEventListener('click', function (e) {
+        if (e.target.closest('a')) return;
+        var card = e.target.closest('.shuku-card');
+        if (!card) return;
+        var was = card.classList.contains('open');
+        cards.forEach(function (c) { c.classList.remove('open'); });
+        if (!was) card.classList.add('open');
+    });
+
+    /* 列表 / 网格切换，记住选择 */
+    var btnList = document.getElementById('sk-view-list');
+    var btnGrid = document.getElementById('sk-view-grid');
+    function setView(grid) {
+        list.classList.toggle('sk-grid', grid);
+        btnGrid.classList.toggle('on', grid);
+        btnList.classList.toggle('on', !grid);
+        try { localStorage.setItem('shuku-view', grid ? 'grid' : 'list'); } catch (e) {}
+    }
+    btnList.addEventListener('click', function () { setView(false); });
+    btnGrid.addEventListener('click', function () { setView(true); });
+    try { if (localStorage.getItem('shuku-view') === 'grid') setView(true); } catch (e) {}
 });
 </script>
 
