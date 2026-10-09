@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 09 Oct 2026 06:55:23 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 08:01:53 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月9日：DeepSeek 4.1 Flash 冲上 HN 674 分，便宜到让人怀疑人生</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-09/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-09/</guid>
+      <pubDate>Thu, 08 Oct 2026 16:00:00 GMT</pubDate>
+      <description>DeepSeek 4.1 Flash 冲上 HN 674 分引热议，V2EX 讨论 AI 写代码要不要逐行看 diff，分享创造里本地抠图、NAS 播放器与刷论文工具齐发，烧饼社区算清了 KV Cache 的显存账。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月9日：世界第134削翻世界第4，独库公路道别说声明年见</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-03/</guid>
       <pubDate>Fri, 02 Oct 2026 16:00:00 GMT</pubDate>
       <description>《兰香如故》台网双爆：央八同时段第一、腾讯视频热度破32000登顶2026年冠，原著《兰香缘》回到起点女生双榜第一；本期速递5本原著与获奖作，另附三号最新动态。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 10月3日：广州南站一天到发100万人，国庆档3亿票房却没等来爆款</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-10-03/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-03/</guid>
-      <pubDate>Fri, 02 Oct 2026 16:00:00 GMT</pubDate>
-      <description>广州南站国庆首日到发旅客破100万人次创全国纪录；国庆档票房破3亿元但爆款缺席；亚运网球男单决赛黄泽林击败吴易昺，为中国香港夺得队史首金；金价冲上4226美元后回落；天安门看升旗时晚辈托举老人的画面登上热搜。</description>
     </item>
   </channel>
 </rss>
