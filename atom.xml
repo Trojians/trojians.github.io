@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 09 Oct 2026 03:09:48 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 04:03:53 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 10月9日：世界第134削翻世界第4，独库公路道别说声明年见</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-10-09/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-09/</guid>
+      <pubDate>Thu, 08 Oct 2026 16:00:00 GMT</pubDate>
+      <description>国乒削球手朱思冰3比2爆冷击败世界第4蒯曼；独库公路进入冬季封闭；AI魔改四大名著治理继续，超强厄尔尼诺正在形成，A股午盘普跌，横店短剧体验国庆爆火。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 10月9日：三星利润暴涨782%，谷歌直接把智能体塞进邮箱</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-10-03/</guid>
       <pubDate>Fri, 02 Oct 2026 16:00:00 GMT</pubDate>
       <description>广州南站国庆首日到发旅客破100万人次创全国纪录；国庆档票房破3亿元但爆款缺席；亚运网球男单决赛黄泽林击败吴易昺，为中国香港夺得队史首金；金价冲上4226美元后回落；天安门看升旗时晚辈托举老人的画面登上热搜。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月3日：12万人因AI丢工作，谷歌新模型却先藏起来了</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-03/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-03/</guid>
-      <pubDate>Fri, 02 Oct 2026 16:00:00 GMT</pubDate>
-      <description>谷歌发布 Gemini 4 Argon 却只给少数安全伙伴试用；美国今年已有 12 万裁员归因于 AI、登顶裁员理由；Cloudflare 开源只做判断不写文章的 Clef；ChatGPT 上线虚拟试衣和文档扫描。</description>
     </item>
   </channel>
 </rss>
