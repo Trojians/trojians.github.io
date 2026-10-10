@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 10 Oct 2026 04:02:56 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 08:02:03 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月10日：500行改动 Codex 干不了，程序员开始问还能干几年</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-10/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-10/</guid>
+      <pubDate>Fri, 09 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Codex 干不了 500 行大改动、程序员问五年后何去何从、AI 月度开销越滚越大；还有能改自己的 Agent、复活的水浒闪卡，以及 Linus 谈 Linux 的未来。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月10日：卫星互联网凌晨组网，4斤登山外挂火遍景区</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-05/</guid>
       <pubDate>Sun, 04 Oct 2026 16:00:00 GMT</pubDate>
       <description>特朗普任命克莱顿牵头“超级智能部队”并限期120天交报告，前Anthropic研究员将赴纽约作证，奥尔特曼发声反对把AI当宗教，Reflection首个开源模型在即。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月4日：《十日终焉》登上《小说选刊》，网文这次被传统文学看见了</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-04/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-04/</guid>
-      <pubDate>Sat, 03 Oct 2026 16:00:00 GMT</pubDate>
-      <description>《十日终焉》节选被《小说选刊》2026年第10期“众选佳作”收录；阅文“跟着网文游山东”串联七城七书，活动持续到10月31日；本期速递5本书，另附三号最新动态。</description>
     </item>
   </channel>
 </rss>
