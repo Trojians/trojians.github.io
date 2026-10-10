@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 10 Oct 2026 08:06:16 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 12:02:38 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 10月10日：270部网文变成影视游戏，中腰部故事靠AI漫剧翻身</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-10/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-10/</guid>
+      <pubDate>Fri, 09 Oct 2026 16:00:00 GMT</pubDate>
+      <description>中国网络作家村已促成270多部网文IP转化为影视游戏、成交突破22.4亿元，AI漫剧为中腰部故事打开新通道；新书速递带来起点畅销榜前五本长线好书。</description>
+    </item>
 
     <item>
       <title>极客日报 · 10月10日：500行改动 Codex 干不了，程序员开始问还能干几年</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-10-05/</guid>
       <pubDate>Sun, 04 Oct 2026 16:00:00 GMT</pubDate>
       <description>缅北电诈纪录片首播登顶双榜，10万份孕妇血样案再引关注；蔡康永风波发酵、国庆档票房破7亿，外卖明厨亮灶造假被查，返程防骗提醒也来了。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月5日：特朗普组建“超级智能部队”，120天内要交AI答卷</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-05/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-05/</guid>
-      <pubDate>Sun, 04 Oct 2026 16:00:00 GMT</pubDate>
-      <description>特朗普任命克莱顿牵头“超级智能部队”并限期120天交报告，前Anthropic研究员将赴纽约作证，奥尔特曼发声反对把AI当宗教，Reflection首个开源模型在即。</description>
     </item>
   </channel>
 </rss>
