@@ -364,7 +364,7 @@
                 <div class="mod-post__meta">
                     <time datetime="2026-10-11">
                         2026-10-11
-                    </time> • 约 378 分钟 •
+                    </time> • 约 380 分钟 •
                         
                         
                         
@@ -619,7 +619,7 @@
     </div>
 
     <div class="gs-panel" id="gs-panel">
-      <p class="gs-h">线 索</p>
+      <p class="gs-h">线 索 · 掉 落 顺 序 每 局 随 机</p>
       <ul class="gs-clues" id="gs-clues"></ul>
 
       <div class="gs-guessrow">
@@ -759,6 +759,26 @@ function renderVault(){
   });
 }
 
+/* ---------- 线索顺序（作者固定开局，其余每局随机） ---------- */
+var clueOrder = null;
+function seededShuffle(arr, seed){
+  var a = arr.slice(), h = hashStr(seed);
+  for(var i=a.length-1;i>0;i--){
+    h = (Math.imul(h,1103515245)+12345) & 0x7fffffff;
+    var j = h % (i+1), t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+function buildOrder(book){
+  var all = cluesFor(book);
+  var rest = all.slice(1);
+  rest = (mode==="daily")
+    ? seededShuffle(rest, "wls-order-"+TODAY)
+    : seededShuffle(rest, "practice-"+Math.random());
+  rest.forEach(function(c, i){ c.need = i+1; });
+  return [all[0]].concat(rest);
+}
+
 /* ---------- 渲染 ---------- */
 function renderFog(){
   var wrong = guesses.filter(function(g){ return g !== answerIdx; }).length;
@@ -779,7 +799,8 @@ function renderClues(){
   var book = GBOOKS[answerIdx];
   var wrong = guesses.filter(function(g){ return g !== answerIdx; }).length;
   var ul = $("gs-clues"); ul.innerHTML = "";
-  cluesFor(book).forEach(function(c, i){
+  if(!clueOrder) clueOrder = buildOrder(book);
+  clueOrder.forEach(function(c, i){
     var open = (wrong >= c.need) || status !== "playing";
     var li = document.createElement("li");
     if(open) li.className = "open";
@@ -962,11 +983,11 @@ $("gs-submit").addEventListener("click", function(){
 $("gs-practice").addEventListener("click", function(){
   mode = "practice";
   var n; do { n = Math.floor(Math.random()*GBOOKS.length); } while(n===dailyIdx || n===answerIdx && guesses.length);
-  answerIdx = n; guesses = []; status = "playing"; selected=-1;
+  answerIdx = n; guesses = []; status = "playing"; selected=-1; clueOrder = null;
   $("gs-input").value=""; hideSugs(); render();
 });
 $("gs-back").addEventListener("click", function(){
-  mode = "daily"; answerIdx = dailyIdx;
+  mode = "daily"; answerIdx = dailyIdx; clueOrder = null;
   var saved = store("wls_daily_v1");
   if(saved && saved.date===TODAY){ guesses = saved.guesses||[]; status = saved.status||"playing"; }
   else { guesses=[]; status="playing"; }
