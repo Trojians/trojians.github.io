@@ -707,7 +707,7 @@ function cluesFor(book){
     {need:1, tier:"雾表", label:"分类", text:"分类是「"+(book.g||"其他")+"」"+(tagTxt ? "，标签："+tagTxt : "")},
     {need:2, tier:"雾中", label:"状态与评分", text:"状态："+book.s+" · 白雾给它打了 "+book.r+" 分"},
     {need:3, tier:"雾心", label:"简介首句", text:firstSentence(book)},
-    {need:3, tier:"雾心", label:"最后提示", text:"书名共 "+book.t.length+" 个字，第一个字是「"+book.t.charAt(0)+"」"}
+    {need:4, tier:"雾心", label:"最后提示", text:"书名共 "+book.t.length+" 个字，第一个字是「"+book.t.charAt(0)+"」"}
   ];
 }
 
