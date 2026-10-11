@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 11 Oct 2026 04:03:42 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 08:01:48 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月11日：半年封了1140万个号，Claude用户集体破防</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-11/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-11/</guid>
+      <pubDate>Sat, 10 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Claude 半年封号 1140 万、申诉翻案仅一成；有人拿护照冲回家开便宜 Max，内存涨价带火 Linux，Telegram 桌面端爆出文件窃取漏洞。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月11日：21.44亿人次跑完长假，俄罗斯柴油让油价先跌了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-10-06/</guid>
       <pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate>
       <description>广州南站最短40秒发一趟车、单日客流破百万；诺奖颁给光遗传学，邓紫棋170场巡演破纪录，孙颖莎呼吁文明观赛，高铁座椅套焦虑被医生辟谣。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月6日：美中AI差距只剩3%，五角大楼却把Claude请出了门</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-06/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-06/</guid>
-      <pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate>
-      <description>彭博称美中顶尖AI模型差距收窄至3%；五角大楼宣布停用Anthropic的Claude；谷歌因AI垃圾报告暂停开源漏洞赏金；华为与高通达成含5G与AI的多年专利协议。</description>
     </item>
   </channel>
 </rss>
