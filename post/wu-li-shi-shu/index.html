@@ -364,7 +364,7 @@
                 <div class="mod-post__meta">
                     <time datetime="2026-10-11">
                         2026-10-11
-                    </time> • 约 373 分钟 •
+                    </time> • 约 378 分钟 •
                         
                         
                         
@@ -427,6 +427,12 @@
   -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
 }
 .gsfull .gs-sub{color:var(--gs-ink2); font-size:15.5px; letter-spacing:.12em}
+.gsfull .gs-code{
+  display:inline-block; margin:14px 0 0; padding:7px 18px; border-radius:999px;
+  border:1px solid var(--gs-accent); color:var(--gs-accent);
+  font-size:13.5px; letter-spacing:.34em; background:rgba(127,178,217,.08);
+}
+.gsfull .gs-code:empty{display:none}
 .gsfull .gs-dateline{margin-top:12px; font-size:13px; color:var(--gs-ink2)}
 .gsfull .gs-dateline b{color:var(--gs-accent); font-weight:700}
 
@@ -498,6 +504,11 @@
 }
 .gsfull .gs-clues li.open .gs-cn{background:var(--gs-accent); border-color:var(--gs-accent); color:#fff}
 .gsfull .gs-clues .gs-lock{margin-left:auto; font-size:12px; color:var(--gs-ink2); letter-spacing:.2em}
+.gsfull .gs-tier{
+  flex:none; font-size:11px; letter-spacing:.14em; padding:2.5px 8px; border-radius:99px;
+  border:1px solid var(--gs-panel-brd); color:var(--gs-ink2); transform:translateY(2px);
+}
+.gsfull .gs-clues li.open .gs-tier{border-color:var(--gs-accent); color:var(--gs-accent)}
 
 .gsfull .gs-guessrow{position:relative}
 .gsfull .gs-input{
@@ -545,6 +556,33 @@
 .gsfull .gs-stars{color:#e8a33d; letter-spacing:.18em}
 .gsfull .gs-intro{font-size:15px; line-height:1.85; color:var(--gs-ink); margin:0 0 14px}
 .gsfull .gs-streak{font-size:14px; color:var(--gs-accent); margin:0 0 6px}
+
+/* 藏书票 */
+.gsfull .gs-plate{
+  margin:16px 0 6px; padding:20px 22px 16px; border-radius:6px; position:relative;
+  border:1.5px solid var(--gs-accent);
+  background:linear-gradient(150deg, rgba(127,178,217,.13), rgba(127,178,217,.03));
+}
+.gsfull .gs-plate::after{
+  content:""; position:absolute; inset:5px; border:1px solid var(--gs-panel-brd); border-radius:4px; pointer-events:none;
+}
+.gsfull .gs-plate-k{margin:0 0 10px; font-size:11.5px; letter-spacing:.5em; color:var(--gs-accent)}
+.gsfull .gs-plate-q{margin:0 0 10px; font-size:16.5px; line-height:1.9; font-style:italic}
+.gsfull .gs-plate-f{margin:0; font-size:13px; color:var(--gs-ink2); letter-spacing:.08em}
+
+/* 雾散阁 */
+.gsfull .gs-vault{max-width:1060px; margin:52px auto 0; padding:0 clamp(16px,4vw,44px)}
+.gsfull .gs-vault .gs-h{font-size:13px; letter-spacing:.34em; color:var(--gs-ink2); margin:0 0 16px}
+.gsfull .gs-vault-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(104px,1fr)); gap:16px}
+.gsfull .gs-vault-grid figure{margin:0; text-align:center}
+.gsfull .gs-vault-grid img{
+  width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:8px; box-shadow:var(--gs-shadow);
+  transition:transform .3s ease;
+}
+.gsfull .gs-vault-grid figure:hover img{transform:translateY(-4px)}
+.gsfull .gs-vault-grid figcaption{margin-top:7px; font-size:12.5px; color:var(--gs-ink); line-height:1.5}
+.gsfull .gs-vault-grid figcaption span{display:block; color:var(--gs-ink2); font-size:11px; letter-spacing:.06em}
+.gsfull .gs-vault-empty{color:var(--gs-ink2); font-size:14px; letter-spacing:.06em}
 .gsfull .gs-foot{
   text-align:center; color:var(--gs-ink2); font-size:13.5px; letter-spacing:.22em; margin-top:44px;
 }
@@ -565,6 +603,7 @@
     <div class="gs-kicker">Daily Book Riddle</div>
     <h1 class="gs-title">雾里识书</h1>
     <p class="gs-sub">每日一猜 · 藏在雾里的，是你读过的书</p>
+    <p class="gs-code" id="gs-code"></p>
     <p class="gs-dateline" id="gs-dateline"></p>
   </div>
 
@@ -599,6 +638,11 @@
         <p class="gs-bookline" id="gs-bookline"></p>
         <p class="gs-meta" id="gs-meta"></p>
         <p class="gs-intro" id="gs-intro"></p>
+        <div class="gs-plate" id="gs-plate" style="display:none">
+          <p class="gs-plate-k">故 物 · 藏 书 票</p>
+          <p class="gs-plate-q" id="gs-plate-q"></p>
+          <p class="gs-plate-f" id="gs-plate-f"></p>
+        </div>
         <p class="gs-streak" id="gs-streak"></p>
         <div class="gs-btnrow">
           <button class="gs-btn" id="gs-share">复制战绩</button>
@@ -607,6 +651,12 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="gs-vault">
+    <p class="gs-h">雾 散 阁 · 已 收 藏 <span id="gs-vault-n">0</span> 张藏书票</p>
+    <div class="gs-vault-grid" id="gs-vault-grid"></div>
+    <p class="gs-vault-empty" id="gs-vault-empty">还没有藏书票——猜中第一本，它就会挂进这里。</p>
   </section>
 
   <p class="gs-foot">共 <b id="gs-total"></b> 本 · 每天零点换新题 · <b>雾散之后，都是好天气。</b></p>
@@ -653,12 +703,60 @@ function firstSentence(book){
 function cluesFor(book){
   var tagTxt = (book.tags||[]).slice(0,3).join(" · ");
   return [
-    {need:1, label:"作者", text:"这本书的作者是「"+book.a+"」"},
-    {need:2, label:"分类", text:"分类是「"+(book.g||"其他")+"」"+(tagTxt ? "，标签："+tagTxt : "")},
-    {need:3, label:"状态与评分", text:"状态："+book.s+" · 白雾给它打了 "+book.r+" 分"},
-    {need:4, label:"简介首句", text:firstSentence(book)},
-    {need:4, label:"最后提示", text:"书名共 "+book.t.length+" 个字，第一个字是「"+book.t.charAt(0)+"」"}
+    {need:1, tier:"雾表", label:"作者", text:"这本书的作者是「"+book.a+"」"},
+    {need:2, tier:"雾表", label:"分类", text:"分类是「"+(book.g||"其他")+"」"+(tagTxt ? "，标签："+tagTxt : "")},
+    {need:3, tier:"雾中", label:"状态与评分", text:"状态："+book.s+" · 白雾给它打了 "+book.r+" 分"},
+    {need:4, tier:"雾心", label:"简介首句", text:firstSentence(book)},
+    {need:4, tier:"雾心", label:"最后提示", text:"书名共 "+book.t.length+" 个字，第一个字是「"+book.t.charAt(0)+"」"}
   ];
+}
+
+/* ---------- 代号与编号 ---------- */
+var CODENAMES = {"玄幻":"临渊","东方玄幻":"临渊","仙侠":"问道","武侠":"听雨","都市":"雾市","历史":"青史",
+  "科幻":"星尘","悬疑":"夜行","灵异":"夜行","游戏":"浮生","军事":"烽火","现实":"人间","体育":"逐风","诸天":"万界"};
+function codenameFor(book){
+  if(CODENAMES[book.g]) return CODENAMES[book.g];
+  var tags = book.tags||[];
+  for(var i=0;i<tags.length;i++) if(CODENAMES[tags[i]]) return CODENAMES[tags[i]];
+  return "雾隐";
+}
+function dayOfYear(){
+  var d = new Date(TODAY+"T00:00:00+08:00");
+  var start = new Date(d.getFullYear()+"-01-01T00:00:00+08:00");
+  return Math.floor((d - start) / 86400000) + 1;
+}
+function renderCode(){
+  var book = GBOOKS[answerIdx];
+  $("gs-code").textContent = (mode==="daily")
+    ? "雾藏 №"+dayOfYear()+" · 代号「"+codenameFor(book)+"」"
+    : "练习局 · 代号「"+codenameFor(book)+"」";
+}
+
+/* ---------- 雾散阁收藏 ---------- */
+function collectVault(){
+  var book = GBOOKS[answerIdx];
+  var vault = store("wls_vault_v1") || [];
+  for(var i=0;i<vault.length;i++) if(vault[i].d === TODAY) return;
+  vault.push({d:TODAY, t:book.t, a:book.a, r:book.r, c:book.c});
+  store("wls_vault_v1", vault);
+}
+function renderVault(){
+  var vault = store("wls_vault_v1") || [];
+  $("gs-vault-n").textContent = vault.length;
+  $("gs-vault-empty").style.display = vault.length ? "none" : "";
+  var grid = $("gs-vault-grid"); grid.innerHTML = "";
+  vault.slice().reverse().forEach(function(v){
+    var fig = document.createElement("figure");
+    var img = document.createElement("img");
+    img.setAttribute("src", v.c); img.setAttribute("alt", v.t); img.loading = "lazy";
+    fig.appendChild(img);
+    var cap = document.createElement("figcaption");
+    cap.textContent = "《"+v.t+"》";
+    var sp = document.createElement("span"); sp.textContent = v.d.slice(5)+" · "+v.r+" 分";
+    cap.appendChild(sp);
+    fig.appendChild(cap);
+    grid.appendChild(fig);
+  });
 }
 
 /* ---------- 渲染 ---------- */
@@ -687,6 +785,7 @@ function renderClues(){
     if(open) li.className = "open";
     li.innerHTML = "";
     var n = document.createElement("span"); n.className="gs-cn"; n.textContent = i+1; li.appendChild(n);
+    var tier = document.createElement("span"); tier.className="gs-tier"; tier.textContent = c.tier; li.appendChild(tier);
     var txt = document.createElement("span");
     txt.textContent = open ? (c.label+"："+c.text) : "猜错 "+c.need+" 次后掉落";
     li.appendChild(txt);
@@ -725,6 +824,16 @@ function renderResult(){
   var st = document.createElement("span"); st.className="gs-stars"; st.textContent = stars;
   $("gs-meta").appendChild(st);
   $("gs-intro").textContent = (book.i||"").slice(0,140);
+  var plate = $("gs-plate");
+  if(status==="won"){
+    var q = (book.i||"").split(/[。！？!?]/)[0];
+    $("gs-plate-q").textContent = "「"+q+"」";
+    $("gs-plate-f").textContent = "《"+book.t+"》 · "+book.a+" · 雾藏 №"+dayOfYear()+" · "+TODAY+(mode==="practice" ? " · 练习局（不入阁）" : " · 已入雾散阁");
+    plate.style.display = "";
+    if(mode==="daily"){ collectVault(); renderVault(); }
+  } else {
+    plate.style.display = "none";
+  }
   var stats = store("wls_stats_v1") || {streak:0,lastEnd:"",played:0,won:0};
   $("gs-streak").textContent = (mode==="daily")
     ? ("连续猜中 "+stats.streak+" 天 · 累计玩了 "+stats.played+" 局，猜中 "+stats.won+" 局")
@@ -736,6 +845,7 @@ function render(){
   var book = GBOOKS[answerIdx];
   var img = $("gs-cover");
   if(img.getAttribute("src") !== book.c) img.setAttribute("src", book.c);
+  renderCode();
   renderFog(); renderClues(); renderHistory(); renderResult();
   var over = status !== "playing";
   $("gs-input").disabled = over;
@@ -882,6 +992,7 @@ $("gs-share").addEventListener("click", function(){
 /* ---------- 初始化 ---------- */
 (function init(){
   $("gs-total").textContent = GBOOKS.length;
+  renderVault();
   var saved = store("wls_daily_v1");
   if(saved && saved.date===TODAY && saved.idx===dailyIdx){
     guesses = saved.guesses||[]; status = saved.status||"playing";
