@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 11 Oct 2026 23:59:09 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 04:03:34 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 10月12日：郑钦文刚夺冠就退赛，冠军茶把小程序挤崩了</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-10-12/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-12/</guid>
+      <pubDate>Sun, 11 Oct 2026 16:00:00 GMT</pubDate>
+      <description>郑钦文首夺中网后因右肩伤退出武网，冠军茶买一送一挤崩小程序；新皇岗口岸通关缩至5分钟，手机最高再涨1000元，物流景气连扩5个月，16岁刘宇婕创高尔夫历史。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 10月12日：纳德拉要给AI装紧急刹车，英伟达已砸8亿美元抢人</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-10-07/</guid>
       <pubDate>Tue, 06 Oct 2026 16:00:00 GMT</pubDate>
       <description>假期最后一天迎来返程最高峰，高速免费今晚结束；国足0比1首负塔吉克斯坦，国庆档票房破10亿，蔚来换电单日再创新高。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月7日：AI一口气挖出12.9万个漏洞，美国司法部却忙着给它改名</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-07/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-07/</guid>
-      <pubDate>Tue, 06 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Anthropic 扩大安全计划，其合作伙伴已确认 12.9 万个漏洞；Mistral Large 4 定于 10 月 27 日开放权重；Reflection AI 发布 Beam 对标中国模型；犹他州授权 AI 开首次处方；美司法部改称 AI 为“超级智能”。</description>
     </item>
   </channel>
 </rss>
