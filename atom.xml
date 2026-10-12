@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 12 Oct 2026 08:02:18 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 12:02:46 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 10月12日：番茄新规10月全面落地，40亿播放的短剧开始反哺长剧</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-12/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-12/</guid>
+      <pubDate>Sun, 11 Oct 2026 16:00:00 GMT</pubDate>
+      <description>番茄小说新版签约与福利规则10月全面生效，完本签约上线、激励门槛收紧；《好一个乖乖女》竖屏版超40亿播放后又改成24集横屏中剧，短剧开始反哺长剧；新书速递带来起点畅销榜五本长线作品。</description>
+    </item>
 
     <item>
       <title>极客日报 · 10月12日：被 Claude 埋了雷，第二天号就没了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-08/</guid>
       <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
       <description>Anthropic 小模型降价约75%、Mistral 放出万亿参数预览、OpenAI 一次公开722篇数学稿，中国9月连发16个模型——今天拼的都是又快又便宜。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月7日：番茄新规落地一周，这5本天马奖获奖书先码住</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-07/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-07/</guid>
-      <pubDate>Tue, 06 Oct 2026 16:00:00 GMT</pubDate>
-      <description>番茄小说新版福利10月1日起全面生效，完本签约与品质奖励门槛双升；第三届天马文学奖5部获奖作品揭晓；现实题材征文大赛6.11万部参赛创纪录，第十一届同步启动。</description>
     </item>
   </channel>
 </rss>
