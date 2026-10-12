@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 11 Oct 2026 12:02:29 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 23:59:09 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月12日：纳德拉要给AI装紧急刹车，英伟达已砸8亿美元抢人</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-12/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-12/</guid>
+      <pubDate>Sun, 11 Oct 2026 16:00:00 GMT</pubDate>
+      <description>微软CEO呼吁给AI设紧急刹车，英伟达洽购开放权重公司Reflection，AI拉动美股三季度盈利预计涨31%，阿联酋AI普及率70.1%居全球第一。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月11日：网文登上《小说选刊》，《十日终焉》被国家级选刊收了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-07/</guid>
       <pubDate>Tue, 06 Oct 2026 16:00:00 GMT</pubDate>
       <description>Anthropic 扩大安全计划，其合作伙伴已确认 12.9 万个漏洞；Mistral Large 4 定于 10 月 27 日开放权重；Reflection AI 发布 Beam 对标中国模型；犹他州授权 AI 开首次处方；美司法部改称 AI 为“超级智能”。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月6日：AI漫剧冲向400亿，3.5万部漫威漫画也要换新家</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-06/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-06/</guid>
-      <pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate>
-      <description>DataEye预计2026年国内AI剧漫剧规模达400亿元、红果头部作品超六成来自网文IP；两岸网络文学大赛第六届启动；漫威与WEBTOON新应用11月16日上线，收录3.5万部漫画。</description>
     </item>
   </channel>
 </rss>
