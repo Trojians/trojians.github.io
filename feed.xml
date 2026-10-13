@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 13 Oct 2026 04:03:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 08:02:28 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月13日：一句“要有光”，Codex就给游戏引擎加上了光追</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-13/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-13/</guid>
+      <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
+      <description>一句“要有光”，Codex 给游戏引擎加上光追；有人用 Rust 重写 Navicat、为带娃看病做家庭药箱 App；海外则在热议 Codex CLI 的常驻后台进程与欧洲超市冷柜遭攻击。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月13日：国考明天开报招3.57万人，58元咖啡只许一人落座</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-08/</guid>
       <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
       <description>《小说选刊》2026年第10期新设“众选佳作”栏目、首收番茄《十日终焉》节选；起点九月月票榜定格，辰东《夜无疆》终夺第一，《玄鉴仙族》《没钱修什么仙？》分列其后。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 10月8日：阿波罗代码女神离世，V2EX 却为宿舍关系吵出147楼</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-08/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-08/</guid>
-      <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
-      <description>极客日报开张：V2EX 热议与分享创造、NodeSeek 与烧饼社区热帖、Hacker News 头条——阿波罗代码女神 Margaret Hamilton 逝世。</description>
     </item>
   </channel>
 </rss>
