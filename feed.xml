@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 12 Oct 2026 16:04:01 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 23:58:51 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月13日：英特尔CEO说中国模型已经够好，无问芯穹一天拿下23亿</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-13/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-13/</guid>
+      <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
+      <description>英特尔CEO陈立武称DeepSeek、Kimi、GLM已足够好且成本更低；无问芯穹完成23亿元C轮融资；IMF称AI托住全球3%增长，也将影响约40%工作。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月12日：番茄新规10月全面落地，40亿播放的短剧开始反哺长剧</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-10-08/</guid>
       <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
       <description>彭玉离世登顶热搜，缅北电诈纪录片再揭明家案；长春大冬会火炬「吉翔」发布，节后机票跳水至259元，水贝金镯子卖断货。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月8日：中国一个月连发16个新模型，美国这边先把小模型价格砍了75%</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-08/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-08/</guid>
-      <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Anthropic 小模型降价约75%、Mistral 放出万亿参数预览、OpenAI 一次公开722篇数学稿，中国9月连发16个模型——今天拼的都是又快又便宜。</description>
     </item>
   </channel>
 </rss>
