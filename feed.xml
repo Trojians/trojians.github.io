@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 13 Oct 2026 08:02:28 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 12:02:34 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 10月13日：网文靠AI漫剧跃上荧屏，270多部IP已成交22.4亿</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-13/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-13/</guid>
+      <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
+      <description>中新社报道AI正改写网文IP转化：中国网络作家村超三成企业布局AI漫剧，已促成超270部网文IP转化、累计成交突破22.4亿元；新书速递带来起点畅销榜五本长线作品。</description>
+    </item>
 
     <item>
       <title>极客日报 · 10月13日：一句“要有光”，Codex就给游戏引擎加上了光追</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-09/</guid>
       <pubDate>Thu, 08 Oct 2026 16:00:00 GMT</pubDate>
       <description>谷歌推出能干活的 Gemini 办公智能体，GPT-6 向免费用户开放，三星与台积电同日刷新纪录，微软则把智能体搬回本地电脑。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月8日：网文登上《小说选刊》，《夜无疆》终夺起点九月月票第一</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-08/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-08/</guid>
-      <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
-      <description>《小说选刊》2026年第10期新设“众选佳作”栏目、首收番茄《十日终焉》节选；起点九月月票榜定格，辰东《夜无疆》终夺第一，《玄鉴仙族》《没钱修什么仙？》分列其后。</description>
     </item>
   </channel>
 </rss>
