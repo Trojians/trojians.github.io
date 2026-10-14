@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 14 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 04:02:23 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 10月14日：高铁免提打1小时电话被通报，新鸭绿江大桥等了12年明天通车</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-10-14/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-14/</guid>
+      <pubDate>Tue, 13 Oct 2026 16:00:00 GMT</pubDate>
+      <description>高铁免提通话1小时引争执，上铁南京客运段通报处置经过；中朝新鸭绿江大桥10月15日开通、等待12年；1.9元汽水举报事件医院回应不构成违规；北京2030年轨道交通将超1050公里；辟谣平台称禁止教师用AI备课系误读；比亚迪大汉上市，续航1008公里、23.59万元起。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 10月14日：Meta憋出Wonder叫板ChatGPT，微软自研芯片要铺100万颗</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-09/</guid>
       <pubDate>Thu, 08 Oct 2026 16:00:00 GMT</pubDate>
       <description>DeepSeek 4.1 Flash 冲上 HN 674 分引热议，V2EX 讨论 AI 写代码要不要逐行看 diff，分享创造里本地抠图、NAS 播放器与刷论文工具齐发，烧饼社区算清了 KV Cache 的显存账。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 10月9日：世界第134削翻世界第4，独库公路道别说声明年见</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-10-09/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-09/</guid>
-      <pubDate>Thu, 08 Oct 2026 16:00:00 GMT</pubDate>
-      <description>国乒削球手朱思冰3比2爆冷击败世界第4蒯曼；独库公路进入冬季封闭；AI魔改四大名著治理继续，超强厄尔尼诺正在形成，A股午盘普跌，横店短剧体验国庆爆火。</description>
     </item>
   </channel>
 </rss>
