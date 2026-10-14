@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 14 Oct 2026 04:02:23 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 08:08:16 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月14日：苹果新Apple TV用上A19，有人两个半月完成了近2000个开发任务</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-14/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-14/</guid>
+      <pubDate>Tue, 13 Oct 2026 16:00:00 GMT</pubDate>
+      <description>苹果发布第四代 Apple TV 4K，A19 芯片加 Siri AI；有人两个半月让 AI 完成近 2000 个开发任务，V 站热议程序员的驾驭能力；还有本地改 WPS 的字浮、每天只能拍一张的每刻相机与开源额度工具 TokenPulse；海外 Hacker News 榜首是 Gemini 4 Argon，Anthropic 重做源码管理也引热议。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月14日：高铁免提打1小时电话被通报，新鸭绿江大桥等了12年明天通车</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-09/</guid>
       <pubDate>Thu, 08 Oct 2026 16:00:00 GMT</pubDate>
       <description>中文在线28.33亿元定增在深交所问询后于10月8日终止、港股上市同日叫停，8天融资戛然而止；新书速递深挖起点九月月票榜中段五本潜力书。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 10月9日：DeepSeek 4.1 Flash 冲上 HN 674 分，便宜到让人怀疑人生</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-09/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-09/</guid>
-      <pubDate>Thu, 08 Oct 2026 16:00:00 GMT</pubDate>
-      <description>DeepSeek 4.1 Flash 冲上 HN 674 分引热议，V2EX 讨论 AI 写代码要不要逐行看 diff，分享创造里本地抠图、NAS 播放器与刷论文工具齐发，烧饼社区算清了 KV Cache 的显存账。</description>
     </item>
   </channel>
 </rss>
