@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 15 Oct 2026 08:01:39 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 12:03:00 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 10月15日：把小说喂给AI做漫剧，法院判了侵权</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-15/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-15/</guid>
+      <pubDate>Wed, 14 Oct 2026 16:00:00 GMT</pubDate>
+      <description>天津和平区法院审结首例文字作品改编AI漫剧侵权案，被告删作赔偿；艾儿天空盘点三本完结作品；赤戟推书单435期带来火影同人、双向门基建与克系仙侠三本主推；开源阅读分享唐家三少、季越人等作者的笔名由来。</description>
+    </item>
 
     <item>
       <title>极客日报 · 10月15日：让AI当高管开公司，7天造开源软件</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-11/</guid>
       <pubDate>Sat, 10 Oct 2026 16:00:00 GMT</pubDate>
       <description>谷歌推出能独立交活的 Gemini 智能体，美国要求 AI 安全事件立即上报，国内全面实施“人工智能+”，教师 AI 素养全覆盖培训启动。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月10日：270部网文变成影视游戏，中腰部故事靠AI漫剧翻身</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-10/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-10/</guid>
-      <pubDate>Fri, 09 Oct 2026 16:00:00 GMT</pubDate>
-      <description>中国网络作家村已促成270多部网文IP转化为影视游戏、成交突破22.4亿元，AI漫剧为中腰部故事打开新通道；新书速递带来起点畅销榜前五本长线好书。</description>
     </item>
   </channel>
 </rss>
