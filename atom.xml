@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 16 Oct 2026 04:04:58 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 08:01:54 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月16日：买个Claude账号，被骗1198元</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-16/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-16/</guid>
+      <pubDate>Thu, 15 Oct 2026 16:00:00 GMT</pubDate>
+      <description>V2EX 热议特斯拉 Roadster「起飞」与买 Claude 账号被骗 1198 元的经历，215 回复的情感债务帖登顶；分享创造有 Claude Code 切线路工具 Folkbench Switch、15MB 的 Flutter 版 VS Code 与 V2Echo iOS 版；NodeSeek 继续聊特斯拉与 Telegram 手机号，烧饼社区一篇多任务模型训练实战谈工程落地；海外 Hacker News 榜首是资深工程师被裁自述，天文学家还探测到一颗带「心跳」的恒星。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月16日：特斯拉新跑车现场飞起来了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-11/</guid>
       <pubDate>Sat, 10 Oct 2026 16:00:00 GMT</pubDate>
       <description>《小说选刊》2026年第10期新设「众选佳作」栏目，首次收录番茄小说《十日终焉》节选；另一边人民日报点名批评离谱网文，认真写故事的作品今晚值得重开一本。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 10月11日：半年封了1140万个号，Claude用户集体破防</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-11/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-11/</guid>
-      <pubDate>Sat, 10 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Claude 半年封号 1140 万、申诉翻案仅一成；有人拿护照冲回家开便宜 Max，内存涨价带火 Linux，Telegram 桌面端爆出文件窃取漏洞。</description>
     </item>
   </channel>
 </rss>
