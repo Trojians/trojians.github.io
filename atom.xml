@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 17 Oct 2026 02:42:40 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 04:02:40 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 10月17日：作业全对，月考却跌了两成</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-10-17/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-17/</guid>
+      <pubDate>Fri, 16 Oct 2026 16:00:00 GMT</pubDate>
+      <description>港大研究称用AI写作业的学生月考成绩下降约20%；海外游客兴起中国科技游；雅思主办方致歉并推退费与免费专场；青岛咖啡店一人一座一消费引争议；上海卫生院低矮窗口两日内改造；国考招录3.57万人报名进行中。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 10月17日：8160亿参数，两台Mac就跑得动</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-12/</guid>
       <pubDate>Sun, 11 Oct 2026 16:00:00 GMT</pubDate>
       <description>Claude 生成图埋雷、改完反被封号引热议，华为争议 211 条回复吵翻；还有 Vibe Coding 搓出的宝可梦小镇、多账号切号工具与古法编程讨论，海外则在争 Passkeys 到底是不是陷阱。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 10月12日：郑钦文刚夺冠就退赛，冠军茶把小程序挤崩了</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-10-12/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-12/</guid>
-      <pubDate>Sun, 11 Oct 2026 16:00:00 GMT</pubDate>
-      <description>郑钦文首夺中网后因右肩伤退出武网，冠军茶买一送一挤崩小程序；新皇岗口岸通关缩至5分钟，手机最高再涨1000元，物流景气连扩5个月，16岁刘宇婕创高尔夫历史。</description>
     </item>
   </channel>
 </rss>
