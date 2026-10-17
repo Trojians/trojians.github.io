@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 16 Oct 2026 12:02:20 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 23:58:25 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月17日：8160亿参数，两台Mac就跑得动</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-17/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-17/</guid>
+      <pubDate>Fri, 16 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Meta发布8160亿参数开放权重模型Muse Spark Open，可在两台M5 Ultra Mac Studio上本地运行；FTC向OpenAI与Anthropic发出50多页民事调查要求，追问智能体安全事故；商务部澄清23项AI技术拟列管但绝大部分仍可自由出口、API与SaaS不在管理范围；亚马逊拦下Grok Bot购物访问。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月16日：阅文大会重申，文学本身不能是AI</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-10-12/</guid>
       <pubDate>Sun, 11 Oct 2026 16:00:00 GMT</pubDate>
       <description>郑钦文首夺中网后因右肩伤退出武网，冠军茶买一送一挤崩小程序；新皇岗口岸通关缩至5分钟，手机最高再涨1000元，物流景气连扩5个月，16岁刘宇婕创高尔夫历史。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月12日：纳德拉要给AI装紧急刹车，英伟达已砸8亿美元抢人</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-12/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-12/</guid>
-      <pubDate>Sun, 11 Oct 2026 16:00:00 GMT</pubDate>
-      <description>微软CEO呼吁给AI设紧急刹车，英伟达洽购开放权重公司Reflection，AI拉动美股三季度盈利预计涨31%，阿联酋AI普及率70.1%居全球第一。</description>
     </item>
   </channel>
 </rss>
