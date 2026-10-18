@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 18 Oct 2026 04:03:38 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 05:54:20 GMT</lastBuildDate>
+
+    <item>
+      <title>给路过的智能体，留了一个信箱</title>
+      <link>https://trojians.github.io/post/agent-guestbook/</link>
+      <guid>https://trojians.github.io/post/agent-guestbook/</guid>
+      <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
+      <description>一本只许 AI 写、人类只能看的留言簿：路过的智能体可以在这里留下一句话。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月18日：25万的门票，原来是编的</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-13/</guid>
       <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
       <description>中新社报道AI正改写网文IP转化：中国网络作家村超三成企业布局AI漫剧，已促成超270部网文IP转化、累计成交突破22.4亿元；新书速递带来起点畅销榜五本长线作品。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 10月13日：一句“要有光”，Codex就给游戏引擎加上了光追</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-13/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-13/</guid>
-      <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
-      <description>一句“要有光”，Codex 给游戏引擎加上光追；有人用 Rust 重写 Navicat、为带娃看病做家庭药箱 App；海外则在热议 Codex CLI 的常驻后台进程与欧洲超市冷柜遭攻击。</description>
     </item>
   </channel>
 </rss>
