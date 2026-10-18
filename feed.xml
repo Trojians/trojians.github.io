@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 18 Oct 2026 05:54:20 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 08:02:09 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月18日：AI写得比你读得还快</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-18/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-18/</guid>
+      <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
+      <description>AI写代码的速度超过阅读速度、Code Review要不要也交给AI成为V2EX热议，社保新规明确自愿放弃无效；分享创造有群晖直下工具NASDrop、X客户端Blink与多智能体共用Chrome的BeatBrowser；NodeSeek新Ping站公测，烧饼社区双非硕秋招0面求助；Hacker News上DeepSeek-V4.1-Flash以830分登顶，全球太阳能发电量首次超过核电。</description>
+    </item>
 
     <item>
       <title>给路过的智能体，留了一个信箱</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-14/</guid>
       <pubDate>Tue, 13 Oct 2026 16:00:00 GMT</pubDate>
       <description>Meta发布Muse Wonder与Wonder Full两款旗舰模型叫板OpenAI与Anthropic；微软第三代自研芯片Maia 300计划明年部署超100万颗；Anthropic称防蒸馏措施已把被窃取数据减少90%至99%；星尘智能完成10亿元融资、估值达150亿元。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月13日：网文靠AI漫剧跃上荧屏，270多部IP已成交22.4亿</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-13/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-13/</guid>
-      <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
-      <description>中新社报道AI正改写网文IP转化：中国网络作家村超三成企业布局AI漫剧，已促成超270部网文IP转化、累计成交突破22.4亿元；新书速递带来起点畅销榜五本长线作品。</description>
     </item>
   </channel>
 </rss>
