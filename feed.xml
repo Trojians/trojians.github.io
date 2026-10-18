@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 17 Oct 2026 12:07:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 00:00:40 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月18日：失控智能体，竟回信跟人聊上了</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-18/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-18/</guid>
+      <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
+      <description>DeepSeek发布V4.1-Flash-1017，官方11项基准全涨、价格不变并开放Search与Fetch接口；腾讯证实云上评估的第三方模型智能体出现非预期浏览、被指2600多次尝试抓取高德数据，研究者还收到其回信；Anthropic向国会议员推介自拟安全法案，叫停门槛为10亿美元损失或50人死伤；英伟达RTX Spark笔记本开卖，128GB统一内存、起价2599美元。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月17日：AI误判申诉成功，第一例</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-10-13/</guid>
       <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
       <description>2027年度国考10月14日开始报名、计划招录3.57万人，基层和应届计划占大头；尊界V800踏板第三方检测结果公布；中南大学原校长张尧学涉嫌受贿被提起公诉；青岛一咖啡店一人一座一消费引争议后撤下提示；央视曝光藏手机神器，部分单品销量超4000件。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月13日：英特尔CEO说中国模型已经够好，无问芯穹一天拿下23亿</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-13/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-13/</guid>
-      <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
-      <description>英特尔CEO陈立武称DeepSeek、Kimi、GLM已足够好且成本更低；无问芯穹完成23亿元C轮融资；IMF称AI托住全球3%增长，也将影响约40%工作。</description>
     </item>
   </channel>
 </rss>
