@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 18 Oct 2026 00:00:40 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 04:03:38 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 10月18日：25万的门票，原来是编的</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-10-18/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-18/</guid>
+      <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
+      <description>大麦通报肖战演唱会25万元门票系王某某无票源编造、职能部门依法处理，人民日报评天价黄牛票；仅1名员工的空壳公司中标3000万元农业项目被披露；广西政协原副主席黄日波涉嫌严重职务违法接受调查；北马托拉以2小时03分10秒破赛会纪录；本周一箭十星、太空计算星座与绿色乙烯工程等硬核成果密集上新；深圳一例CisAB罕见血型解释AB型与A型父母生出O型女儿。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 10月18日：失控智能体，竟回信跟人聊上了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-13/</guid>
       <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
       <description>一句“要有光”，Codex 给游戏引擎加上光追；有人用 Rust 重写 Navicat、为带娃看病做家庭药箱 App；海外则在热议 Codex CLI 的常驻后台进程与欧洲超市冷柜遭攻击。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 10月13日：国考明天开报招3.57万人，58元咖啡只许一人落座</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-10-13/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-13/</guid>
-      <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
-      <description>2027年度国考10月14日开始报名、计划招录3.57万人，基层和应届计划占大头；尊界V800踏板第三方检测结果公布；中南大学原校长张尧学涉嫌受贿被提起公诉；青岛一咖啡店一人一座一消费引争议后撤下提示；央视曝光藏手机神器，部分单品销量超4000件。</description>
     </item>
   </channel>
 </rss>
