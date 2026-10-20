@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 19 Oct 2026 14:13:51 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 00:10:18 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月20日：DeepSeek刚升级，就被美国政府下令清除</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-20/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-20/</guid>
+      <pubDate>Mon, 19 Oct 2026 16:00:00 GMT</pubDate>
+      <description>MiniMax发布M3.1 Flash并揭晓匿名的「太空兔」就是它，智能体成本较M3降70%、权重10月23日开放；DeepSeek V4.1-Flash-1017多项自测分数大涨，却同期被美国国土安全部下令从联邦文职机构系统移除并禁购；奥特曼确认OpenAI将造人形机器人、2027年先演示；市场监管总局发布三项钢铁行业AI国家标准化指导性技术文件。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月19日：开荒开新书，四本精品完结</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-15/</guid>
       <pubDate>Wed, 14 Oct 2026 16:00:00 GMT</pubDate>
       <description>天津和平区法院审结首例文字作品改编AI漫剧侵权案，被告删作赔偿；艾儿天空盘点三本完结作品；赤戟推书单435期带来火影同人、双向门基建与克系仙侠三本主推；开源阅读分享唐家三少、季越人等作者的笔名由来。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 10月15日：让AI当高管开公司，7天造开源软件</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-15/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-15/</guid>
-      <pubDate>Wed, 14 Oct 2026 16:00:00 GMT</pubDate>
-      <description>AI 当高管开公司 7 天造开源软件，短剧日均 125 分钟引热议；还有 Quick Share 开源实现、家庭记账工具与 Passkey 之争。</description>
     </item>
   </channel>
 </rss>
