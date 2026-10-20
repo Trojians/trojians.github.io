@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 20 Oct 2026 08:03:42 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 12:06:23 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 10月20日：阅文首批AI动画亮相</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-20/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-20/</guid>
+      <pubDate>Mon, 19 Oct 2026 16:00:00 GMT</pubDate>
+      <description>阅文创作大会发布首批AI精品动画与OPC平台，番茄新人签约改为先完本再说，网文行业集体转向提质。</description>
+    </item>
 
     <item>
       <title>极客日报 · 10月20日：568分热帖说，享受编程没过时</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-16/</guid>
       <pubDate>Thu, 15 Oct 2026 16:00:00 GMT</pubDate>
       <description>V2EX 热议特斯拉 Roadster「起飞」与买 Claude 账号被骗 1198 元的经历，215 回复的情感债务帖登顶；分享创造有 Claude Code 切线路工具 Folkbench Switch、15MB 的 Flutter 版 VS Code 与 V2Echo iOS 版；NodeSeek 继续聊特斯拉与 Telegram 手机号，烧饼社区一篇多任务模型训练实战谈工程落地；海外 Hacker News 榜首是 Meta 研究博客的 Muse Spark Open（778 分），另有一篇 440 分的自托管服务清单。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 10月16日：特斯拉新跑车现场飞起来了</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-10-16/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-16/</guid>
-      <pubDate>Thu, 15 Oct 2026 16:00:00 GMT</pubDate>
-      <description>特斯拉第二代Roadster时隔9年亮相并演示腾空翻滚，中国官网意向金33.2万元、计划2028年生产；海关总署称前三季度外贸增长18.8%、9月单月首破5万亿元；美国肯德基2027年起改用可口可乐，中国门店称未接到通知；深圳11月起全市全天禁鸣喇叭5年；谷歌量子错误率降低约40倍；DeepSeek故障近5小时后全额补偿一周API消耗。</description>
     </item>
   </channel>
 </rss>
