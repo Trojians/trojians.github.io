@@ -131,6 +131,19 @@
    },
    "song": "风起天阑 · 河图",
    "snow": false
+  },
+  {
+   "date": "2026-10-20",
+   "minTemp": 0.7,
+   "maxTemp": 7.4,
+   "titles": {
+    "ai": "AI 早报 · 10月20日：DeepSeek刚升级，就被美国政府下令清除",
+    "rebang": "热榜日报 · 10月20日：打个喷嚏，肋骨就断了",
+    "jike": "极客日报 · 10月20日：568分热帖说，享受编程没过时",
+    "shuhuang": "书荒日报 · 10月20日：阅文首批AI动画亮相"
+   },
+   "song": "魔鬼中的天使 · Hebe Tien",
+   "snow": false
   }
  ],
  "firstSnow": null,
