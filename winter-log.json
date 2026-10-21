@@ -144,6 +144,19 @@
    },
    "song": "魔鬼中的天使 · Hebe Tien",
    "snow": false
+  },
+  {
+   "date": "2026-10-21",
+   "minTemp": -1.8,
+   "maxTemp": 3.4,
+   "titles": {
+    "ai": "AI 早报 · 10月21日：DeepSeek开源家底，英伟达遭围攻",
+    "rebang": "热榜日报 · 10月21日：宝马员工争着离职，挤崩了系统",
+    "jike": "极客日报 · 10月21日：Codex写2万行，没人敢合并",
+    "shuhuang": "书荒日报 · 10月21日：姬叉新书《千秋契》来了"
+   },
+   "song": "山外小楼夜听雨 · Ren Ran（任然）",
+   "snow": false
   }
  ],
  "firstSnow": null,
