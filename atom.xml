@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 20 Oct 2026 14:16:16 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:49:08 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月21日：DeepSeek开源家底，英伟达遭围攻</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-21/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-21/</guid>
+      <pubDate>Tue, 20 Oct 2026 16:00:00 GMT</pubDate>
+      <description>DeepSeek开源支撑V4.1-Flash的推理引擎DeepInfer，同时支持英伟达SM100与华为昇腾950；谷歌开源TorchTPU、亚马逊发布TorchNeuron，同一周用「改一行代码」松动英伟达CUDA；Inception扩散模型Mercury 3官方称每秒1068个Token；OpenAI收购Orchestra Bio并入Rosalind进军药物研发协调；OpenRouter测算中国模型周调用量79.18万亿Token、连续25周全球第一。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月20日：阅文首批AI动画亮相</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-16/</guid>
       <pubDate>Thu, 15 Oct 2026 16:00:00 GMT</pubDate>
       <description>2026阅文创作大会今日在杭州举行：短剧漫剧上半年收入破4.3亿元、OPC平台签约超5000个创作者，阅文同时重申文学本身不能是AI并拿出10亿起点币扶持优质内容；万订作者做梦的木头抗议新书被AI判定；艾儿天空盘点三本完结大精品，含均订一万三的假面骑士同人。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 10月16日：买个Claude账号，被骗1198元</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-16/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-16/</guid>
-      <pubDate>Thu, 15 Oct 2026 16:00:00 GMT</pubDate>
-      <description>V2EX 热议特斯拉 Roadster「起飞」与买 Claude 账号被骗 1198 元的经历，215 回复的情感债务帖登顶；分享创造有 Claude Code 切线路工具 Folkbench Switch、15MB 的 Flutter 版 VS Code 与 V2Echo iOS 版；NodeSeek 继续聊特斯拉与 Telegram 手机号，烧饼社区一篇多任务模型训练实战谈工程落地；海外 Hacker News 榜首是 Meta 研究博客的 Muse Spark Open（778 分），另有一篇 440 分的自托管服务清单。</description>
     </item>
   </channel>
 </rss>
