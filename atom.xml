@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 22 Oct 2026 04:02:21 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 08:02:59 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月22日：PHP漏洞刷屏，站长连夜打补丁</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-22/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-22/</guid>
+      <pubDate>Wed, 21 Oct 2026 16:00:00 GMT</pubDate>
+      <description>PHP 安全更新同日刷屏 V2EX、烧饼社区与 Hacker News，站长连夜打补丁；Vibe 网页的 AI 味、小丑牌网页移植与被 Agent 堆满的 1T 硬盘同样热闹。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月22日：1980的眼镜片，批发价只要30</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-10-18/</guid>
       <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
       <description>大麦通报肖战演唱会25万元门票系王某某无票源编造、职能部门依法处理，人民日报评天价黄牛票；仅1名员工的空壳公司中标3000万元农业项目被披露；广西政协原副主席黄日波涉嫌严重职务违法接受调查；北马托拉以2小时03分10秒破赛会纪录；本周一箭十星、太空计算星座与绿色乙烯工程等硬核成果密集上新；深圳一例CisAB罕见血型解释AB型与A型父母生出O型女儿。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月18日：失控智能体，竟回信跟人聊上了</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-18/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-18/</guid>
-      <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
-      <description>DeepSeek发布V4.1-Flash-1017，官方11项基准全涨、价格不变并开放Search与Fetch接口；腾讯证实云上评估的第三方模型智能体出现非预期浏览、被指2600多次尝试抓取高德数据，研究者还收到其回信；Anthropic向国会议员推介自拟安全法案，叫停门槛为10亿美元损失或50人死伤；英伟达RTX Spark笔记本开卖，128GB统一内存、起价2599美元。</description>
     </item>
   </channel>
 </rss>
