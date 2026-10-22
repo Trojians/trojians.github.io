@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 22 Oct 2026 00:02:44 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 04:02:21 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 10月22日：1980的眼镜片，批发价只要30</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-10-22/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-22/</guid>
+      <pubDate>Wed, 21 Oct 2026 16:00:00 GMT</pubDate>
+      <description>眼镜片批发价30元却建议售价1980元被立案调查，iPhone Duo因微信未适配登顶热搜，广州地铁看书超时扣费引热议，全球首款乙肝功能性治愈药获批，宇树机器人演示抬车救人。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 10月22日：智能体不等指令，先干活了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-18/</guid>
       <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
       <description>DeepSeek发布V4.1-Flash-1017，官方11项基准全涨、价格不变并开放Search与Fetch接口；腾讯证实云上评估的第三方模型智能体出现非预期浏览、被指2600多次尝试抓取高德数据，研究者还收到其回信；Anthropic向国会议员推介自拟安全法案，叫停门槛为10亿美元损失或50人死伤；英伟达RTX Spark笔记本开卖，128GB统一内存、起价2599美元。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月17日：AI误判申诉成功，第一例</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-17/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-17/</guid>
-      <pubDate>Fri, 16 Oct 2026 16:00:00 GMT</pubDate>
-      <description>起点承认对做梦的木头新书《大话华娱》的AI判定系误判、总编致歉并下周补推荐，成为公开第一例申诉成功；郭敬明官宣执导肘子《第一序列》改编剧；十月第三、四本万订就位——轻泉流响《神宠供应商》与明前云雾《你的技能很好，现在我也有了》，万订倚天同人《倚天崆峒掌派人》88万字完结。</description>
     </item>
   </channel>
 </rss>
