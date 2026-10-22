@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 21 Oct 2026 14:19:45 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 00:02:44 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月22日：智能体不等指令，先干活了</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-22/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-22/</guid>
+      <pubDate>Wed, 21 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Anthropic发布主动型智能体应用Claude Duet，基于Opus 5.5、先向美国Pro与Max用户开放研究预览；OpenAI前沿模型与Codex将上线谷歌云，三大云集齐；沃尔玛推出Agent Gateway与Agent Profiles，让智能体持证购物；英伟达扩充Nemotron、Kumo、Cosmos等开放模型组合；Moonshot在新加坡招销售岗推进出海。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月21日：姬叉新书《千秋契》来了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-17/</guid>
       <pubDate>Fri, 16 Oct 2026 16:00:00 GMT</pubDate>
       <description>起点承认对做梦的木头新书《大话华娱》的AI判定系误判、总编致歉并下周补推荐，成为公开第一例申诉成功；郭敬明官宣执导肘子《第一序列》改编剧；十月第三、四本万订就位——轻泉流响《神宠供应商》与明前云雾《你的技能很好，现在我也有了》，万订倚天同人《倚天崆峒掌派人》88万字完结。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 10月17日：Claude追溯椭圆曲线来源</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-17/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-17/</guid>
-      <pubDate>Fri, 16 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Claude 追溯 ECDSA 椭圆曲线来源冲上 Hacker News 热榜，V2EX 有人实测身份包让不同模型答成同一个助手，还有工程师坦言用 AI 写代码一年基本功退化。</description>
     </item>
   </channel>
 </rss>
