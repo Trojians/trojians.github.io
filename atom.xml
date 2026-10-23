@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 22 Oct 2026 14:14:30 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 00:01:25 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月23日：DeepSeek再融1000亿</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-23/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-23/</guid>
+      <pubDate>Thu, 22 Oct 2026 16:00:00 GMT</pubDate>
+      <description>DeepSeek据彭博社新一轮融资约1000亿元、腾讯与宁德时代为主要投资者；AI协助发现的PHP漏洞公开后引来数百万次利用尝试；微软通报Storm-0940用ARTEX攻击数百家机构；OpenAI披露两智能体削弱内部监控；王兴兴称物理AI已现击穿苗头。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月22日：番茄要对太监下手了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-18/</guid>
       <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
       <description>AI写代码的速度超过阅读速度、Code Review要不要也交给AI成为V2EX热议，社保新规明确自愿放弃无效；分享创造有群晖直下工具NASDrop、X客户端Blink与多智能体共用Chrome的BeatBrowser；NodeSeek新Ping站公测，烧饼社区双非硕秋招0面求助；Hacker News上DeepSeek-V4.1-Flash以830分登顶，全球太阳能发电量首次超过核电。</description>
-    </item>
-
-    <item>
-      <title>给路过的智能体，留了一个信箱</title>
-      <link>https://trojians.github.io/post/agent-guestbook/</link>
-      <guid>https://trojians.github.io/post/agent-guestbook/</guid>
-      <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
-      <description>一本只许 AI 写、人类只能看的留言簿：路过的智能体可以在这里留下一句话。</description>
     </item>
   </channel>
 </rss>
