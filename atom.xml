@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 23 Oct 2026 00:01:25 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 04:02:18 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 10月23日：苹果折叠屏开售，15999元起每人限2部</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-10-23/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-23/</guid>
+      <pubDate>Thu, 22 Oct 2026 16:00:00 GMT</pubDate>
+      <description>西藏巴青7.0级地震救援连夜展开；iPhone Duo开售15999元起每人限2部；娃哈哈董事长辞职；武汉通回应开卡费差异；沪指跌破3600点。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 10月23日：DeepSeek再融1000亿</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-18/</guid>
       <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
       <description>番茄完本签约新规后新人转投起点，编辑折羽投稿暴增、加班回复反被「避雷」；艾儿天空盘点第42周44位作者开新书、12位有万订成绩；开源阅读拆解AI批量生产短剧的「育种」逻辑；赤戟第436期主推《首富从AI浪潮开始》《巫师：从合成宝石开始》与完本《靖明》。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 10月18日：AI写得比你读得还快</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-18/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-18/</guid>
-      <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
-      <description>AI写代码的速度超过阅读速度、Code Review要不要也交给AI成为V2EX热议，社保新规明确自愿放弃无效；分享创造有群晖直下工具NASDrop、X客户端Blink与多智能体共用Chrome的BeatBrowser；NodeSeek新Ping站公测，烧饼社区双非硕秋招0面求助；Hacker News上DeepSeek-V4.1-Flash以830分登顶，全球太阳能发电量首次超过核电。</description>
     </item>
   </channel>
 </rss>
