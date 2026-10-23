@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 23 Oct 2026 08:04:45 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 12:02:41 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 10月23日：前金牌编辑给网文类型分档了</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-23/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-23/</guid>
+      <pubDate>Thu, 22 Oct 2026 16:00:00 GMT</pubDate>
+      <description>起点前金牌编辑好运直播给网文类型分五档：乐子文夯爆了，校园恋爱拉完了；另有10月第3周起点月票榜观察，《夜无疆》继续领跑。</description>
+    </item>
 
     <item>
       <title>极客日报 · 10月23日：捅破PHP漏洞的人，道歉了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/dong-tian-jin-du-tiao/</guid>
       <pubDate>Sun, 18 Oct 2026 16:00:00 GMT</pubDate>
       <description>把大庆的供暖季过成一条进度条：一天点亮一格，格子里存着当天的最低温、四更标题和每日一首，烧满就是春天。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月19日：智能体工时，已是人的6倍</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-19/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-19/</guid>
-      <pubDate>Sun, 18 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Anthropic自查报告：智能体工时已达人类6倍、初级技术岗新招占比从27%降至9%；OpenRouter数据显示中国模型周调用量86.74万亿Token、为美国4.5倍且连续24周居首；4个Gemini 4 Argon智能体27小时14分、死亡605次后自主通关《我的世界》；我国首个全国产十万卡AI超集群曙光8000在深圳亮相并发布十大应用成果。</description>
     </item>
   </channel>
 </rss>
