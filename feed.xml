@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 23 Oct 2026 04:02:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 08:04:45 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月23日：捅破PHP漏洞的人，道歉了</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-23/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-23/</guid>
+      <pubDate>Thu, 22 Oct 2026 16:00:00 GMT</pubDate>
+      <description>PHP漏洞提前披露者公开道歉、上午开源下午被裁、麦当劳MCP省钱助手，11条极客圈今日要闻。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月23日：苹果折叠屏开售，15999元起每人限2部</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-19/</guid>
       <pubDate>Sun, 18 Oct 2026 16:00:00 GMT</pubDate>
       <description>Anthropic自查报告：智能体工时已达人类6倍、初级技术岗新招占比从27%降至9%；OpenRouter数据显示中国模型周调用量86.74万亿Token、为美国4.5倍且连续24周居首；4个Gemini 4 Argon智能体27小时14分、死亡605次后自主通关《我的世界》；我国首个全国产十万卡AI超集群曙光8000在深圳亮相并发布十大应用成果。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月18日：番茄新人涌入，起点编辑被避雷</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-18/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-18/</guid>
-      <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
-      <description>番茄完本签约新规后新人转投起点，编辑折羽投稿暴增、加班回复反被「避雷」；艾儿天空盘点第42周44位作者开新书、12位有万订成绩；开源阅读拆解AI批量生产短剧的「育种」逻辑；赤戟第436期主推《首富从AI浪潮开始》《巫师：从合成宝石开始》与完本《靖明》。</description>
     </item>
   </channel>
 </rss>
