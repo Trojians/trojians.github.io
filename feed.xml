@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 24 Oct 2026 04:09:46 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 08:02:36 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月24日：运维真要被AI干没了，评论区吵翻了</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-24/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-24/</guid>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <description>运维真要被AI干没了？DeepSeek神化论、AI替人打三国、iPhone被黑四连击——今日极客圈十条精选。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月24日：LPL瑞士轮首轮全军覆没</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-19/</guid>
       <pubDate>Sun, 18 Oct 2026 16:00:00 GMT</pubDate>
       <description>开荒新书《魔头升职记》上线，未来高武、外科医生重生当超凡灾害中心主任；小柒天《人类之光安布雷拉》《从巨神公司到人类帝国》、天际白《这个忍者会开基因锁》与白色鸽鸽子海贼同人四本精品完结；开源阅读把10本番茄爆款放到起点推演，《十日终焉》《冒姓琅琊》被看作最有封神相。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 10月19日：AI用一年，报错都不想看了</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-19/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-19/</guid>
-      <pubDate>Sun, 18 Oct 2026 16:00:00 GMT</pubDate>
-      <description>烧饼社区热议AI用久了基本功退化，V2EX聊拖欠工资与提前还房贷，分享创造扎堆给Agent补工具，HN榜首谈软件背后的人。</description>
     </item>
   </channel>
 </rss>
