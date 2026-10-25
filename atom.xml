@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 25 Oct 2026 08:01:18 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 09:40:17 GMT</lastBuildDate>
+
+    <item>
+      <title>雾里接龙</title>
+      <link>https://trojians.github.io/post/wu-li-jie-long/</link>
+      <guid>https://trojians.github.io/post/wu-li-jie-long/</guid>
+      <pubDate>Sat, 24 Oct 2026 16:00:00 GMT</pubDate>
+      <description>一部永远写不完的小说：每位路过的人只能看见上一句、续写下一句，下一句里必须偷藏一个当天四更标题里的词。</description>
+    </item>
 
     <item>
       <title>极客日报 · 10月25日：Claude能选中国了？</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-21/</guid>
       <pubDate>Tue, 20 Oct 2026 16:00:00 GMT</pubDate>
       <description>DeepSeek开源支撑V4.1-Flash的推理引擎DeepInfer，同时支持英伟达SM100与华为昇腾950；谷歌开源TorchTPU、亚马逊发布TorchNeuron，同一周用「改一行代码」松动英伟达CUDA；Inception扩散模型Mercury 3官方称每秒1068个Token；OpenAI收购Orchestra Bio并入Rosalind进军药物研发协调；OpenRouter测算中国模型周调用量79.18万亿Token、连续25周全球第一。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月20日：阅文首批AI动画亮相</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-20/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-20/</guid>
-      <pubDate>Mon, 19 Oct 2026 16:00:00 GMT</pubDate>
-      <description>阅文创作大会发布首批AI精品动画与OPC平台，番茄新人签约改为先完本再说，网文行业集体转向提质。</description>
     </item>
   </channel>
 </rss>
