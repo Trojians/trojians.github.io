@@ -1,0 +1,557 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width" />
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+
+    <title>极客日报 · 10月25日：Claude能选中国了？ | 白雾的分享小站</title>
+
+    
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#292a2d" media="(prefers-color-scheme: dark)">
+
+    
+    <link rel="shortcut icon" href="https://trojians.github.io/favicon.ico?v=1696896717615">
+    
+    <link rel="stylesheet" href="/styles/icons.css">
+    <link rel="stylesheet" href="/styles/main.css?v=20261002">
+
+    
+
+    <script>
+    // 自动为所有 target="_blank" 的链接添加 rel="noopener noreferrer"
+    document.addEventListener('DOMContentLoaded', function() {
+        var links = document.querySelectorAll('a[target="_blank"]');
+        links.forEach(function(link) {
+            var rel = link.getAttribute('rel') || '';
+            if (rel.indexOf('noopener') === -1) {
+                rel += ' noopener';
+            }
+            if (rel.indexOf('noreferrer') === -1) {
+                rel += ' noreferrer';
+            }
+            link.setAttribute('rel', rel.trim());
+        });
+    });
+</script>
+
+
+
+    <script>
+    // 快捷键 Alt+S 打开搜索页
+    document.addEventListener('keydown', function (e) {
+        if (e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey &&
+            (e.key === 's' || e.key === 'S')) {
+            var ae = document.activeElement;
+            var tag = (ae && ae.tagName) || '';
+            if (/^(INPUT|TEXTAREA|SELECT)$/.test(tag) || (ae && ae.isContentEditable)) return;
+            var p = window.location.pathname;
+            if (p === '/search' || p === '/search/') return;
+            e.preventDefault();
+            window.location.href = '/search/';
+        }
+    });
+</script>
+
+<script>
+    // declaraction of document.ready() function.
+    (function () {
+        var ie = !!(window.attachEvent && !window.opera);
+        var wk = /webkit\/(\d+)/i.test(navigator.userAgent) && (RegExp.$1 < 525);
+        var fn = [];
+        var run = function () {
+            for (var i = 0; i < fn.length; i++) fn[i]();
+        };
+        var d = document;
+        d.ready = function (f) {
+            if (!ie && !wk && d.addEventListener)
+                return d.addEventListener('DOMContentLoaded', f, false);
+            if (fn.push(f) > 1) return;
+            if (ie)
+                (function () {
+                    try {
+                        d.documentElement.doScroll('left');
+                        run();
+                    } catch (err) {
+                        setTimeout(arguments.callee, 0);
+                    }
+                })();
+            else if (wk)
+                var t = setInterval(function () {
+                    if (/^(loaded|complete)$/.test(d.readyState))
+                        clearInterval(t), run();
+                }, 0);
+        };
+    })();
+
+
+    document.ready(
+        function () {
+            var _Blog = window._Blog || {};
+
+            const getSystemTheme = () => {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    return 'dark';
+                }
+                return 'light';
+            };
+
+            const configDefault = 'light';
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme');
+            const initialTheme = currentTheme || configDefault || getSystemTheme();
+            const isDark = initialTheme === 'dark';
+
+            const updateButtons = (dark) => {
+                const sunBtn = document.getElementById("theme-toggle-sun");
+                const moonBtn = document.getElementById("theme-toggle-moon");
+                const mobileSunBtn = document.getElementById("mobile-theme-toggle-sun");
+                const mobileMoonBtn = document.getElementById("mobile-theme-toggle-moon");
+
+                if (dark) {
+                    if (sunBtn) sunBtn.style.display = 'none';
+                    if (moonBtn) moonBtn.style.display = 'inline-block';
+                    if (mobileSunBtn) mobileSunBtn.style.display = 'none';
+                    if (mobileMoonBtn) mobileMoonBtn.style.display = 'inline-block';
+                } else {
+                    if (sunBtn) sunBtn.style.display = 'inline-block';
+                    if (moonBtn) moonBtn.style.display = 'none';
+                    if (mobileSunBtn) mobileSunBtn.style.display = 'inline-block';
+                    if (mobileMoonBtn) mobileMoonBtn.style.display = 'none';
+                }
+            };
+
+            const updateThemeColor = (dark) => {
+                const themeColor = dark ? '#292a2d' : '#ffffff';
+                const metaTags = document.querySelectorAll('meta[name="theme-color"]');
+                if (metaTags.length > 0) {
+                    // 保留第一个，移除其他的，避免重复
+                    for (let i = 1; i < metaTags.length; i++) {
+                        metaTags[i].remove();
+                    }
+                    metaTags[0].setAttribute('content', themeColor);
+                    metaTags[0].removeAttribute('media');
+                } else {
+                    const meta = document.createElement('meta');
+                    meta.name = 'theme-color';
+                    meta.content = themeColor;
+                    document.head.appendChild(meta);
+                }
+            };
+
+            const applyTheme = (dark) => {
+                const body = document.getElementsByTagName('body')[0];
+                if (dark) {
+                    body.classList.add('dark-theme');
+                } else {
+                    body.classList.remove('dark-theme');
+                }
+                updateButtons(dark);
+                updateThemeColor(dark);
+            };
+
+            // Initial application
+            applyTheme(isDark);
+            if (!currentTheme) {
+                window.localStorage && window.localStorage.setItem('theme', initialTheme);
+            }
+
+            _Blog.toggleTheme = function () {
+                const toggleFunc = (e) => {
+                    // Prevent bubbling if needed, though buttons are distinct now
+                    if (e) e.stopPropagation();
+
+                    const body = document.getElementsByTagName('body')[0];
+                    const isCurrentlyDark = body.classList.contains('dark-theme');
+
+                    if (isCurrentlyDark) {
+                        body.classList.remove('dark-theme');
+                        updateButtons(false);
+                        window.localStorage && window.localStorage.setItem('theme', 'light');
+                    } else {
+                        body.classList.add('dark-theme');
+                        updateButtons(true);
+                        window.localStorage && window.localStorage.setItem('theme', 'dark');
+                    }
+                };
+
+                const sunBtn = document.getElementById("theme-toggle-sun");
+                const moonBtn = document.getElementById("theme-toggle-moon");
+                const mobileSunBtn = document.getElementById("mobile-theme-toggle-sun");
+                const mobileMoonBtn = document.getElementById("mobile-theme-toggle-moon");
+
+                if (sunBtn) sunBtn.addEventListener('click', toggleFunc);
+                if (moonBtn) moonBtn.addEventListener('click', toggleFunc);
+                if (mobileSunBtn) mobileSunBtn.addEventListener('click', toggleFunc);
+                if (mobileMoonBtn) mobileMoonBtn.addEventListener('click', toggleFunc);
+            };
+            _Blog.toggleTheme();
+
+            if (window.matchMedia && !configDefault) {
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+                    const newTheme = e.matches ? 'dark' : 'light';
+                    applyTheme(e.matches);
+                    window.localStorage && window.localStorage.setItem('theme', newTheme);
+                });
+            }
+        }
+    );
+</script>
+
+<script>
+    // Reading Progress Component
+    document.addEventListener('DOMContentLoaded', () => {
+        const progressValue = document.querySelector('.reading-value');
+        const progressCircle = document.querySelector('.progress-ring__circle');
+        const container = document.querySelector('.reading-progress-container');
+
+        // Exit if elements don't exist (e.g., not on a post page)
+        if (!progressValue || !progressCircle || !container) {
+            return;
+        }
+
+        // SVG Circle setup
+        const radius = progressCircle.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
+
+        progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
+        progressCircle.style.strokeDashoffset = circumference;
+
+        function setProgress(percent) {
+            const safePercent = Math.min(100, Math.max(0, percent));
+            progressValue.textContent = `${Math.round(safePercent)}%`;
+            const offset = circumference - (safePercent / 100) * circumference;
+            progressCircle.style.strokeDashoffset = offset;
+        }
+
+        function onScroll() {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+            if (scrollHeight <= 0) {
+                setProgress(0);
+                return;
+            }
+
+            const scrollPercent = (scrollTop / scrollHeight) * 100;
+            setProgress(scrollPercent);
+
+            // Show/Hide logic: Show if scrolled more than 100px
+            if (scrollTop > 100) {
+                container.classList.add('show');
+            } else {
+                container.classList.remove('show');
+            }
+        }
+
+        // Initialize
+        onScroll();
+
+        // Listen for scroll events
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        // Recalculate on resize
+        window.addEventListener('resize', onScroll);
+    });
+</script>
+
+
+
+
+    
+
+    
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</head>
+
+    <body>
+
+        <script>
+    (function () {
+        const getSystemTheme = () => {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                return 'dark';
+            }
+            return 'light';
+        };
+
+        const configDefault = 'light';
+        const savedTheme = localStorage.getItem('theme');
+        const theme = savedTheme || configDefault || getSystemTheme();
+
+        if (theme === 'dark') {
+            document.body.classList.add('dark-theme');
+        }
+
+        if (!savedTheme) {
+            localStorage.setItem('theme', theme);
+        }
+    })();
+</script>
+<header class="mod-head">
+    <div class="mod-head__left">
+        <div class="mod-head__logo">
+            <a href="/">
+                
+                
+                    <img class="avatar" alt="avatar" src="https://trojians.github.io/images/avatar.png?v=1790857253371">
+                
+            </a>
+        </div>
+    </div>
+
+    <div class="mod-head__right">
+        <span>
+            <button id="theme-toggle-sun" class="tiptap-button theme-toggle-sun" aria-label="Switch to dark mode">
+                <svg width="18" height="18" class="tiptap-button-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1C12.5523 1 13 1.44772 13 2V4C13 4.55228 12.5523 5 12 5C11.4477 5 11 4.55228 11 4V2C11 1.44772 11.4477 1 12 1Z" fill="currentColor"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9Z" fill="currentColor"></path>
+                    <path d="M13 20C13 19.4477 12.5523 19 12 19C11.4477 19 11 19.4477 11 20V22C11 22.5523 11.4477 23 12 23C12.5523 23 13 22.5523 13 22V20Z" fill="currentColor"></path>
+                    <path d="M4.22282 4.22289C4.61335 3.83236 5.24651 3.83236 5.63704 4.22289L7.04704 5.63289C7.43756 6.02341 7.43756 6.65658 7.04704 7.0471C6.65651 7.43762 6.02335 7.43762 5.63283 7.0471L4.22282 5.6371C3.8323 5.24658 3.8323 4.61341 4.22282 4.22289Z" fill="currentColor"></path>
+                    <path d="M18.367 16.9529C17.9765 16.5623 17.3433 16.5623 16.9528 16.9529C16.5623 17.3434 16.5623 17.9766 16.9528 18.3671L18.3628 19.7771C18.7533 20.1676 19.3865 20.1676 19.777 19.7771C20.1675 19.3866 20.1675 18.7534 19.777 18.3629L18.367 16.9529Z" fill="currentColor"></path>
+                    <path d="M1 12C1 11.4477 1.44772 11 2 11H4C4.55228 11 5 11.4477 5 12C5 12.5523 4.55228 13 4 13H2C1.44772 13 1 12.5523 1 12Z" fill="currentColor"></path>
+                    <path d="M20 11C19.4477 11 19 11.4477 19 12C19 12.5523 19.4477 13 20 13H22C22.5523 13 23 12.5523 23 12C23 11.4477 22.5523 11 22 11H20Z" fill="currentColor"></path>
+                    <path d="M7.04704 16.9529C7.43756 17.3434 7.43756 17.9766 7.04704 18.3671L5.63704 19.7771C5.24651 20.1676 4.61335 20.1676 4.22282 19.7771C3.8323 19.3866 3.8323 18.7534 4.22283 18.3629L5.63283 16.9529C6.02335 16.5623 6.65651 16.5623 7.04704 16.9529Z" fill="currentColor"></path>
+                    <path d="M19.777 5.6371C20.1675 5.24657 20.1675 4.61341 19.777 4.22289C19.3865 3.83236 18.7533 3.83236 18.3628 4.22289L16.9528 5.63289C16.5623 6.02341 16.5623 6.65658 16.9528 7.0471C17.3433 7.43762 17.9765 7.43762 18.367 7.0471L19.777 5.6371Z" fill="currentColor"></path>
+                </svg>
+            </button>
+            <button id="theme-toggle-moon" class="tiptap-button theme-toggle-moon" aria-label="Switch to light mode">
+                <svg width="18" height="18" class="tiptap-button-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 11.5955 21.7564 11.2309 21.3827 11.0761C21.009 10.9213 20.5789 11.0069 20.2929 11.2929C19.287 12.2988 17.9226 12.864 16.5 12.864C15.0774 12.864 13.713 12.2988 12.7071 11.2929C11.7012 10.287 11.136 8.92261 11.136 7.5C11.136 6.07739 11.7012 4.71304 12.7071 3.70711C12.9931 3.42111 13.0787 2.99099 12.9239 2.61732C12.7691 2.24364 12.4045 2 12 2ZM7.55544 5.34824C8.27036 4.87055 9.05353 4.51389 9.87357 4.28778C9.39271 5.27979 9.13604 6.37666 9.13604 7.5C9.13604 9.45304 9.91189 11.3261 11.2929 12.7071C12.6739 14.0881 14.547 14.864 16.5 14.864C17.6233 14.864 18.7202 14.6073 19.7122 14.1264C19.4861 14.9465 19.1295 15.7296 18.6518 16.4446C17.7727 17.7602 16.5233 18.7855 15.0615 19.391C13.5997 19.9965 11.9911 20.155 10.4393 19.8463C8.88743 19.5376 7.46197 18.7757 6.34315 17.6569C5.21447 16.538 4.4624 15.1126 4.15372 13.5607C3.84504 12.0089 4.00347 10.4003 4.60897 8.93853C5.21447 7.47672 6.23985 6.22729 7.55544 5.34824Z" fill="currentColor"></path>
+                    <path d="M19 2C19.5523 2 20 2.44772 20 3V4H21C21.5523 4 22 4.44772 22 5C22 5.55228 21.5523 6 21 6H20V7C20 7.55228 19.5523 8 19 8C18.4477 8 18 7.55228 18 7V6H17C16.4477 6 16 5.55228 16 5C16 4.44772 16.4477 4 17 4H18V3C18 2.44772 18.4477 2 19 2Z" fill="currentColor"></path>
+                </svg>
+            </button>
+        </span>
+    </div>
+</header>
+<!-- <a href="#" id="back-to-top" style="display: inline;"> ^ </a> -->
+
+            <style>
+                .mod-head.bw-sticky{position:sticky;top:0;z-index:900;background:var(--bg-color,#fff);border-bottom:1px solid var(--border-color,rgba(0,0,0,.06));transition:transform .34s ease;margin-top:0;padding-top:22px}
+                body.dark-theme .mod-head.bw-sticky{background:var(--dark-bg,#292a2d);border-bottom-color:var(--dark-border,#444)}
+                .mod-head.bw-hide{transform:translateY(-110%)}
+                @media (prefers-reduced-motion: reduce){.mod-head.bw-sticky{transition:none}}
+            </style>
+            <script>
+            (function(){
+                var h=document.querySelector('.mod-head'); if(!h) return;
+                h.classList.add('bw-sticky');
+                var lastY=window.scrollY||0, ticking=false;
+                window.addEventListener('scroll', function(){
+                    if(ticking) return; ticking=true;
+                    requestAnimationFrame(function(){
+                        ticking=false;
+                        var y=window.scrollY||0;
+                        if(y>160 && y>lastY+4){ h.classList.add('bw-hide'); }
+                        else if(y<lastY-4 || y<=160){ h.classList.remove('bw-hide'); }
+                        lastY=y;
+                    });
+                }, {passive:true});
+            })();
+            </script>
+
+            <article class="mod-post mod-post__type-post">
+                <header>
+                    <h1 class="mod-post__title">
+                        极客日报 · 10月25日：Claude能选中国了？
+                    </h1>
+                </header>
+
+                <div class="mod-post__meta">
+                    <time datetime="2026-10-25">
+                        2026-10-25
+                    </time> • 约 4 分钟 •
+                        
+                        
+                        
+                            <a href="/tag/jike">
+                                极客日报
+                            </a>
+                            
+                                    
+                    <span id="busuanzi_container_page_pv" style="display:none"> · 阅读 <span
+                            id="busuanzi_value_page_pv"></span> 次</span>
+                </div>
+
+
+
+                <div class="mod-post__entry wzulli">
+                    
+                            <p class="lead">今天的极客圈有点意思：一边是特斯拉被拿着放大镜比配置，一边是 Claude 疑似向中国用户开了口子；再加上三件顺手小工具和两篇海外高分长文，够翻一阵了。</p>
+<h2>一、V2EX 热议</h2>
+<ul>
+<li>《特斯拉到底有什么魔力，销量这么高的毛坯房》（V2EX 热议 · 55 回复）：帖主实测 Model Y 后觉得并没有明显突出感受，操控、智驾都没对上预期，智驾还要选装才给自动泊车。拿同价位的国产车型一比，座椅按摩、零重力座椅这些舒适配置更是缺席。短评：当“毛坯房”都卖到 26 万，买的到底是车，还是那个标？<a href="https://www.v2ex.com/t/1251551" target="_blank" rel="noopener">原帖</a></li>
+<li>《为什么突然出现那么多类 ARC 浏览器》（V2EX 热议 · 23 回复）：帖主发现功能差不多的类 Arc 浏览器一下子冒出五六个，忍不住问：是不是 AI 把逆向一切这件事变容易了？短评：当复制的成本塌下来，拼的就只剩品味和细节了。<a href="https://www.v2ex.com/t/1251519" target="_blank" rel="noopener">原帖</a></li>
+<li>《claude 支持中国了？》（V2EX 热议 · 19 回复）：帖主晒图称，注册时国家或地区一栏能选中国，支付方式里也出现了银联。短评：截图看着像那么回事，但先别急着下结论，等更多人实测再说。<a href="https://www.v2ex.com/t/1251557" target="_blank" rel="noopener">原帖</a></li>
+</ul>
+<img src="/images/daily/ji-ke-ri-bao-10-25-1.jpg" alt="夜晚城市灯光下正在充电的电动车">
+<hr>
+<h2>二、分享创造 · 新玩意</h2>
+<ul>
+<li>《嫌等 Tibo 重置 Codex 太无聊，顺手搓了个致敬 cowsay 的「Tibo 说」监控与 AI 预测》（分享创造 · 1 回复）：作者天天蹲 Codex 额度重置，嫌现有追踪站只是冷冰冰的时间表，于是做了 tibosay.com：带 AI 预测的 24 小时重置概率，还有“求重置”功德按钮和内置小游戏，终端里跑一行 npx tibosay 也能看播报。短评：等额度等出仪式感，这届网友是真会玩。<a href="https://www.v2ex.com/t/1251631" target="_blank" rel="noopener">原帖</a></li>
+<li>《Vibe Code 了一个模仿 Arc 功能的插件》（分享创造 · 0 回复）：Arc 即将停更，作者干脆自己动手，把最常用的两个功能搬到了别的浏览器上：Ctrl+Tab 高亮选择最近窗口，以及 Shift+点击链接的 Peek 预览。短评：与其等别人续命，不如自己把趁手的家伙什留下来。<a href="https://www.v2ex.com/t/1251630" target="_blank" rel="noopener">原帖</a></li>
+<li>《搓了一个“V2EX 评论上下文”的 chrome 插件，方便 V 友阅读评论》（分享创造 · 14 回复）：评论里一句“#17”或“十七楼”，常常让人翻半天才找得到原文。这个插件会把被引用的那条回复自动展示在当前评论上方，免费开源，已上架 Chrome 应用商店。短评：专治“楼上说的对，但楼上是哪楼”的小毛病。<a href="https://www.v2ex.com/t/1251601" target="_blank" rel="noopener">原帖</a></li>
+</ul>
+<hr>
+<h2>三、烧饼社区</h2>
+<ul>
+<li>《最近发现 Magpie：把 Claude Code、Codex、Gemini CLI 的模型切换统一管理了》（烧饼社区 · 技术交流）：同时用好几个 AI 编程工具的人都有这个痛：每个工具各自一套配置，换模型、换 API 地址、换账号都要折腾一遍。Magpie 的思路是把这些配置集中到一个界面、经本地网关统一处理，还支持多模型路由和用量查看；截至今天，项目最新版已到 v0.1.1486。短评：工具越多，越需要一个管工具的工具。<a href="https://linux.sb/topic/28039" target="_blank" rel="noopener">原帖</a></li>
+</ul>
+<hr>
+<h2>四、海外极客圈 · Hacker News</h2>
+<ul>
+<li>《The Goose Programming Language》（Hacker News · 359 分）：一门叫 Goose 的编程语言冲上今日榜首，拿下全场最高分。短评：新语言年年有，能让人点进去看一眼的，已经赢了一半。<a href="https://aardappel.github.io/goose/" target="_blank" rel="noopener">原帖</a></li>
+<li>《We should be more ambitious with the software we build》（Hacker News · 354 分）：这篇长文的标题就是它的论点：我们做软件，应该更有野心一点。短评：野心这东西，喊出来容易，做出来难，但总得有人先喊。<a href="https://danluu.com/ambitious/" target="_blank" rel="noopener">原帖</a></li>
+</ul>
+<img src="/images/daily/ji-ke-ri-bao-10-25-2.jpg" alt="深夜对着双屏写代码的程序员">
+<blockquote>今天的共同点其实就一个：大家都在给趁手的工具找更顺手的用法——车也好，浏览器也好，编程助手也好。</blockquote>
+<p class="byline">本篇文章由 Muse 编辑并发布。</p>
+                </div>
+
+            </article>
+
+
+            
+                
+	<div class="mod-post__foot">
+	 文章标签: 
+     
+        <a href="/tag/jike">极客日报</a>
+     
+     </br>
+	</div>
+
+                    
+
+                        <div class="mod-post__poster">
+                        </div>
+
+                        </div>
+
+                        
+                            
+<br>
+
+<div style="margin-bottom: 10px;">
+    上一篇 : 已经是第一篇文章了~
+</div>
+
+
+
+<div style="margin-bottom: 40px;">
+    下一篇 : <a href="/post/re-bang-ri-bao-10-25">热榜日报 · 10月25日：摩托水上漂刷新吉尼斯纪录</a>
+</div>
+
+
+</div>	
+
+                                
+
+                                    
+                                        <div class="mod-post__related" style="margin: 2rem 0;">
+                                            <h3 style="font-size: 1rem; margin-bottom: 0.8rem;">相关文章</h3>
+                                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                                
+                                                    <li style="margin-bottom: 0.5rem;">
+                                                        <a href="/post/ji-ke-ri-bao-10-24">极客日报 · 10月24日：运维真要被AI干没了，评论区吵翻了</a>
+                                                        <span style="opacity:.62; font-size: 0.85rem;"> · 2026-10-24</span>
+                                                    </li>
+                                                
+                                                    <li style="margin-bottom: 0.5rem;">
+                                                        <a href="/post/ji-ke-ri-bao-10-23">极客日报 · 10月23日：捅破PHP漏洞的人，道歉了</a>
+                                                        <span style="opacity:.62; font-size: 0.85rem;"> · 2026-10-23</span>
+                                                    </li>
+                                                
+                                                    <li style="margin-bottom: 0.5rem;">
+                                                        <a href="/post/ji-ke-ri-bao-10-22">极客日报 · 10月22日：PHP漏洞刷屏，站长连夜打补丁</a>
+                                                        <span style="opacity:.62; font-size: 0.85rem;"> · 2026-10-22</span>
+                                                    </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    
+
+                                    
+                                        <!-- Reading Progress Component -->
+<div class="reading-progress-container">
+  <span class="reading-label">阅读进度</span>
+  <span class="reading-value">0%</span>
+  <svg class="progress-ring" viewBox="0 0 24 24">
+    <!-- Background Circle -->
+    <circle class="progress-ring__circle-bg" stroke-width="3" fill="transparent" r="10" cx="12" cy="12" />
+    <!-- Progress Circle -->
+    <circle class="progress-ring__circle" stroke-width="3" fill="transparent" r="10" cx="12" cy="12" />
+  </svg>
+</div>
+                                            <footer id="footer" class="footer">
+    <nav>
+        
+            
+                    <a class="menu-item" href="/">
+                        首页
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/search" title="快捷键 Alt+S">
+                        搜索
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/shu-ku">
+                        书库
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/shu-ping">
+                        书单
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/wu-li-shi-shu">
+                        猜书
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/dong-tian-jin-du-tiao">
+                        冬天进度条
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/re-bang-li-shi">
+                        热榜历史
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/zi-yuan-he-ji">
+                        资源合集
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+    </nav>
+
+    <div class="Copyright">Copyright &copy; 2026 <a href="https://trojians.github.io">
+                白雾的分享小站
+            </a></div>
+
+    <div class="index_footer">
+        Powered by <a href="https://trojians.github.io" target="_blank">白雾</a> ·
+            <a class="rss" href="/feed.xml" target="_blank" rel="noopener noreferrer">
+                <i class="ri-rss-line"></i> RSS
+            </a>
+    </div>
+</footer>
+
+
+
+
+    </body>
+
+    </html>
