@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 26 Oct 2026 08:02:27 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 12:04:35 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 10月26日：十一年后，再读贼道三痴</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-26/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-26/</guid>
+      <pubDate>Sun, 25 Oct 2026 16:00:00 GMT</pubDate>
+      <description>十一年后重读贼道三痴，兼看影视剧里的网文作者形象与第43周14本完结小说。</description>
+    </item>
 
     <item>
       <title>极客日报 · 10月26日：三星电视被拿下 root 权限</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-10-22/</guid>
       <pubDate>Wed, 21 Oct 2026 16:00:00 GMT</pubDate>
       <description>眼镜片批发价30元却建议售价1980元被立案调查，iPhone Duo因微信未适配登顶热搜，广州地铁看书超时扣费引热议，全球首款乙肝功能性治愈药获批，宇树机器人演示抬车救人。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月22日：智能体不等指令，先干活了</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-22/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-22/</guid>
-      <pubDate>Wed, 21 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Anthropic发布主动型智能体应用Claude Duet，基于Opus 5.5、先向美国Pro与Max用户开放研究预览；OpenAI前沿模型与Codex将上线谷歌云，三大云集齐；沃尔玛推出Agent Gateway与Agent Profiles，让智能体持证购物；英伟达扩充Nemotron、Kumo、Cosmos等开放模型组合；Moonshot在新加坡招销售岗推进出海。</description>
     </item>
   </channel>
 </rss>
