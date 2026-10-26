@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 25 Oct 2026 14:12:26 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 00:00:16 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 10月26日：最强开源模型先给自己踩了刹车</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-10-26/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-10-26/</guid>
+      <pubDate>Sun, 25 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Kimi K3.1 Pro 主动削减网络攻击能力；Block 推出只用语音训练的 Dessa；AWS 算力大体售罄至 2027 年；摩根大通与嘉信理财拦截未经授权的 AI 智能体。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 10月25日：仙侠年度盘点来了，今年比去年更惨</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-21/</guid>
       <pubDate>Tue, 20 Oct 2026 16:00:00 GMT</pubDate>
       <description>Codex 15 小时写 2 万行没人敢合并，前端岗位再引热议；DeepSeek 推理框架 DeepInfer 以 2230 分登顶 Hacker News。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 10月21日：宝马员工争着离职，挤崩了系统</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-10-21/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-21/</guid>
-      <pubDate>Tue, 20 Oct 2026 16:00:00 GMT</pubDate>
-      <description>宝马自愿离职补偿最高约65万欧元、4万人查报价挤崩系统；星巴克10月22日起全国消费入座；“肖战演唱会第一排25万元”系造谣、王某某被拘7日；襄阳男子捡到38000元用身份证数字给失主留题寻人；徐州生物地理不计入中考总分改等级；国家癌症中心公布2024年发病前五，甲状腺癌升至第三。</description>
     </item>
   </channel>
 </rss>
