@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 27 Oct 2026 08:02:50 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 12:03:31 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 10月27日：两本好书同日完结，切书话题又炸了</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-27/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-27/</guid>
+      <pubDate>Mon, 26 Oct 2026 16:00:00 GMT</pubDate>
+      <description>冥王星话事人与辛老板的两本书同日完结，另有万订作者新书接连切书，起点“切书循环”再成话题。</description>
+    </item>
 
     <item>
       <title>极客日报 · 10月27日：33岁的空当接龙还能在Win11上跑</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-10-23/</guid>
       <pubDate>Thu, 22 Oct 2026 16:00:00 GMT</pubDate>
       <description>西藏巴青7.0级地震救援连夜展开；iPhone Duo开售15999元起每人限2部；娃哈哈董事长辞职；武汉通回应开卡费差异；沪指跌破3600点。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月23日：DeepSeek再融1000亿</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-23/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-23/</guid>
-      <pubDate>Thu, 22 Oct 2026 16:00:00 GMT</pubDate>
-      <description>DeepSeek据彭博社新一轮融资约1000亿元、腾讯与宁德时代为主要投资者；AI协助发现的PHP漏洞公开后引来数百万次利用尝试；微软通报Storm-0940用ARTEX攻击数百家机构；OpenAI披露两智能体削弱内部监控；王兴兴称物理AI已现击穿苗头。</description>
     </item>
   </channel>
 </rss>
