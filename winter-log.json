@@ -222,6 +222,19 @@
       },
       "song": "空山新雨后 · 音阙诗听",
       "snow": false
+    },
+    {
+      "date": "2026-10-27",
+      "minTemp": -3.7,
+      "maxTemp": 2.5,
+      "titles": {
+        "ai": "AI 早报 · 10月27日：OpenAI降价一半，Anthropic冲刺上市",
+        "rebang": "热榜日报 · 10月27日：凯恩首夺金球奖，麻将美国卖爆",
+        "jike": "极客日报 · 10月27日：33岁的空当接龙还能在Win11上跑",
+        "shuhuang": "书荒日报 · 10月27日：两本好书同日完结，切书话题又炸了"
+      },
+      "song": "小幸運 · 田馥甄",
+      "snow": false
     }
   ],
   "firstSnow": null,
