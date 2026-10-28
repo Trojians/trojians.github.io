@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 28 Oct 2026 00:04:26 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 04:00:47 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 10月28日：姆巴佩风波刷屏，法国超市冷柜遭黑客煮熟</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-10-28/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-28/</guid>
+      <pubDate>Tue, 27 Oct 2026 16:00:00 GMT</pubDate>
+      <description>姆巴佩风波持续发酵，法国超市冷柜遭黑客攻击，地铁站变身健身房与食堂，苹果M6新品国行开售，老龄化数据与老君山云雾也上了榜。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 10月28日：AI 声称攻下三道数学难题</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-23/</guid>
       <pubDate>Thu, 22 Oct 2026 16:00:00 GMT</pubDate>
       <description>起点前金牌编辑好运直播给网文类型分五档：乐子文夯爆了，校园恋爱拉完了；另有10月第3周起点月票榜观察，《夜无疆》继续领跑。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 10月23日：捅破PHP漏洞的人，道歉了</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-23/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-23/</guid>
-      <pubDate>Thu, 22 Oct 2026 16:00:00 GMT</pubDate>
-      <description>PHP漏洞提前披露者公开道歉、上午开源下午被裁、麦当劳MCP省钱助手，11条极客圈今日要闻。</description>
     </item>
   </channel>
 </rss>
