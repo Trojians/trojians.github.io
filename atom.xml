@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 28 Oct 2026 08:05:07 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 12:03:09 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 10月28日：冒险屋完结六年终破十万订</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-28/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-28/</guid>
+      <pubDate>Tue, 27 Oct 2026 16:00:00 GMT</pubDate>
+      <description>完结六年的《我有一座冒险屋》达成十万均订，成起点第36本十万订作品；同日举国文新书万订，石章鱼开都市新书，灵异题材的冷暖也再成话题。</description>
+    </item>
 
     <item>
       <title>极客日报 · 10月28日：Ghostty 1.4撞上Thinkrail</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-10-24/</guid>
       <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
       <description>S16世界赛瑞士轮首轮LPL四队全军覆没；山东小伙用AI抢出父亲脑梗的救命时间；iPhone Duo开售首日遭内屏开裂投诉；红果短剧&quot;戒断&quot;话题引热议。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 10月24日：Kimi 逼近 Claude，只差 0.7 分</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-10-24/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-10-24/</guid>
-      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Kimi K3.1 Pro发布，Terminal-Bench 4.0拿65.7%逼近Claude Opus 5.5，11月4日放开源权重；DeepSeek Harness插件让AI&quot;大肥鱼&quot;攻占B站评论区；Block发布全双工语音模型Dessa；Hi3D V1.0开源。</description>
     </item>
   </channel>
 </rss>
