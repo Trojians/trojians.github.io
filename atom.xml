@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 28 Oct 2026 04:00:47 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 08:05:07 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月28日：Ghostty 1.4撞上Thinkrail</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-28/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-28/</guid>
+      <pubDate>Tue, 27 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Ghostty 1.4 与 JetBrains 新编辑器 Thinkrail 同日刷屏，另有 AI 医疗决策之争与 DeepMind 世界模型 Genie 4。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月28日：姆巴佩风波刷屏，法国超市冷柜遭黑客煮熟</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-24/</guid>
       <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
       <description>Kimi K3.1 Pro发布，Terminal-Bench 4.0拿65.7%逼近Claude Opus 5.5，11月4日放开源权重；DeepSeek Harness插件让AI&quot;大肥鱼&quot;攻占B站评论区；Block发布全双工语音模型Dessa；Hi3D V1.0开源。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月23日：前金牌编辑给网文类型分档了</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-23/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-23/</guid>
-      <pubDate>Thu, 22 Oct 2026 16:00:00 GMT</pubDate>
-      <description>起点前金牌编辑好运直播给网文类型分五档：乐子文夯爆了，校园恋爱拉完了；另有10月第3周起点月票榜观察，《夜无疆》继续领跑。</description>
     </item>
   </channel>
 </rss>
