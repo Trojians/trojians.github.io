@@ -235,6 +235,19 @@
       },
       "song": "小幸運 · 田馥甄",
       "snow": false
+    },
+    {
+      "date": "2026-10-28",
+      "minTemp": -5.1,
+      "maxTemp": 3.6,
+      "titles": {
+        "ai": "AI 早报 · 10月28日：AI 声称攻下三道数学难题",
+        "rebang": "热榜日报 · 10月28日：姆巴佩风波刷屏，法国超市冷柜遭黑客煮熟",
+        "jike": "极客日报 · 10月28日：Ghostty 1.4撞上Thinkrail",
+        "shuhuang": "书荒日报 · 10月28日：冒险屋完结六年终破十万订"
+      },
+      "song": "可能 · 程响",
+      "snow": false
     }
   ],
   "firstSnow": null,
