@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 29 Oct 2026 04:04:34 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 08:02:26 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月29日：发光 LOGO 回归，触屏 Mac 遭灵魂拷问</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-29/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-29/</guid>
+      <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
+      <description>发光苹果 Logo 或将回归、触屏 Mac 引发灵魂拷问，OpenAI 给订阅用户送 API 额度，Stack Overflow 月提问量跌破 1000 条。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月29日：三丽鸥道歉冲上双榜第一</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-25/</guid>
       <pubDate>Sat, 24 Oct 2026 16:00:00 GMT</pubDate>
       <description>OpenAI 300 亿美元融资估值从 1.4 万亿砍到 1.25 万亿；国务院办公厅印发 AI 就业友好意见；两起 Claude 对话报警案；云深处发布具身大脑五项成果。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月24日：滚开十年旧作完结九年后万订了</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-24/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-24/</guid>
-      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
-      <description>滚开十年旧作《永恒剑主》完结九年九个月后万订；亲吻指尖双开新书；海外读者开始破解“龙国”“樱花国”的梗。</description>
     </item>
   </channel>
 </rss>
