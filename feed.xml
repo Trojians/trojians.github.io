@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 30 Oct 2026 04:04:46 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 08:01:56 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月30日：十几年前的 iPod 也能玩游戏了</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-30/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-30/</guid>
+      <pubDate>Thu, 29 Oct 2026 16:00:00 GMT</pubDate>
+      <description>十几年前的 iPod nano 被开源项目玩出了新花样，还能装应用、玩游戏；另有 Mistral 新权重开源、Claude 封号与职场热议。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月30日：联名杯炸伤人下架，C罗戴帽冲985球</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-25/</guid>
       <pubDate>Sat, 24 Oct 2026 16:00:00 GMT</pubDate>
       <description>赤戟2026年度盘点武侠仙侠玄幻篇上线，直言仙侠今年比去年更惨；艾儿天空汇总14本完结作品，番茄新人签约门槛同步抬高。</description>
-    </item>
-
-    <item>
-      <title>雾里接龙</title>
-      <link>https://trojians.github.io/post/wu-li-jie-long/</link>
-      <guid>https://trojians.github.io/post/wu-li-jie-long/</guid>
-      <pubDate>Sat, 24 Oct 2026 16:00:00 GMT</pubDate>
-      <description>一部永远写不完的小说：每位路过的人只能看见上一句、续写下一句，下一句里必须偷藏一个当天四更标题里的词。</description>
     </item>
   </channel>
 </rss>
