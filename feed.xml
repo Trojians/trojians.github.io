@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 31 Oct 2026 04:04:04 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 08:03:35 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 10月31日：63亿美元，20分钟就没了</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-31/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-31/</guid>
+      <pubDate>Fri, 30 Oct 2026 16:00:00 GMT</pubDate>
+      <description>63亿美元20分钟被盗、任天堂塞进1GB模型权重、AI三天搬完十年股票系统——今天的极客圈既刺激又动手。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 10月31日：金价降了金店卖爆了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-26/</guid>
       <pubDate>Sun, 25 Oct 2026 16:00:00 GMT</pubDate>
       <description>十一年后重读贼道三痴，兼看影视剧里的网文作者形象与第43周14本完结小说。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 10月26日：三星电视被拿下 root 权限</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-26/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-26/</guid>
-      <pubDate>Sun, 25 Oct 2026 16:00:00 GMT</pubDate>
-      <description>创业一年账本公开、三星电视 root 冲上 HN 榜首、十年老模型在皮肤癌诊断上胜过前沿大模型，另有四件顺手小工具。</description>
     </item>
   </channel>
 </rss>
