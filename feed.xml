@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 31 Oct 2026 00:11:04 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 04:04:04 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 10月31日：金价降了金店卖爆了</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-10-31/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-31/</guid>
+      <pubDate>Fri, 30 Oct 2026 16:00:00 GMT</pubDate>
+      <description>金价跌破4000美元关口，金店客流暴涨；英特尔暴跌28%拖累美股科技板块；国行苹果智能11月4日开测并接入千问；小沈阳夺披荆斩棘总冠军；BLG明早生死战对阵HLE；多所高校改用数字人民币发工资。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 10月31日：苹果入华联手通义，巨头同签数据停火线</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-26/</guid>
       <pubDate>Sun, 25 Oct 2026 16:00:00 GMT</pubDate>
       <description>创业一年账本公开、三星电视 root 冲上 HN 榜首、十年老模型在皮肤癌诊断上胜过前沿大模型，另有四件顺手小工具。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 10月26日：金价大跌，水贝被挤爆</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-10-26/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-26/</guid>
-      <pubDate>Sun, 25 Oct 2026 16:00:00 GMT</pubDate>
-      <description>金价大跌、水贝市场被挤爆，公积金更好用，另有五中全会开幕、Kimi致歉、泰山机器人实测与82岁跨栏夺冠。</description>
     </item>
   </channel>
 </rss>
