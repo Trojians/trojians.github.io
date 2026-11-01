@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 01 Nov 2026 07:04:14 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 08:03:21 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月1日：Linux TCP 曝 9.8 分高危漏洞</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-01/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-01/</guid>
+      <pubDate>Sat, 31 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Linux TCP 曝 9.8 分高危漏洞，ChatGPT 与 Codex 额度传闻引热议，另有 Vidzer、AbcTab 等新玩意。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月1日：金饰克价年内跌近550元</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-28/</guid>
       <pubDate>Tue, 27 Oct 2026 16:00:00 GMT</pubDate>
       <description>OpenAI 声称 AI 攻下三道数学物理难题，谷歌 Genie 4 世界模型长出声音，苹果 M6 Mac 上新、价格没涨。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月27日：两本好书同日完结，切书话题又炸了</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-27/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-27/</guid>
-      <pubDate>Mon, 26 Oct 2026 16:00:00 GMT</pubDate>
-      <description>冥王星话事人与辛老板的两本书同日完结，另有万订作者新书接连切书，起点“切书循环”再成话题。</description>
     </item>
   </channel>
 </rss>
