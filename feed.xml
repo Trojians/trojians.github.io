@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 31 Oct 2026 14:12:50 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 00:00:27 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月1日：万亿参数模型，免费下载了</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-01/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-01/</guid>
+      <pubDate>Sat, 31 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Mistral 万亿参数模型免费开放权重，OpenAI 升级模型失齐监控，思科押注 AI 重构旧代码，奥尔特曼谈内存分配。</description>
+    </item>
 
     <item>
       <title>雾里鬼宴 · 万圣夜</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-27/</guid>
       <pubDate>Mon, 26 Oct 2026 16:00:00 GMT</pubDate>
       <description>1993年的扫雷在Win11上照跑不误，Vibe Coding上线工厂ERP，还有一台被用户自己维护的iPhone Duo。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 10月27日：凯恩首夺金球奖，麻将美国卖爆</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-10-27/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-27/</guid>
-      <pubDate>Mon, 26 Oct 2026 16:00:00 GMT</pubDate>
-      <description>凯恩首夺金球奖，中国麻将在美国卖出天价，多家品牌终止与姆巴佩合作，iPad mini 8 发布，胖东来为员工撑腰，微软开放6万人自愿离职。</description>
     </item>
   </channel>
 </rss>
