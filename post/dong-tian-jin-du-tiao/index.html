@@ -364,7 +364,7 @@
                 <div class="mod-post__meta">
                     <time datetime="2026-10-19">
                         2026-10-19
-                    </time> • 约 17 分钟 •
+                    </time> • 约 27 分钟 •
                         
                         
                         
@@ -417,6 +417,29 @@
 .wpb-row .r-t b{color:#cfdff0;font-weight:600}
 .wpb-empty{color:var(--wpb-dim);font-size:14px;border:1px dashed rgba(190,215,235,.3);border-radius:12px;padding:16px;text-align:center}
 .wpb-foot{color:var(--wpb-dim);font-size:12.5px;margin-top:18px;text-align:center}
+
+.wtemp-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 18px;border-radius:999px;border:1px solid rgba(255,179,92,.7);background:rgba(255,150,60,.16);color:#ffcf96;font-size:13.5px;cursor:pointer}
+.wtemp-btn:hover{background:rgba(255,150,60,.28)}
+.wtemp-modal{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(4,14,24,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.wtemp-modal.open{display:flex}
+.wtemp-card{width:min(720px,94vw);max-height:88vh;overflow:auto;border-radius:20px;padding:22px 22px 16px;background:linear-gradient(160deg,#16324d,#0c1f33);border:1px solid rgba(190,215,235,.28);box-shadow:0 24px 60px rgba(0,0,0,.5);color:#eaf2f8}
+.wtemp-card p{margin:0}
+.wtemp-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.wtemp-title{font-size:17px;font-weight:700}
+.wtemp-sub{color:#a9c2d6;font-size:12.5px;margin-top:3px}
+.wtemp-close{flex:none;width:30px;height:30px;border-radius:50%;border:1px solid rgba(190,215,235,.35);background:transparent;color:#eaf2f8;font-size:18px;line-height:1;cursor:pointer}
+.wtemp-stats{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.wtemp-chip{border-radius:999px;padding:4px 12px;font-size:12.5px;background:rgba(16,38,58,.4)}
+.wtemp-chip.warm{border:1px solid rgba(255,179,92,.6);color:#ffcf96}
+.wtemp-chip.cold{border:1px solid rgba(124,196,232,.6);color:#a8d8f0}
+.wtemp-chip.plain{border:1px solid rgba(190,215,235,.35);color:#a9c2d6}
+.wtemp-chartwrap{position:relative;margin-top:10px}
+.wtemp-chartwrap svg{display:block;width:100%;height:auto}
+.wtemp-tip{position:absolute;top:6px;transform:translateX(-50%);display:none;pointer-events:none;background:rgba(8,24,40,.94);border:1px solid rgba(190,215,235,.35);border-radius:10px;padding:8px 11px;font-size:12.5px;line-height:1.55;white-space:nowrap;z-index:2}
+.wtemp-tip b{color:#fff}
+.wtemp-foot{color:#a9c2d6;font-size:12px;text-align:center;margin-top:10px}
+.wtemp-empty{color:#a9c2d6;font-size:14px;text-align:center;padding:30px 0}
+
 </style>
 <div class="wpb-wrap">
   <div class="wpb-hero">
@@ -429,6 +452,9 @@
     <div class="wpb-pipe" id="wpbPipe"></div>
     <div class="wpb-scale"><span id="wpbStartLab"></span><span id="wpbMidLab"></span><span id="wpbEndLab"></span></div>
     <div class="wpb-miles" id="wpbMiles"></div>
+    <div style="margin-top:16px"><button class="wtemp-btn" id="wtempBtn" type="button">📈 气温曲线</button></div>
+
+<!-- C: 弹窗，放进 .wpb-wrap 末尾、wpb-foot 之后
   </div>
   <div class="wpb-sec">
     <p class="wpb-sec-t">那一天的小卡片</p>
@@ -439,6 +465,25 @@
     <div class="wpb-log" id="wpbLog"><div class="wpb-empty">正在展开长卷…</div></div>
   </div>
   <p class="wpb-foot">雾散之后，都是好天气。这个冬天也是。</p>
+<div class="wtemp-modal" id="wtempModal" role="dialog" aria-modal="true" aria-label="气温曲线">
+  <div class="wtemp-card">
+    <div class="wtemp-head">
+      <div>
+        <p class="wtemp-title">气温曲线</p>
+        <p class="wtemp-sub" id="wtempSub">大庆 · 每天的最高温与最低温</p>
+      </div>
+      <button class="wtemp-close" id="wtempClose" type="button" aria-label="关闭">×</button>
+    </div>
+    <div class="wtemp-stats" id="wtempStats"></div>
+    <div class="wtemp-chartwrap" id="wtempChartWrap">
+      <div id="wtempChart"></div>
+      <div class="wtemp-tip" id="wtempTip"></div>
+    </div>
+    <p class="wtemp-foot">数据来自每天 22:10 存入的冬天进度条，往后每天多一格，曲线会自动变长。</p>
+  </div>
+</div>
+
+<!-- D: 脚本，追加在原 <script> 之后
 </div>
 <script>
 (function(){
@@ -534,6 +579,107 @@
   }).catch(function(){
     document.getElementById('wpbStatus').textContent='进度条的数据没取到，刷新一下再看看。';
   });
+})();
+</script>
+
+<script>
+(function(){
+  var btn=document.getElementById('wtempBtn'),modal=document.getElementById('wtempModal'),close=document.getElementById('wtempClose');
+  if(!btn||!modal)return;
+  var chartEl=document.getElementById('wtempChart'),tip=document.getElementById('wtempTip'),wrap=document.getElementById('wtempChartWrap');
+  var drawn=false;
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+  function md(ds){var a=ds.split('-');return (+a[1])+'月'+(+a[2])+'日';}
+  function open(){modal.classList.add('open');if(!drawn)load();}
+  function shut(){modal.classList.remove('open');}
+  btn.addEventListener('click',open);
+  close.addEventListener('click',shut);
+  modal.addEventListener('click',function(e){if(e.target===modal)shut();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')shut();});
+  function load(){
+    fetch('/winter-log.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(draw).catch(function(){
+      chartEl.innerHTML='<p class="wtemp-empty">气温数据没取到，关掉重开一次试试。</p>';
+    });
+  }
+  function smooth(pts){
+    if(pts.length<2)return '';
+    if(pts.length===2)return 'M'+pts[0][0]+','+pts[0][1]+' L'+pts[1][0]+','+pts[1][1];
+    var d='M'+pts[0][0]+','+pts[0][1];
+    for(var i=0;i<pts.length-1;i++){
+      var p0=pts[Math.max(0,i-1)],p1=pts[i],p2=pts[i+1],p3=pts[Math.min(pts.length-1,i+2)];
+      d+=' C'+(p1[0]+(p2[0]-p0[0])/6).toFixed(1)+','+(p1[1]+(p2[1]-p0[1])/6).toFixed(1)
+        +' '+(p2[0]-(p3[0]-p1[0])/6).toFixed(1)+','+(p2[1]-(p3[1]-p1[1])/6).toFixed(1)
+        +' '+p2[0]+','+p2[1];
+    }
+    return d;
+  }
+  function draw(cfg){
+    var days=(cfg.entries||[]).filter(function(e){return typeof e.minTemp==='number'&&typeof e.maxTemp==='number';})
+      .sort(function(a,b){return a.date<b.date?-1:1;});
+    if(!days.length){chartEl.innerHTML='<p class="wtemp-empty">还没有存下气温数据。</p>';drawn=true;return;}
+    var n=days.length;
+    document.getElementById('wtempSub').textContent='大庆 · '+md(days[0].date)+' – '+md(days[n-1].date)+' · 已记录 '+n+' 天';
+    var cold=days[0],hot=days[0];
+    days.forEach(function(e){if(e.minTemp<cold.minTemp)cold=e;if(e.maxTemp>hot.maxTemp)hot=e;});
+    document.getElementById('wtempStats').innerHTML=
+      '<span class="wtemp-chip cold">❄ 最低 '+cold.minTemp+'℃ · '+md(cold.date)+'</span>'
+      +'<span class="wtemp-chip warm">☀ 最高 '+hot.maxTemp+'℃ · '+md(hot.date)+'</span>'
+      +'<span class="wtemp-chip plain">已记录 '+n+' 天</span>';
+    var lo=Math.min.apply(null,days.map(function(e){return e.minTemp;})),hi=Math.max.apply(null,days.map(function(e){return e.maxTemp;}));
+    var step=(hi-lo)<=30?5:10;
+    var loN=Math.floor((lo-2)/step)*step,hiN=Math.ceil((hi+2)/step)*step;
+    var W=660,H=300,pl=38,pr=14,pt=16,pb=30,iw=W-pl-pr,ih=H-pt-pb;
+    function X(i){return n===1?pl+iw/2:pl+iw*i/(n-1);}
+    function Y(v){return pt+ih*(1-(v-loN)/(hiN-loN));}
+    var maxPts=days.map(function(e,i){return [X(i).toFixed(1),Y(e.maxTemp).toFixed(1)];});
+    var minPts=days.map(function(e,i){return [X(i).toFixed(1),Y(e.minTemp).toFixed(1)];});
+    var maxPath=smooth(maxPts),minPath=smooth(minPts);
+    var revMin=minPts.slice().reverse();
+    var band=maxPath+' L'+smooth(revMin).slice(1)+' Z';
+    var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="最高温与最低温折线图"><defs>'
+      +'<linearGradient id="wtempBandGrad" x1="0" y1="0" x2="0" y2="1">'
+      +'<stop offset="0%" stop-color="#ffb35c" stop-opacity=".22"/><stop offset="100%" stop-color="#7cc4e8" stop-opacity=".18"/>'
+      +'</linearGradient></defs>';
+    for(var v=loN;v<=hiN;v+=step){
+      var y=Y(v);
+      s+='<line x1="'+pl+'" y1="'+y.toFixed(1)+'" x2="'+(W-pr)+'" y2="'+y.toFixed(1)+'" stroke="rgba(190,215,235,.13)" stroke-width="1"/>';
+      s+='<text x="'+(pl-6)+'" y="'+(y+4).toFixed(1)+'" text-anchor="end" font-size="11" fill="#a9c2d6">'+v+'°</text>';
+    }
+    var ticks=Math.min(7,n);
+    for(var j=0;j<ticks;j++){
+      var idx=Math.round(j*(n-1)/(ticks-1));
+      s+='<text x="'+X(idx).toFixed(1)+'" y="'+(H-8)+'" text-anchor="middle" font-size="11" fill="#a9c2d6">'+md(days[idx].date)+'</text>';
+    }
+    s+='<path d="'+band+'" fill="url(#wtempBandGrad)"/>';
+    s+='<path d="'+minPath+'" fill="none" stroke="#7cc4e8" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>';
+    s+='<path d="'+maxPath+'" fill="none" stroke="#ffb35c" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>';
+    s+='<line id="wtempGuide" x1="0" y1="'+pt+'" x2="0" y2="'+(pt+ih)+'" stroke="rgba(255,255,255,.35)" stroke-width="1" stroke-dasharray="3 3" visibility="hidden"/>';
+    s+='<circle id="wtempDotMax" r="4.5" fill="#ffb35c" stroke="#0c1f33" stroke-width="1.5" visibility="hidden"/>';
+    s+='<circle id="wtempDotMin" r="4.5" fill="#7cc4e8" stroke="#0c1f33" stroke-width="1.5" visibility="hidden"/>';
+    s+='<rect id="wtempHit" x="'+pl+'" y="'+pt+'" width="'+iw+'" height="'+ih+'" fill="transparent"/>';
+    s+='</svg>';
+    chartEl.innerHTML=s;
+    var guide=document.getElementById('wtempGuide'),dotMax=document.getElementById('wtempDotMax'),dotMin=document.getElementById('wtempDotMin');
+    function show(i){
+      var x=X(i);
+      guide.setAttribute('x1',x);guide.setAttribute('x2',x);guide.setAttribute('visibility','visible');
+      dotMax.setAttribute('cx',x);dotMax.setAttribute('cy',Y(days[i].maxTemp));dotMax.setAttribute('visibility','visible');
+      dotMin.setAttribute('cx',x);dotMin.setAttribute('cy',Y(days[i].minTemp));dotMin.setAttribute('visibility','visible');
+      var e=days[i];
+      tip.innerHTML='<b>'+md(e.date)+'</b>'+(e.snow?' ❄':'')+'<br>最高 '+e.maxTemp+'℃ · 最低 '+e.minTemp+'℃';
+      var pct=Math.max(15,Math.min(85,x/W*100));
+      tip.style.left=pct+'%';tip.style.display='block';
+    }
+    function hide(){guide.setAttribute('visibility','hidden');dotMax.setAttribute('visibility','hidden');dotMin.setAttribute('visibility','hidden');tip.style.display='none';}
+    document.getElementById('wtempHit').addEventListener('pointermove',function(ev){
+      var r=ev.currentTarget.getBoundingClientRect();
+      var mx=(ev.clientX-r.left)/r.width*iw;
+      var i=Math.max(0,Math.min(n-1,Math.round(mx/iw*(n-1))));
+      show(i);
+    });
+    document.getElementById('wtempHit').addEventListener('pointerleave',hide);
+    drawn=true;
+  }
 })();
 </script>
 
