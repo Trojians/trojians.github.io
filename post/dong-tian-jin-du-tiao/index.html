@@ -364,7 +364,7 @@
                 <div class="mod-post__meta">
                     <time datetime="2026-10-19">
                         2026-10-19
-                    </time> • 约 27 分钟 •
+                    </time> • 约 28 分钟 •
                         
                         
                         
@@ -600,6 +600,7 @@
     });
   }
   function smooth(pts){
+    pts=pts.map(function(q){return [parseFloat(q[0]),parseFloat(q[1])];});
     if(pts.length<2)return '';
     if(pts.length===2)return 'M'+pts[0][0]+','+pts[0][1]+' L'+pts[1][0]+','+pts[1][1];
     var d='M'+pts[0][0]+','+pts[0][1];
