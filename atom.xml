@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 01 Nov 2026 14:12:49 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:01:20 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月2日：苹果国行AI来了，用的却是千问</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-02/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-02/</guid>
+      <pubDate>Sun, 01 Nov 2026 16:00:00 GMT</pubDate>
+      <description>苹果 AI 中国版接入千问，DeepSeek 公布超级智能体架构，OpenAI 宣布聊天与代码共用额度，Grok 文字将加隐形水印。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月1日：玄鉴仙族结卷登顶</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-28/</guid>
       <pubDate>Tue, 27 Oct 2026 16:00:00 GMT</pubDate>
       <description>Ghostty 1.4 与 JetBrains 新编辑器 Thinkrail 同日刷屏，另有 AI 医疗决策之争与 DeepMind 世界模型 Genie 4。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 10月28日：姆巴佩风波刷屏，法国超市冷柜遭黑客煮熟</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-10-28/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-28/</guid>
-      <pubDate>Tue, 27 Oct 2026 16:00:00 GMT</pubDate>
-      <description>姆巴佩风波持续发酵，法国超市冷柜遭黑客攻击，地铁站变身健身房与食堂，苹果M6新品国行开售，老龄化数据与老君山云雾也上了榜。</description>
     </item>
   </channel>
 </rss>
