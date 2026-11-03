@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 03 Nov 2026 00:42:52 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 04:02:08 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 11月3日：九寨沟排队起冲突，警方已介入</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-11-03/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-11-03/</guid>
+      <pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate>
+      <description>九寨沟排队冲突警方已介入；超强厄尔尼诺今冬冷暖起伏大；iPhone Duo开售一周黄牛亏了十几万；詹姆斯场边喝了球迷一口酒；社保欠缴处罚有了全国统一尺度。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 11月3日：1.6万亿参数，美团扔出长程智能体大招</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-29/</guid>
       <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
       <description>白乌鸦新书历史梗引发争议；冒险屋成为起点第36本十万订小说；赤戟438期带来游戏三国、HP同人与诸天武道三本推书。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 10月29日：发光 LOGO 回归，触屏 Mac 遭灵魂拷问</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-10-29/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-29/</guid>
-      <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
-      <description>发光苹果 Logo 或将回归、触屏 Mac 引发灵魂拷问，OpenAI 给订阅用户送 API 额度，Stack Overflow 月提问量跌破 1000 条。</description>
     </item>
   </channel>
 </rss>
