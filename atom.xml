@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 02 Nov 2026 14:13:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 00:42:52 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月3日：1.6万亿参数，美团扔出长程智能体大招</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-03/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-03/</guid>
+      <pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate>
+      <description>美团发布 1.6 万亿参数的 LongCat-2.5，DeepSeek 开源常驻仓库的 Super-agent，优必选给机器人建了仿真练功房，OpenAI 则重写了模型行为规范。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月2日：邓紫棋新书11月6日番茄连载</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-29/</guid>
       <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
       <description>发光苹果 Logo 或将回归、触屏 Mac 引发灵魂拷问，OpenAI 给订阅用户送 API 额度，Stack Overflow 月提问量跌破 1000 条。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 10月29日：三丽鸥道歉冲上双榜第一</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-10-29/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-29/</guid>
-      <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
-      <description>三丽鸥为联名风波道歉登顶双榜，S16八强陆续落定，《影之刃零》今日上线，另有二手手机行情、韩国重罚苹果谷歌与周末冷空气。</description>
     </item>
   </channel>
 </rss>
