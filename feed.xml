@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 03 Nov 2026 14:13:18 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 00:02:06 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月4日：国行iPhone今天开测千问</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-04/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-04/</guid>
+      <pubDate>Tue, 03 Nov 2026 16:00:00 GMT</pubDate>
+      <description>国行 iPhone 今日开测千问，智元 GO-3 登顶三项具身基准，小米机器人打满 8 小时整班，而 GDPx 基准显示最强智能体也只完成 12% 的高难度专业任务。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月3日：10月起点新增万订仅7本</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-10-30/</guid>
       <pubDate>Thu, 29 Oct 2026 16:00:00 GMT</pubDate>
       <description>十几年前的 iPod nano 被开源项目玩出了新花样，还能装应用、玩游戏；另有 Mistral 新权重开源、Claude 封号与职场热议。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 10月30日：联名杯炸伤人下架，C罗戴帽冲985球</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-10-30/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-10-30/</guid>
-      <pubDate>Thu, 29 Oct 2026 16:00:00 GMT</pubDate>
-      <description>五中全会精神发布会举行；茉莉奶白联名杯爆裂致用户住院并下架；U17女足首进世界杯八强；C罗戴帽生涯985球；群晖NAS遭勒索病毒攻击。</description>
     </item>
   </channel>
 </rss>
