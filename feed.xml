@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 04 Nov 2026 04:03:31 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 08:02:29 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月4日：Postman悄悄装AI插件引众怒</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-04/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-04/</guid>
+      <pubDate>Tue, 03 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Postman 被指悄悄装 AI 插件并试图分享 API 数据，另有 Pixsolo、Daban、证书熊与 Nomi 等新工具登场。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月4日：苹果天气突现-32℃，气象局回应了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-10-31/</guid>
       <pubDate>Fri, 30 Oct 2026 16:00:00 GMT</pubDate>
       <description>苹果智能 11 月 4 日在中国开启测试、12 月正式上线，通义千问接入 Siri；四巨头同签 AI 训练退出信号，OpenAI 与 Meta 也在改写规则。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月30日：番茄换帅，白乌鸦梗再发酵</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-30/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-30/</guid>
-      <pubDate>Thu, 29 Oct 2026 16:00:00 GMT</pubDate>
-      <description>番茄小说负责人与总编辑双双换人引连锁反应；白乌鸦新书历史梗争议出续集；《梦魇绝境》等四本精品小说完结。</description>
     </item>
   </channel>
 </rss>
