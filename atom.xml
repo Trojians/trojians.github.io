@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 05 Nov 2026 04:08:35 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 08:01:45 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月5日：小米隐私风波，35岁又成了一道坎</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-05/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-05/</guid>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <description>小米 HyperOS 3 被曝隐私采集引热议，35 岁前端生日刚过就被裁；另有全球电台随机听、AI 翻出的 40 年 PHP 老漏洞。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月5日：进博会今日开幕，金价又坐过山车</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/wu-li-gui-yan/</guid>
       <pubDate>Fri, 30 Oct 2026 16:00:00 GMT</pubDate>
       <description>万圣夜鬼宴：过去二十天里被搁置的 44 个点子请回来吃一顿，按搁置日期上桌。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 10月31日：起点滥用AI将取消福利</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-10-31/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-10-31/</guid>
-      <pubDate>Fri, 30 Oct 2026 16:00:00 GMT</pubDate>
-      <description>起点发布滥用AI取消福利公告，禁言50年或将成历史；《斗罗：从武魂喷火龙开始！》等两本精品完结，常世携民国新书复出。</description>
     </item>
   </channel>
 </rss>
