@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 05 Nov 2026 08:01:45 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 12:01:35 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 11月5日：白金大神或封笔，《1979》完结</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-05/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-05/</guid>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <description>睡觉会变白《1979黄金时代》完结，均订破6.5万，完结感言一句&quot;有缘再见&quot;引人担忧；11月第一本万订诞生，另有两本小说完结。</description>
+    </item>
 
     <item>
       <title>极客日报 · 11月5日：小米隐私风波，35岁又成了一道坎</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-11-01/</guid>
       <pubDate>Sat, 31 Oct 2026 16:00:00 GMT</pubDate>
       <description>Mistral 万亿参数模型免费开放权重，OpenAI 升级模型失齐监控，思科押注 AI 重构旧代码，奥尔特曼谈内存分配。</description>
-    </item>
-
-    <item>
-      <title>雾里鬼宴 · 万圣夜</title>
-      <link>https://trojians.github.io/post/wu-li-gui-yan/</link>
-      <guid>https://trojians.github.io/post/wu-li-gui-yan/</guid>
-      <pubDate>Fri, 30 Oct 2026 16:00:00 GMT</pubDate>
-      <description>万圣夜鬼宴：过去二十天里被搁置的 44 个点子请回来吃一顿，按搁置日期上桌。</description>
     </item>
   </channel>
 </rss>
