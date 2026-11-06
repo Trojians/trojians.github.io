@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 05 Nov 2026 14:12:54 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 00:01:52 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月6日：GPT-5.2 来了，70.9% 胜过人类专家</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-06/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-06/</guid>
+      <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
+      <description>OpenAI 发布 GPT-5.2，70.9% 的专业任务胜过人类专家；谷歌视频生成拉长到 15 秒，还推出了首个关键级安全模型。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月5日：白金大神或封笔，《1979》完结</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-01/</guid>
       <pubDate>Sat, 31 Oct 2026 16:00:00 GMT</pubDate>
       <description>金饰克价年内回落近550元，苏超无锡2:1常州夺冠，S16八强抽出TES与iG内战，法定假期增至13天，苹果智能国行版11月4日开测。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 11月1日：万亿参数模型，免费下载了</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-11-01/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-11-01/</guid>
-      <pubDate>Sat, 31 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Mistral 万亿参数模型免费开放权重，OpenAI 升级模型失齐监控，思科押注 AI 重构旧代码，奥尔特曼谈内存分配。</description>
     </item>
   </channel>
 </rss>
