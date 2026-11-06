@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Nov 2026 00:01:52 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 04:03:11 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 11月6日：2027放假安排来了，春节连休9天</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-11-06/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-11-06/</guid>
+      <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
+      <description>2027年放假安排公布、春节连休9天，美国中期选举民主党夺回两院，大众在华召回超58万辆，内存合约价创历史新高，BLG横扫DK进S16四强。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 11月6日：GPT-5.2 来了，70.9% 胜过人类专家</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-01/</guid>
       <pubDate>Sat, 31 Oct 2026 16:00:00 GMT</pubDate>
       <description>Linux TCP 曝 9.8 分高危漏洞，ChatGPT 与 Codex 额度传闻引热议，另有 Vidzer、AbcTab 等新玩意。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 11月1日：金饰克价年内跌近550元</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-11-01/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-11-01/</guid>
-      <pubDate>Sat, 31 Oct 2026 16:00:00 GMT</pubDate>
-      <description>金饰克价年内回落近550元，苏超无锡2:1常州夺冠，S16八强抽出TES与iG内战，法定假期增至13天，苹果智能国行版11月4日开测。</description>
     </item>
   </channel>
 </rss>
