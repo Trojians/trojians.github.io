@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Nov 2026 04:03:11 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 08:03:40 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月6日：超长密码竟能登入 OpenSSH，十年老洞曝光</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-06/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-06/</guid>
+      <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
+      <description>OpenSSH 曝出十年老洞、Claude Code 被指泄露用户邮箱，微信输入法敏感词库遭提取，另有墨水屏阅读器、小游戏复盘等 10 条极客动态。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月6日：2027放假安排来了，春节连休9天</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-01/</guid>
       <pubDate>Sat, 31 Oct 2026 16:00:00 GMT</pubDate>
       <description>十月起点月票榜出炉，玄鉴仙族结卷登顶，1979黄金时代将完结，另有博士作者与赤戟十一月口碑榜。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月1日：Linux TCP 曝 9.8 分高危漏洞</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-01/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-01/</guid>
-      <pubDate>Sat, 31 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Linux TCP 曝 9.8 分高危漏洞，ChatGPT 与 Codex 额度传闻引热议，另有 Vidzer、AbcTab 等新玩意。</description>
     </item>
   </channel>
 </rss>
