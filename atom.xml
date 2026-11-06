@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Nov 2026 08:03:40 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 12:02:44 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 11月6日：土豆新书放飞后宫，《神通者》三天破百万在读</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-06/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-06/</guid>
+      <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
+      <description>天蚕土豆新书《神通者》回归后宫、番茄征稿活动被群嘲，11月第一本万订诞生。</description>
+    </item>
 
     <item>
       <title>极客日报 · 11月6日：超长密码竟能登入 OpenSSH，十年老洞曝光</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-11-02/</guid>
       <pubDate>Sun, 01 Nov 2026 16:00:00 GMT</pubDate>
       <description>苹果 AI 中国版接入千问，DeepSeek 公布超级智能体架构，OpenAI 宣布聊天与代码共用额度，Grok 文字将加隐形水印。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 11月1日：玄鉴仙族结卷登顶</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-01/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-01/</guid>
-      <pubDate>Sat, 31 Oct 2026 16:00:00 GMT</pubDate>
-      <description>十月起点月票榜出炉，玄鉴仙族结卷登顶，1979黄金时代将完结，另有博士作者与赤戟十一月口碑榜。</description>
     </item>
   </channel>
 </rss>
