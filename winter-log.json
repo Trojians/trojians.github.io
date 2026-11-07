@@ -365,6 +365,19 @@
       },
       "song": "落海 · Ren Ran",
       "snow": true
+    },
+    {
+      "date": "2026-11-07",
+      "minTemp": -12.1,
+      "maxTemp": -6.5,
+      "titles": {
+        "ai": "AI 早报 · 11月7日：2.8万亿参数免费开源，Kimi 掏出压箱底",
+        "rebang": "热榜日报 · 11月7日：T1 3-1挺进四强，半决赛再战BLG",
+        "jike": "极客日报 · 11月7日：特斯拉停产 Cybertruck",
+        "shuhuang": "书荒日报 · 11月7日：白金大神弃用笔名，年度仙侠盘点出炉"
+      },
+      "song": "烏鴉 · Hebe Tien（田馥甄）",
+      "snow": false
     }
   ],
   "firstSnow": "2026-10-27",
