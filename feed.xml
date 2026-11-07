@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 07 Nov 2026 08:02:27 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 12:02:04 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 11月7日：白金大神弃用笔名，年度仙侠盘点出炉</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-07/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-07/</guid>
+      <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
+      <description>《全职法师》作者“乱”弃用白金笔名改回“鱼的天空”，南希北庆新书《大宋第一讼棍》上线，开源阅读放出 2.2 万字年度仙侠盘点。</description>
+    </item>
 
     <item>
       <title>极客日报 · 11月7日：特斯拉停产 Cybertruck</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-11-03/</guid>
       <pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate>
       <description>美团发布 1.6 万亿参数的 LongCat-2.5，DeepSeek 开源常驻仓库的 Super-agent，优必选给机器人建了仿真练功房，OpenAI 则重写了模型行为规范。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 11月2日：邓紫棋新书11月6日番茄连载</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-02/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-02/</guid>
-      <pubDate>Sun, 01 Nov 2026 16:00:00 GMT</pubDate>
-      <description>邓紫棋第二部科幻小说《自由的你》11月6日番茄连载；第44周26本小说集中完结。</description>
     </item>
   </channel>
 </rss>
