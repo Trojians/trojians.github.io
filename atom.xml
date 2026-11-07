@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 07 Nov 2026 04:16:20 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 08:02:27 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月7日：特斯拉停产 Cybertruck</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-07/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-07/</guid>
+      <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
+      <description>特斯拉逐步停产 Cybertruck，达里奥往事曝光，Claude 防封与 DeepSeek 宕机同上热搜，另有 Ghostty 1.0 与一批新玩意。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月7日：T1 3-1挺进四强，半决赛再战BLG</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-02/</guid>
       <pubDate>Sun, 01 Nov 2026 16:00:00 GMT</pubDate>
       <description>邓紫棋第二部科幻小说《自由的你》11月6日番茄连载；第44周26本小说集中完结。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月2日：卡帕西一夜做了个“干净版 YouTube”</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-02/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-02/</guid>
-      <pubDate>Sun, 01 Nov 2026 16:00:00 GMT</pubDate>
-      <description>AI 写的代码到底审不审吵上热门，卡帕西一夜做了个“干净版 YouTube”，还有断网版搜狗输入法脚本、本地智能体 AnyModelBot 等 10 条。</description>
     </item>
   </channel>
 </rss>
