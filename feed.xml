@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Nov 2026 14:41:44 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 00:04:51 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月7日：2.8万亿参数免费开源，Kimi 掏出压箱底</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-07/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-07/</guid>
+      <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Kimi 开源 2.8 万亿参数的 K3.1 Pro；OpenAI 的 GPT-6 Cyber 一次挖出 948 个 Linux 内核漏洞；乌镇给 AI 智能体发身份证，美国禁超智能法案重回聚光灯。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月6日：土豆新书放飞后宫，《神通者》三天破百万在读</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-02/</guid>
       <pubDate>Sun, 01 Nov 2026 16:00:00 GMT</pubDate>
       <description>一场不存在的乒乓球比赛引来二十万人围观，罗技广告再惹争议，胡歌谈戒烟与健康，最冷小镇降至-28℃，《影之刃零》三天卖出四百万份。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 11月2日：苹果国行AI来了，用的却是千问</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-11-02/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-11-02/</guid>
-      <pubDate>Sun, 01 Nov 2026 16:00:00 GMT</pubDate>
-      <description>苹果 AI 中国版接入千问，DeepSeek 公布超级智能体架构，OpenAI 宣布聊天与代码共用额度，Grok 文字将加隐形水印。</description>
     </item>
   </channel>
 </rss>
