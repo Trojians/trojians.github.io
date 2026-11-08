@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 08 Nov 2026 04:03:11 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 08:04:30 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月8日：Cursor 扩展遭投毒，五千人中招</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-08/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-08/</guid>
+      <pubDate>Sat, 07 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Cursor 扩展遭假更新投毒、微软研究院 AI 前沿组落幕；“学编程还有没有必要”和“卖软件是不是伪命题”两场大讨论吵上热榜。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月8日：最后一位开国将军走了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-03/</guid>
       <pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate>
       <description>10月起点新增万订小说只有7本，连续三个月个位数；番茄创作者大会晒出年轻作者与改编增长，另有《帐中香》抄袭争议待解。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月3日：Claude 10 分钟搓出个练题站</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-03/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-03/</guid>
-      <pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate>
-      <description>Claude 十分钟搓出练题站、权重读写改进模型，另有无人机上门检查与县城 AI 落差讨论等 11 条极客动态。</description>
     </item>
   </channel>
 </rss>
