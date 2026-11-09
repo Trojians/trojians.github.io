@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 09 Nov 2026 04:05:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 08:07:07 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月9日：高盛撤下 Claude Code</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-09/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-09/</guid>
+      <pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate>
+      <description>高盛把 Claude Code 从交易员手里收走，黄仁勋致信道歉；CSDN 再被热议，AI 眼镜值不值得买也有人问。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月9日：BLG 3:1 掀翻 T1，终结十三连败</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-04/</guid>
       <pubDate>Tue, 03 Nov 2026 16:00:00 GMT</pubDate>
       <description>开源阅读辟谣一则有关断更作者的去世传言；赤戟推书单439带来大明幕后黑手、遮天同人与民国争霸三本书；番茄新人完本签约新规仍在引发讨论。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月4日：Postman悄悄装AI插件引众怒</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-04/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-04/</guid>
-      <pubDate>Tue, 03 Nov 2026 16:00:00 GMT</pubDate>
-      <description>Postman 被指悄悄装 AI 插件并试图分享 API 数据，另有 Pixsolo、Daban、证书熊与 Nomi 等新工具登场。</description>
     </item>
   </channel>
 </rss>
