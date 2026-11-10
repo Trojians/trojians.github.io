@@ -5,14 +5,22 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 10 Nov 2026 00:03:34 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 04:05:01 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 11月10日：零元面馆排起百米长队</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-11-10/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-11-10/</guid>
+      <pubDate>Mon, 09 Nov 2026 16:00:00 GMT</pubDate>
+      <description>南京零元面馆每天免费送出近3000碗素面、排起百米长队，胖东来洗发水疑云、合肥地震、华为小折叠电脑与A股大肉签也上了热搜。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 11月10日：Claude新王登基，千个智能体30小时证出费马</title>
       <link>https://trojians.github.io/post/ai-zao-bao-11-10/</link>
       <guid>https://trojians.github.io/post/ai-zao-bao-11-10/</guid>
       <pubDate>Mon, 09 Nov 2026 16:00:00 GMT</pubDate>
-      <description>Anthropic 的 Claude Fable 5.2 以 65 分空降榜首，千个智能体 30 小时证出费马大定理；Meta 的 Muse Ember 十美分跑百万 token；阿里开源 3 亿参数手机模型，可离线运行。</description>
+      <description>一夜之间，AI 圈连放两颗重磅炸弹：Claude Fable 5.2 空降榜首，Meta 祭出史上最便宜的小模型。旗舰拼性能，小模型拼性价比，两条战线同时开打。 1. Claude Fable 5.2 登顶，千个智能体证费马 Anthropic 11 月 9 日发布 Claude Fable 5.2</description>
     </item>
 
     <item>
@@ -20,7 +28,7 @@
       <link>https://trojians.github.io/post/shu-huang-ri-bao-11-09/</link>
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-09/</guid>
       <pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate>
-      <description>被封七年的《这里有妖气》今日解封，咬火改名“此生亦要火”后等来好消息；《持械入宋》主创故事遭网文圈质疑；老鱼周一扫书四本。</description>
+      <description>被封七年的《这里有妖气》今天解封了；爆火漫剧《持械入宋》的主创故事，则在网文圈里引发了一场群嘲。 今日要闻 咬火的封神作《这里有妖气》今天正式解封。小说2018年5月上线，是当年起点泛灵异文的代表作，也让咬火拿到了那一年的十二天王。2019年网文大整改，起点灵异分类直接取消，大批灵异小说被封，它也没</description>
     </item>
 
     <item>
@@ -28,7 +36,7 @@
       <link>https://trojians.github.io/post/ji-ke-ri-bao-11-09/</link>
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-09/</guid>
       <pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate>
-      <description>高盛把 Claude Code 从交易员手里收走，黄仁勋致信道歉；CSDN 再被热议，AI 眼镜值不值得买也有人问。</description>
+      <description>今天极客圈的两件大事都跟 AI 编程有关：高盛把 Claude Code 从交易员手里收走了，黄仁勋则为私事致信全体员工道歉；国内这边，CSDN 又被挂上热榜，AI 眼镜到底值不值得买也有人认真在问。 1. V2EX 热议 《我觉得 CSDN 是彻底废了吧》（V2EX 热议 · 60 回复）：楼主的</description>
     </item>
 
     <item>
@@ -36,7 +44,7 @@
       <link>https://trojians.github.io/post/re-bang-ri-bao-11-09/</link>
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-09/</guid>
       <pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate>
-      <description>BLG 3:1 掀翻 T1 终结十三连败，大连英博雪夜逆袭夺冠，太原火灾已致 14 死，胖东来再谈赔付底线，双 11 最后一波今晚开抢。</description>
+      <description>今天的热搜一半是赛场，一半是生活：BLG 掀翻 T1 进决赛，大连英博雪夜夺冠，双 11 最后一波今晚开抢。 1. BLG 3:1 战胜 T1，挺进 S16 决赛 11 月 9 日上午，S16 半决赛，BLG 以 3:1 战胜 T1，挺进决赛。这是 LPL 队伍第一次在世界赛 BO5 里赢下 T1，</description>
     </item>
 
     <item>
@@ -44,7 +52,7 @@
       <link>https://trojians.github.io/post/ai-zao-bao-11-09/</link>
       <guid>https://trojians.github.io/post/ai-zao-bao-11-09/</guid>
       <pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate>
-      <description>DeepMind 的 AI 智能体在 RSA-1024 上找到两个弱点，Anthropic 的 IPO 估值从 2 万亿美元滑向 1 万亿出头，OpenAI 的实验室基准则给 AI 的读图能力泼了冷水。</description>
+      <description>AI 盯上了用了几十年的老加密，Anthropic 的万亿 IPO 却在缩水。今天的 AI 圈，一边加速，一边降温。 1. DeepMind 的 AI，找到了 RSA-1024 的两个弱点 11 月 6 日，谷歌 DeepMind 宣布，在人类密码学家的指导下，AI 智能体在老牌加密算法 RSA-1</description>
     </item>
 
     <item>
@@ -52,7 +60,7 @@
       <link>https://trojians.github.io/post/shu-huang-ri-bao-11-08/</link>
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-08/</guid>
       <pubDate>Sat, 07 Nov 2026 16:00:00 GMT</pubDate>
-      <description>11月首周起点月票榜出炉，《神宠供应商》领跑，《1979黄金时代》完结；江南与今何在因综艺再上热搜；赤戟11月养肥书单五本重点推荐。</description>
+      <description>11 月首周起点月票榜出炉，轻泉流响的《神宠供应商》一路领跑；睡觉会变白的《1979黄金时代》本周完结。与此同时，江南与今何在因为一档综艺再度同上热搜。 今日要闻 11 月过了一周，起点月票榜首周格局基本定型。轻泉流响的御兽文新书《神宠供应商》开局领跑并维持至今，作者为保住榜首坚持四更，本月有望实现</description>
     </item>
 
     <item>
@@ -60,7 +68,7 @@
       <link>https://trojians.github.io/post/ji-ke-ri-bao-11-08/</link>
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-08/</guid>
       <pubDate>Sat, 07 Nov 2026 16:00:00 GMT</pubDate>
-      <description>Cursor 扩展遭假更新投毒、微软研究院 AI 前沿组落幕；“学编程还有没有必要”和“卖软件是不是伪命题”两场大讨论吵上热榜。</description>
+      <description>Cursor 扩展遭假更新投毒、微软研究院的 AI 前沿组落幕；国内这边，“学编程还有没有必要”和“卖软件是不是伪命题”两场大讨论吵上了热榜，顺手还有 FinalShell 平替和手机照片无损搬家的新玩意。 一、V2EX 热议 《现在还有必要花大量时间学习编程吗？》（职场话题 · 39 回复）AI </description>
     </item>
 
     <item>
@@ -68,7 +76,7 @@
       <link>https://trojians.github.io/post/re-bang-ri-bao-11-08/</link>
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-08/</guid>
       <pubDate>Sat, 07 Nov 2026 16:00:00 GMT</pubDate>
-      <description>最后一位开国将军王扶之逝世，IG 0-3 止步四强；多地中小学延迟到校，秦皇岛暴雪、雪后长城同上热搜。</description>
+      <description>今天的热榜从告别开始：最后一位开国将军走完一个多世纪的人生，IG 的 4% 奇迹之旅画上句号；多地孩子终于能多睡一会儿，一场大雪让长城和秦皇岛同时上了榜。 1. 最后一位开国将军王扶之逝世，享年 104 岁 据新华社报道，11 月 7 日，原乌鲁木齐军区副司令员王扶之病逝于辽宁大连，享年 104 岁</description>
     </item>
 
     <item>
@@ -76,7 +84,7 @@
       <link>https://trojians.github.io/post/ai-zao-bao-11-08/</link>
       <guid>https://trojians.github.io/post/ai-zao-bao-11-08/</guid>
       <pubDate>Sat, 07 Nov 2026 16:00:00 GMT</pubDate>
-      <description>OpenAI 首笔 110 亿美元到账、估值 1.25 万亿美元却没募满；Inkling 2 Small 以 31 分杀进开源榜；谷歌把 AI 视频拉到 15 秒还降价三成；METR 称 Anthropic 模型进步速度翻倍。</description>
+      <description>OpenAI 拿到 110 亿美元却没募满，谷歌把 AI 视频拉长到 15 秒。 1. OpenAI 拿到 110 亿美元，估值 1.25 万亿美元 据彭博社和路透社 11 月 6 日报道，OpenAI 新一轮融资的首笔 110 亿美元已经到账，公司估值 1.25 万亿美元。本轮原定募 300 亿美</description>
     </item>
 
     <item>
@@ -84,7 +92,7 @@
       <link>https://trojians.github.io/post/shu-huang-ri-bao-11-07/</link>
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-07/</guid>
       <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
-      <description>《全职法师》作者“乱”弃用白金笔名改回“鱼的天空”，南希北庆新书《大宋第一讼棍》上线，开源阅读放出 2.2 万字年度仙侠盘点。</description>
+      <description>今天网文圈最大的消息，是《全职法师》作者、白金大神“乱”弃用了白金笔名，重新启用十三年没用过的老笔名“鱼的天空”。与此同时，开源阅读放出了 2.2 万字的 2026 年度武侠仙侠玄幻盘点，仙侠这一年的冷暖，都在里头了。 今日要闻 “乱”改回“鱼的天空”。《全职法师》作者、白金大神“乱”弃用了这个白金</description>
     </item>
 
     <item>
@@ -92,7 +100,7 @@
       <link>https://trojians.github.io/post/ji-ke-ri-bao-11-07/</link>
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-07/</guid>
       <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
-      <description>特斯拉逐步停产 Cybertruck，达里奥往事曝光，Claude 防封与 DeepSeek 宕机同上热搜，另有 Ghostty 1.0 与一批新玩意。</description>
+      <description>特斯拉要给 Cybertruck 画句号了，Anthropic 掌门人的往事也罕见曝光；国内这边，Claude 防封、Gemini 戒断、DeepSeek 宕机轮番上热搜，终端、桌面小工具和额度管理的新玩意也没闲着。 一、V2EX 热议 《今天离职谈话领导说他心寒了》（职场话题 · 45 回复）楼主</description>
     </item>
 
     <item>
@@ -100,7 +108,7 @@
       <link>https://trojians.github.io/post/re-bang-ri-bao-11-07/</link>
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-07/</guid>
       <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
-      <description>T1 3-1 挺进四强约战 BLG，立冬饺子花样翻新，误转账、寺庙金银、药企赔偿三起社会新闻同上热搜。</description>
+      <description>今天的热搜一半电竞、一半人间烟火：T1 3-1 拿下 KC，半决赛再战 BLG；今天立冬，超长饺子刷屏；误转账、寺庙金银、药企赔偿同上热搜。 1. T1 3-1 击败 KC，半决赛再战 BLG S16 全球总决赛八强赛，T1 3-1 战胜 KC，连续 6 年晋级四强。T1 先下两局，第三局被 KC </description>
     </item>
 
     <item>
@@ -108,7 +116,7 @@
       <link>https://trojians.github.io/post/ai-zao-bao-11-07/</link>
       <guid>https://trojians.github.io/post/ai-zao-bao-11-07/</guid>
       <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
-      <description>Kimi 开源 2.8 万亿参数的 K3.1 Pro；OpenAI 的 GPT-6 Cyber 一次挖出 948 个 Linux 内核漏洞；乌镇给 AI 智能体发身份证，美国禁超智能法案重回聚光灯。</description>
+      <description>Kimi 免费开源 2.8 万亿参数的压箱底模型；OpenAI 的安全模型一次挖出 948 个 Linux 内核漏洞；乌镇给智能体办&quot;身份证&quot;，美国争论要不要给超级智能&quot;判刑&quot;。1. Kimi 开源：2.8 万亿参数免费拿11 月 5 日，月之暗面在 Hugging Face 放出 Kimi K3.</description>
     </item>
 
     <item>
@@ -116,7 +124,7 @@
       <link>https://trojians.github.io/post/shu-huang-ri-bao-11-06/</link>
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-06/</guid>
       <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
-      <description>天蚕土豆新书《神通者》回归后宫、番茄征稿活动被群嘲，11月第一本万订诞生。</description>
+      <description>今天的网文圈，最大消息属于天蚕土豆：新书《神通者》放话回归后宫，电子版权早已卖给番茄；番茄刚推的大学生征稿活动，却因为奖金太抠被群嘲；好消息是，11 月第一本万订也在今天诞生了。 今日要闻 天蚕土豆最近在直播中表示，新书《神通者》打算放飞一下自我，重新回归后宫文。熟悉土豆的老读者都知道，后宫是他的看</description>
     </item>
 
     <item>
@@ -124,7 +132,7 @@
       <link>https://trojians.github.io/post/ji-ke-ri-bao-11-06/</link>
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-06/</guid>
       <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
-      <description>OpenSSH 曝出十年老洞、Claude Code 被指泄露用户邮箱，微信输入法敏感词库遭提取，另有墨水屏阅读器、小游戏复盘等 10 条极客动态。</description>
+      <description>今天的极客圈被安全话题刷屏：一个藏了十年的 OpenSSH 漏洞、一次 Claude Code 的邮箱泄露，再加上微信输入法的敏感词库被扒了个底朝天，剩下的则是墨水屏阅读器、小游戏复盘这些让人手痒的新玩意。 一、V2EX 热议 《微信输入法敏感词提取器》（信息安全 · 105 回复）：楼主发现微信输</description>
     </item>
 
     <item>
@@ -132,7 +140,7 @@
       <link>https://trojians.github.io/post/re-bang-ri-bao-11-06/</link>
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-06/</guid>
       <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
-      <description>2027年放假安排公布、春节连休9天，美国中期选举民主党夺回两院，大众在华召回超58万辆，内存合约价创历史新高，BLG横扫DK进S16四强。</description>
+      <description>今天的热搜都在看明年：2027年放假安排公布，春节能连休9天；美国中期选举尘埃落定；大众召回超58万辆车；内存涨价还没到头；电竞圈里，LPL两支队都进了S16四强。 1. 2027放假安排公布：春节连休9天，端午中秋只放1天 国务院办公厅11月5日公布2027年部分节假日安排。春节从2月5日（除夕、</description>
     </item>
 
     <item>
@@ -140,7 +148,7 @@
       <link>https://trojians.github.io/post/ai-zao-bao-11-06/</link>
       <guid>https://trojians.github.io/post/ai-zao-bao-11-06/</guid>
       <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
-      <description>OpenAI 发布 GPT-5.2，70.9% 的专业任务胜过人类专家；谷歌视频生成拉长到 15 秒，还推出了首个关键级安全模型。</description>
+      <description>一夜之间，三家大厂齐齐亮牌：OpenAI 拿出 GPT-5.2 回应 Gemini 3 Pro 的压力，谷歌把视频生成拉长到 15 秒，Anthropic 摊开了 170 亿美元一个季度的账本。 1. GPT-5.2 发布：70.9% 的任务胜过人类专家 OpenAI 在 11 月 5 日发布了 G</description>
     </item>
 
     <item>
@@ -148,7 +156,7 @@
       <link>https://trojians.github.io/post/shu-huang-ri-bao-11-05/</link>
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-05/</guid>
       <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <description>睡觉会变白《1979黄金时代》完结，均订破6.5万，完结感言一句&quot;有缘再见&quot;引人担忧；11月第一本万订诞生，另有两本小说完结。</description>
+      <description>今天网文圈最大的消息，来自一位白金大神——睡觉会变白的《1979黄金时代》完结了。完结感言里一句&quot;以后还写不写不清楚，有缘再见吧&quot;，让不少读者开始担心，她会不会就此封笔。 今日要闻 睡觉会变白《1979黄金时代》完结，均订破 6.5 万，是她写书十二年来成绩最好的一本。但这本书也让她付出了不小的代价</description>
     </item>
 
     <item>
@@ -156,15 +164,7 @@
       <link>https://trojians.github.io/post/ji-ke-ri-bao-11-05/</link>
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-05/</guid>
       <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <description>小米 HyperOS 3 被曝隐私采集引热议，35 岁前端生日刚过就被裁；另有全球电台随机听、AI 翻出的 40 年 PHP 老漏洞。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 11月5日：进博会今日开幕，金价又坐过山车</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-11-05/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-11-05/</guid>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <description>进博会今日开幕、金价大涨又现追高亏损案例，另有马兴瑞案被提起公诉、偷拍黑产调查与iPhone Duo转售行情降温。</description>
+      <description>今天的极客圈，隐私和饭碗一起上了热搜：小米被曝系统组件涉嫌采集隐私，35 岁的前端在生日刚过完就被裁员；另一边，全球 3.5 万个电台随机听、AI 找出的 40 年老漏洞，都在提醒我们——旧东西正在被新工具重新翻出来。 一、V2EX 热议 《能不能给人留点隐私》（V2EX 热议 · 107 回复）楼</description>
     </item>
   </channel>
 </rss>
