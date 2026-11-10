@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 10 Nov 2026 04:05:01 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 08:03:42 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月10日：Claude 新模型登场，Gemini 偷看网盘</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-10/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-10/</guid>
+      <pubDate>Mon, 09 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Anthropic 新模型 Fable 5.2 登场，Gemini 被曝把用户网盘文件交给人工标注；外企外包成大龄程序员避风港，ADM、Aid、理相、PadNote 四款新玩意亮相。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月10日：零元面馆排起百米长队</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-05/</guid>
       <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
       <description>今天网文圈最大的消息，来自一位白金大神——睡觉会变白的《1979黄金时代》完结了。完结感言里一句&quot;以后还写不写不清楚，有缘再见吧&quot;，让不少读者开始担心，她会不会就此封笔。 今日要闻 睡觉会变白《1979黄金时代》完结，均订破 6.5 万，是她写书十二年来成绩最好的一本。但这本书也让她付出了不小的代价</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月5日：小米隐私风波，35岁又成了一道坎</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-05/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-05/</guid>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <description>今天的极客圈，隐私和饭碗一起上了热搜：小米被曝系统组件涉嫌采集隐私，35 岁的前端在生日刚过完就被裁员；另一边，全球 3.5 万个电台随机听、AI 找出的 40 年老漏洞，都在提醒我们——旧东西正在被新工具重新翻出来。 一、V2EX 热议 《能不能给人留点隐私》（V2EX 热议 · 107 回复）楼</description>
     </item>
   </channel>
 </rss>
