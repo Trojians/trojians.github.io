@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 11 Nov 2026 08:04:09 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 12:03:09 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 11月11日：诡秘反超新书登月票榜第七</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-11/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-11/</guid>
+      <pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate>
+      <description>双十一五折返场搅动榜单，《诡秘之主》反超乌贼新书登月票榜第七；太一生水开新书，快餐店“复活”，赤戟推书单440送到。</description>
+    </item>
 
     <item>
       <title>极客日报 · 11月11日：Claude 封号又收紧，网友还在抢着用</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-11-07/</guid>
       <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
       <description>Kimi 免费开源 2.8 万亿参数的压箱底模型；OpenAI 的安全模型一次挖出 948 个 Linux 内核漏洞；乌镇给智能体办&quot;身份证&quot;，美国争论要不要给超级智能&quot;判刑&quot;。1. Kimi 开源：2.8 万亿参数免费拿11 月 5 日，月之暗面在 Hugging Face 放出 Kimi K3.</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 11月6日：土豆新书放飞后宫，《神通者》三天破百万在读</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-06/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-06/</guid>
-      <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
-      <description>今天的网文圈，最大消息属于天蚕土豆：新书《神通者》放话回归后宫，电子版权早已卖给番茄；番茄刚推的大学生征稿活动，却因为奖金太抠被群嘲；好消息是，11 月第一本万订也在今天诞生了。 今日要闻 天蚕土豆最近在直播中表示，新书《神通者》打算放飞一下自我，重新回归后宫文。熟悉土豆的老读者都知道，后宫是他的看</description>
     </item>
   </channel>
 </rss>
