@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 11 Nov 2026 06:13:29 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 08:04:09 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月11日：Claude 封号又收紧，网友还在抢着用</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-11/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-11/</guid>
+      <pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Claude 封号又收紧却越封越火，32 岁后端拿 N+1 离职，AI 写代码与智能家居断网之争也上了热榜。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月11日：冠军车再拍目标500万起，取消外卖是摆拍</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-06/</guid>
       <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
       <description>今天的网文圈，最大消息属于天蚕土豆：新书《神通者》放话回归后宫，电子版权早已卖给番茄；番茄刚推的大学生征稿活动，却因为奖金太抠被群嘲；好消息是，11 月第一本万订也在今天诞生了。 今日要闻 天蚕土豆最近在直播中表示，新书《神通者》打算放飞一下自我，重新回归后宫文。熟悉土豆的老读者都知道，后宫是他的看</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月6日：超长密码竟能登入 OpenSSH，十年老洞曝光</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-06/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-06/</guid>
-      <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
-      <description>今天的极客圈被安全话题刷屏：一个藏了十年的 OpenSSH 漏洞、一次 Claude Code 的邮箱泄露，再加上微信输入法的敏感词库被扒了个底朝天，剩下的则是墨水屏阅读器、小游戏复盘这些让人手痒的新玩意。 一、V2EX 热议 《微信输入法敏感词提取器》（信息安全 · 105 回复）：楼主发现微信输</description>
     </item>
   </channel>
 </rss>
