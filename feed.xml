@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 11 Nov 2026 14:14:37 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 00:00:08 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月12日：黄仁勋去留今天见分晓</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-12/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-12/</guid>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <description>英伟达董事会最快今天决定黄仁勋去留；谷歌发布毫秒级决策模型，Runway 开源机器人模型，DeepMind 推出新一代基因组模型。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月11日：诡秘反超新书登月票榜第七</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-07/</guid>
       <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
       <description>今天的热搜一半电竞、一半人间烟火：T1 3-1 拿下 KC，半决赛再战 BLG；今天立冬，超长饺子刷屏；误转账、寺庙金银、药企赔偿同上热搜。 1. T1 3-1 击败 KC，半决赛再战 BLG S16 全球总决赛八强赛，T1 3-1 战胜 KC，连续 6 年晋级四强。T1 先下两局，第三局被 KC </description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 11月7日：2.8万亿参数免费开源，Kimi 掏出压箱底</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-11-07/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-11-07/</guid>
-      <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
-      <description>Kimi 免费开源 2.8 万亿参数的压箱底模型；OpenAI 的安全模型一次挖出 948 个 Linux 内核漏洞；乌镇给智能体办&quot;身份证&quot;，美国争论要不要给超级智能&quot;判刑&quot;。1. Kimi 开源：2.8 万亿参数免费拿11 月 5 日，月之暗面在 Hugging Face 放出 Kimi K3.</description>
     </item>
   </channel>
 </rss>
