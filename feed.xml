@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 12 Nov 2026 08:02:18 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 12:04:14 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 11月12日：赵丽颖为AI换脸起诉红果</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-12/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-12/</guid>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <description>赵丽颖因 AI 换脸起诉红果短剧，11 月 10 日已开庭；番茄签约新规走到 11 月掉级窗口；快餐店明确恢复更新节奏。</description>
+    </item>
 
     <item>
       <title>极客日报 · 11月12日：Python 之禅作者去世</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-11-08/</guid>
       <pubDate>Sat, 07 Nov 2026 16:00:00 GMT</pubDate>
       <description>OpenAI 拿到 110 亿美元却没募满，谷歌把 AI 视频拉长到 15 秒。 1. OpenAI 拿到 110 亿美元，估值 1.25 万亿美元 据彭博社和路透社 11 月 6 日报道，OpenAI 新一轮融资的首笔 110 亿美元已经到账，公司估值 1.25 万亿美元。本轮原定募 300 亿美</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 11月7日：白金大神弃用笔名，年度仙侠盘点出炉</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-07/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-07/</guid>
-      <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
-      <description>今天网文圈最大的消息，是《全职法师》作者、白金大神“乱”弃用了白金笔名，重新启用十三年没用过的老笔名“鱼的天空”。与此同时，开源阅读放出了 2.2 万字的 2026 年度武侠仙侠玄幻盘点，仙侠这一年的冷暖，都在里头了。 今日要闻 “乱”改回“鱼的天空”。《全职法师》作者、白金大神“乱”弃用了这个白金</description>
     </item>
   </channel>
 </rss>
