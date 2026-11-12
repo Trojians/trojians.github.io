@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 12 Nov 2026 04:04:01 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 08:02:18 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月12日：Python 之禅作者去世</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-12/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-12/</guid>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Tim Peters 去世、腾讯裁员传闻、大龄程序员的双重夹击，另有 Mac 刘海小岛、X 净空扩展、IDM 开源平替等新玩意。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月12日：油价今晚大降，加满一箱省十几块</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-07/</guid>
       <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
       <description>今天网文圈最大的消息，是《全职法师》作者、白金大神“乱”弃用了白金笔名，重新启用十三年没用过的老笔名“鱼的天空”。与此同时，开源阅读放出了 2.2 万字的 2026 年度武侠仙侠玄幻盘点，仙侠这一年的冷暖，都在里头了。 今日要闻 “乱”改回“鱼的天空”。《全职法师》作者、白金大神“乱”弃用了这个白金</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月7日：特斯拉停产 Cybertruck</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-07/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-07/</guid>
-      <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
-      <description>特斯拉要给 Cybertruck 画句号了，Anthropic 掌门人的往事也罕见曝光；国内这边，Claude 防封、Gemini 戒断、DeepSeek 宕机轮番上热搜，终端、桌面小工具和额度管理的新玩意也没闲着。 一、V2EX 热议 《今天离职谈话领导说他心寒了》（职场话题 · 45 回复）楼主</description>
     </item>
   </channel>
 </rss>
