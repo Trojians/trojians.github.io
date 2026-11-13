@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 12 Nov 2026 14:20:58 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 00:16:35 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月13日：黄仁勋走了，谷歌却连发新模型</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-13/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-13/</guid>
+      <pubDate>Thu, 12 Nov 2026 16:00:00 GMT</pubDate>
+      <description>黄仁勋辞任英伟达 CEO，谷歌发布 Gemini 4 Hydrogen，Anthropic IPO 路演火爆。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月12日：赵丽颖为AI换脸起诉红果</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-08/</guid>
       <pubDate>Sat, 07 Nov 2026 16:00:00 GMT</pubDate>
       <description>今天的热榜从告别开始：最后一位开国将军走完一个多世纪的人生，IG 的 4% 奇迹之旅画上句号；多地孩子终于能多睡一会儿，一场大雪让长城和秦皇岛同时上了榜。 1. 最后一位开国将军王扶之逝世，享年 104 岁 据新华社报道，11 月 7 日，原乌鲁木齐军区副司令员王扶之病逝于辽宁大连，享年 104 岁</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 11月8日：OpenAI 1.25万亿美元估值，照样没募满</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-11-08/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-11-08/</guid>
-      <pubDate>Sat, 07 Nov 2026 16:00:00 GMT</pubDate>
-      <description>OpenAI 拿到 110 亿美元却没募满，谷歌把 AI 视频拉长到 15 秒。 1. OpenAI 拿到 110 亿美元，估值 1.25 万亿美元 据彭博社和路透社 11 月 6 日报道，OpenAI 新一轮融资的首笔 110 亿美元已经到账，公司估值 1.25 万亿美元。本轮原定募 300 亿美</description>
     </item>
   </channel>
 </rss>
