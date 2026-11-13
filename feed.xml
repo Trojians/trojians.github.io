@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 13 Nov 2026 08:02:39 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 12:06:28 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 11月13日：番茄砸10亿扶持新故事</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-13/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-13/</guid>
+      <pubDate>Thu, 12 Nov 2026 16:00:00 GMT</pubDate>
+      <description>番茄宣布2027年投超10亿扶持新故事，《神通者》五日破千万；忘语新书《大梦主》已在起点上线。</description>
+    </item>
 
     <item>
       <title>极客日报 · 11月13日：皮衣黄辞职，英伟达一夜变天</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-11-09/</guid>
       <pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate>
       <description>AI 盯上了用了几十年的老加密，Anthropic 的万亿 IPO 却在缩水。今天的 AI 圈，一边加速，一边降温。 1. DeepMind 的 AI，找到了 RSA-1024 的两个弱点 11 月 6 日，谷歌 DeepMind 宣布，在人类密码学家的指导下，AI 智能体在老牌加密算法 RSA-1</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 11月8日：神宠供应商登顶，江南今何在再上热搜</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-08/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-08/</guid>
-      <pubDate>Sat, 07 Nov 2026 16:00:00 GMT</pubDate>
-      <description>11 月首周起点月票榜出炉，轻泉流响的《神宠供应商》一路领跑；睡觉会变白的《1979黄金时代》本周完结。与此同时，江南与今何在因为一档综艺再度同上热搜。 今日要闻 11 月过了一周，起点月票榜首周格局基本定型。轻泉流响的御兽文新书《神宠供应商》开局领跑并维持至今，作者为保住榜首坚持四更，本月有望实现</description>
     </item>
   </channel>
 </rss>
