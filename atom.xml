@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 13 Nov 2026 04:01:48 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 08:02:39 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月13日：皮衣黄辞职，英伟达一夜变天</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-13/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-13/</guid>
+      <pubDate>Thu, 12 Nov 2026 16:00:00 GMT</pubDate>
+      <description>皮衣黄辞职引爆全网，Anthropic 递交 IPO；另有 Glint 多屏协同、DecHex 计算器与一则 2 万元反诈提醒。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月13日：微软全球宕机，贺岁片8天只卖4455元</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-08/</guid>
       <pubDate>Sat, 07 Nov 2026 16:00:00 GMT</pubDate>
       <description>11 月首周起点月票榜出炉，轻泉流响的《神宠供应商》一路领跑；睡觉会变白的《1979黄金时代》本周完结。与此同时，江南与今何在因为一档综艺再度同上热搜。 今日要闻 11 月过了一周，起点月票榜首周格局基本定型。轻泉流响的御兽文新书《神宠供应商》开局领跑并维持至今，作者为保住榜首坚持四更，本月有望实现</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月8日：Cursor 扩展遭投毒，五千人中招</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-08/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-08/</guid>
-      <pubDate>Sat, 07 Nov 2026 16:00:00 GMT</pubDate>
-      <description>Cursor 扩展遭假更新投毒、微软研究院的 AI 前沿组落幕；国内这边，“学编程还有没有必要”和“卖软件是不是伪命题”两场大讨论吵上了热榜，顺手还有 FinalShell 平替和手机照片无损搬家的新玩意。 一、V2EX 热议 《现在还有必要花大量时间学习编程吗？》（职场话题 · 39 回复）AI </description>
     </item>
   </channel>
 </rss>
