@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 13 Nov 2026 14:12:35 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 00:05:47 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月14日：谷歌新模型跑赢老大哥，AI 开始替你花钱</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-14/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-14/</guid>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <description>谷歌 Gemini 4 Hydrogen 跑赢自家大模型，OpenAI 推出 ChatGPT Wallet 让智能体代购，英伟达辞职余波冲击 AI 创业融资，Anthropic IPO 路演收尾。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月13日：番茄砸10亿扶持新故事</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-09/</guid>
       <pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate>
       <description>今天的热搜一半是赛场，一半是生活：BLG 掀翻 T1 进决赛，大连英博雪夜夺冠，双 11 最后一波今晚开抢。 1. BLG 3:1 战胜 T1，挺进 S16 决赛 11 月 9 日上午，S16 半决赛，BLG 以 3:1 战胜 T1，挺进决赛。这是 LPL 队伍第一次在世界赛 BO5 里赢下 T1，</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 11月9日：AI 破译老加密，效率翻 1600 倍</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-11-09/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-11-09/</guid>
-      <pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate>
-      <description>AI 盯上了用了几十年的老加密，Anthropic 的万亿 IPO 却在缩水。今天的 AI 圈，一边加速，一边降温。 1. DeepMind 的 AI，找到了 RSA-1024 的两个弱点 11 月 6 日，谷歌 DeepMind 宣布，在人类密码学家的指导下，AI 智能体在老牌加密算法 RSA-1</description>
     </item>
   </channel>
 </rss>
