@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 14 Nov 2026 04:09:46 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 08:02:11 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月14日：酷态科充电头暴雷，死机变大电压</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-14/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-14/</guid>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <description>酷态科旗舰充电头被曝死机锁大电压，Claude 出走潮遇上 Gemini，另有 iPhone 上的 agent 与一份论坛晒账本。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月14日：911后第二次，全美航班一度全停</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-09/</guid>
       <pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate>
       <description>被封七年的《这里有妖气》今天解封了；爆火漫剧《持械入宋》的主创故事，则在网文圈里引发了一场群嘲。 今日要闻 咬火的封神作《这里有妖气》今天正式解封。小说2018年5月上线，是当年起点泛灵异文的代表作，也让咬火拿到了那一年的十二天王。2019年网文大整改，起点灵异分类直接取消，大批灵异小说被封，它也没</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月9日：高盛撤下 Claude Code</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-09/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-09/</guid>
-      <pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate>
-      <description>今天极客圈的两件大事都跟 AI 编程有关：高盛把 Claude Code 从交易员手里收走了，黄仁勋则为私事致信全体员工道歉；国内这边，CSDN 又被挂上热榜，AI 眼镜到底值不值得买也有人认真在问。 1. V2EX 热议 《我觉得 CSDN 是彻底废了吧》（V2EX 热议 · 60 回复）：楼主的</description>
     </item>
   </channel>
 </rss>
