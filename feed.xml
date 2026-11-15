@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 15 Nov 2026 04:01:24 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 08:08:19 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月15日：星舰15号成功回收</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-15/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-15/</guid>
+      <pubDate>Sat, 14 Nov 2026 16:00:00 GMT</pubDate>
+      <description>星舰 15 号成功回收，V2EX 楼中楼换上 6 种新样式，AI 编程正在把程序员推向产品经理。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月15日：BLG一穿四夺冠，LPL时隔五年再登顶</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-10/</guid>
       <pubDate>Mon, 09 Nov 2026 16:00:00 GMT</pubDate>
       <description>被封七年的《这里有妖气》解封了，但后续比解封本身更值得说：编辑整改了一两个月，几十万字被删掉，复更最快也要等到明年。再看刺猬猫晒出的收入账，今天这期的消息都有一个共同点——回来了，但没那么简单。 今日要闻 《这里有妖气》解封之后，复更还得等。这本书是 2018 年真正的王者：上架 14 天均订过万，</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月10日：Claude 新模型登场，Gemini 偷看网盘</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-10/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-10/</guid>
-      <pubDate>Mon, 09 Nov 2026 16:00:00 GMT</pubDate>
-      <description>今天的极客日报看点不少：Anthropic 新模型 Fable 5.2 一上线就冲上 Hacker News 热榜，Gemini 却被曝把用户的网盘文件交给人工标注；国内这边，外企外包成了大龄程序员的避风港，换手机、减肥、换城市的讨论也一样热闹。 一、V2EX 热议 《外企外包也许是大龄失业人员的最</description>
     </item>
   </channel>
 </rss>
