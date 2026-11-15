@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 14 Nov 2026 14:14:22 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 00:00:06 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月15日：马斯克带头要黄仁勋回来</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-15/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-15/</guid>
+      <pubDate>Sat, 14 Nov 2026 16:00:00 GMT</pubDate>
+      <description>11 万人联署要黄仁勋回来，Anthropic 在 IPO 前夜坦言算力是最深的两难，美联储把 AI 列为金融头号风险，Cursor 承认插件市场投毒。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月14日：当年明月17年后出新书</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-10/</guid>
       <pubDate>Mon, 09 Nov 2026 16:00:00 GMT</pubDate>
       <description>一碗不要钱的素面排起百米长队，一瓶洗发水引来跨海调查。今天的热搜，民生话题最出圈。 1. 零元面馆每天出面上千碗，排起百米长队 南京两家&quot;零元面馆&quot;火了：不设门槛，排队领一碗素面，两家店每天合计供应近3000碗，队伍最长达百米。 两家店位于江宁殷巷和雨花台岱山，殷巷店10月8日开业。老板张先生说，开</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 11月10日：Claude新王登基，千个智能体30小时证出费马</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-11-10/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-11-10/</guid>
-      <pubDate>Mon, 09 Nov 2026 16:00:00 GMT</pubDate>
-      <description>一夜之间，AI 圈连放两颗重磅炸弹：Claude Fable 5.2 空降榜首，Meta 祭出史上最便宜的小模型。旗舰拼性能，小模型拼性价比，两条战线同时开打。 1. Claude Fable 5.2 登顶，千个智能体证费马 Anthropic 11 月 9 日发布 Claude Fable 5.2</description>
     </item>
   </channel>
 </rss>
