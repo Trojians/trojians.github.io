@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 16 Nov 2026 04:07:28 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 08:02:20 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月16日：国模之争，DeepSeek 被喊梁圣</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-16/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-16/</guid>
+      <pubDate>Sun, 15 Nov 2026 16:00:00 GMT</pubDate>
+      <description>国模之争吵翻 V2EX：DeepSeek Harness 被喊梁圣；Qwen4-Max 登上 HN，Claude Code 修起了 1994 年的老吉普。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月16日：深圳本周迎APEC，世界目光聚焦中国</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-11/</guid>
       <pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate>
       <description>双十一五折返场搅动榜单，《诡秘之主》反超乌贼新书登月票榜第七；太一生水开新书，快餐店“复活”，赤戟推书单440送到。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月11日：Claude 封号又收紧，网友还在抢着用</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-11/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-11/</guid>
-      <pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate>
-      <description>Claude 封号又收紧却越封越火，32 岁后端拿 N+1 离职，AI 写代码与智能家居断网之争也上了热榜。</description>
     </item>
   </channel>
 </rss>
