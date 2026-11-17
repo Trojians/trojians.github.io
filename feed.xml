@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 17 Nov 2026 00:00:54 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 04:05:09 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 11月17日：三国元首周四深圳首会</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-11-17/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-11-17/</guid>
+      <pubDate>Mon, 16 Nov 2026 16:00:00 GMT</pubDate>
+      <description>三国元首周四深圳首会；羽绒服、显卡、金价齐上热搜，钱包和大场面都值得一看。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 11月17日：阿里旗舰首度闭源，加州把 OpenAI 告上法庭</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-12/</guid>
       <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
       <description>Tim Peters 去世、腾讯裁员传闻、大龄程序员的双重夹击，另有 Mac 刘海小岛、X 净空扩展、IDM 开源平替等新玩意。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 11月12日：油价今晚大降，加满一箱省十几块</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-11-12/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-11-12/</guid>
-      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
-      <description>油价今晚大降，千元机退场逼出二手潮；8岁女孩被老师戒尺打伤，警方已介入；一个梗逼得小学生想改名；&quot;车辆召回&quot;短信是骗局。</description>
     </item>
   </channel>
 </rss>
