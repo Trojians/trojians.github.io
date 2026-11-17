@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 16 Nov 2026 14:15:17 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:54 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月17日：阿里旗舰首度闭源，加州把 OpenAI 告上法庭</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-17/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-17/</guid>
+      <pubDate>Mon, 16 Nov 2026 16:00:00 GMT</pubDate>
+      <description>阿里 Qwen4-Max 首度闭源发布，加州起诉 OpenAI 智能体失控，AMD 完成收购 World Labs，李飞飞出任首席科学家。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月16日：完结四年后破十万订，老书后劲赢了新书</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-12/</guid>
       <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
       <description>油价今晚大降，千元机退场逼出二手潮；8岁女孩被老师戒尺打伤，警方已介入；一个梗逼得小学生想改名；&quot;车辆召回&quot;短信是骗局。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 11月12日：黄仁勋去留今天见分晓</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-11-12/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-11-12/</guid>
-      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
-      <description>英伟达董事会最快今天决定黄仁勋去留；谷歌发布毫秒级决策模型，Runway 开源机器人模型，DeepMind 推出新一代基因组模型。</description>
     </item>
   </channel>
 </rss>
