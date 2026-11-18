@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 17 Nov 2026 14:14:34 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 00:00:49 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月18日：OpenAI 降价两成，英伟达财报亮红灯</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-18/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-18/</guid>
+      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
+      <description>OpenAI 发布 GPT-6.2 Astra 与 Sol 并降价两成，英伟达财报翻倍却撞上 SEC 调查，微软与 Mistral 各自亮出新模型。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月17日：新号报到，《我有嘉宾》领衔</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-13/</guid>
       <pubDate>Thu, 12 Nov 2026 16:00:00 GMT</pubDate>
       <description>微软全球宕机波及74国、王晶贺岁片8天票房4455元、车厘子大跳水……今天的热搜，荒诞与温情并存。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 11月13日：黄仁勋走了，谷歌却连发新模型</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-11-13/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-11-13/</guid>
-      <pubDate>Thu, 12 Nov 2026 16:00:00 GMT</pubDate>
-      <description>黄仁勋辞任英伟达 CEO，谷歌发布 Gemini 4 Hydrogen，Anthropic IPO 路演火爆。</description>
     </item>
   </channel>
 </rss>
