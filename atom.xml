@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 18 Nov 2026 08:02:47 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 12:16:01 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 11月18日：木子心完结，游方老盗开新书</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-18/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-18/</guid>
+      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
+      <description>木子心完结、游方老盗开新书，全金属弹壳十一年写下3071万字，赤戟441期三本主推一次看全。</description>
+    </item>
 
     <item>
       <title>极客日报 · 11月18日：GPT-6.2 来了，V 友实测说不好用</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-11-14/</guid>
       <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
       <description>谷歌 Gemini 4 Hydrogen 跑赢自家大模型，OpenAI 推出 ChatGPT Wallet 让智能体代购，英伟达辞职余波冲击 AI 创业融资，Anthropic IPO 路演收尾。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 11月13日：番茄砸10亿扶持新故事</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-13/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-13/</guid>
-      <pubDate>Thu, 12 Nov 2026 16:00:00 GMT</pubDate>
-      <description>《蛊真人》被换皮改写登上日本网文平台，官方声明从未授权；番茄宣布2027年投超10亿扶持新故事，巫马行、卧牛真人等大神新书扎堆上线。</description>
     </item>
   </channel>
 </rss>
