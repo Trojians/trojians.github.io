@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 19 Nov 2026 04:04:28 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 08:03:05 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月19日：Nginx 曝远程代码执行漏洞</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-19/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-19/</guid>
+      <pubDate>Wed, 18 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Nginx 曝出无需认证的远程代码执行漏洞，V2EX 热议公司全面禁止 AI Coding，GPT-6.2 口碑翻车，另有数学辅导工具、Typst 简历引擎等新玩意。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月19日：中俄美元首首次同框会晤</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-14/</guid>
       <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
       <description>当年明月17年后出新书《权力背后的张居正》；起点本月第四本万订诞生，八本精品却因AI撤榜。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月14日：酷态科充电头暴雷，死机变大电压</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-14/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-14/</guid>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <description>酷态科旗舰充电头被曝死机锁大电压，Claude 出走潮遇上 Gemini，另有 iPhone 上的 agent 与一份论坛晒账本。</description>
     </item>
   </channel>
 </rss>
