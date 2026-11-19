@@ -521,6 +521,19 @@
       },
       "song": "懸日 · Hebe Tien",
       "snow": true
+    },
+    {
+      "date": "2026-11-19",
+      "minTemp": -12.5,
+      "maxTemp": -8.7,
+      "titles": {
+        "ai": "AI 早报 · 11月19日：谷歌泄密半天就官宣，Anthropic 今日上市",
+        "rebang": "热榜日报 · 11月19日：中俄美元首首次同框会晤",
+        "jike": "极客日报 · 11月19日：Nginx 曝远程代码执行漏洞",
+        "shuhuang": "书荒日报 · 11月19日：《超魔术士》完结，九千五均订差一步万订"
+      },
+      "song": "外婆桥 · Ren Ran",
+      "snow": false
     }
   ],
   "firstSnow": "2026-10-27",
