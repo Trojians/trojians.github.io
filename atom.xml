@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 19 Nov 2026 08:03:05 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 12:03:18 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 11月19日：《超魔术士》完结，九千五均订差一步万订</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-19/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-19/</guid>
+      <pubDate>Wed, 18 Nov 2026 16:00:00 GMT</pubDate>
+      <description>《超魔术士》完结，九千五均订差一步万订；跃千愁被熊孩子吵到请假；两本另类魔修文与十本爽文盘点。</description>
+    </item>
 
     <item>
       <title>极客日报 · 11月19日：Nginx 曝远程代码执行漏洞</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-11-15/</guid>
       <pubDate>Sat, 14 Nov 2026 16:00:00 GMT</pubDate>
       <description>11 万人联署要黄仁勋回来，Anthropic 在 IPO 前夜坦言算力是最深的两难，美联储把 AI 列为金融头号风险，Cursor 承认插件市场投毒。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 11月14日：当年明月17年后出新书</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-14/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-14/</guid>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <description>当年明月17年后出新书《权力背后的张居正》；起点本月第四本万订诞生，八本精品却因AI撤榜。</description>
     </item>
   </channel>
 </rss>
