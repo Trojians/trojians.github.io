@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 20 Nov 2026 04:01:28 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 08:05:10 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月20日：Anthropic 上市，苹果封杀爆火模拟器</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-20/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-20/</guid>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Anthropic 登陆纳斯达克、Claude 解出黑洞物理难题、黄仁勋被曝或另创新半导体公司，另有爆火模拟器遭苹果封号威胁等 11 条极客热议与新玩意。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月20日：特朗普给会晤打12分，GTA6终于来了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-15/</guid>
       <pubDate>Sat, 14 Nov 2026 16:00:00 GMT</pubDate>
       <description>第46周起点38位作者集中开新书，巫马行、太一生水等大神回归；10月月票榜《玄鉴仙族》夺冠；墨香铜臭被粉丝“开除作者籍”成圈内乐子。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月15日：星舰15号成功回收</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-15/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-15/</guid>
-      <pubDate>Sat, 14 Nov 2026 16:00:00 GMT</pubDate>
-      <description>星舰 15 号成功回收，V2EX 楼中楼换上 6 种新样式，AI 编程正在把程序员推向产品经理。</description>
     </item>
   </channel>
 </rss>
