@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 20 Nov 2026 14:11:58 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 00:00:03 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月21日：黎曼猜想被AI攻克了？先别急着庆祝</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-21/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-21/</guid>
+      <pubDate>Fri, 20 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Anthropic 数学家宣称与 Claude 证明了黎曼猜想，但验证尚未开始；另有笔记本可跑的开源模型、ChatGPT Space 向 Plus 开放、Signal 拦截 AI 读屏。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月20日：起点留存榜顶替畅销榜，万订作者集体反对</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-16/</guid>
       <pubDate>Sun, 15 Nov 2026 16:00:00 GMT</pubDate>
       <description>深圳本周迎APEC与可能的三方会晤，北大399元羽绒服抢到断货，儿童票、蛇草水与复联5也各自出圈。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 11月16日：Anthropic 上市被抢疯，6 倍超额认购</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-11-16/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-11-16/</guid>
-      <pubDate>Sun, 15 Nov 2026 16:00:00 GMT</pubDate>
-      <description>Anthropic IPO 认购超 6 倍剑指史上最大上市，ChatGPT Wallet 让智能体替你花钱，谷歌 Gemini 4 Hydrogen 进搜索，英伟达请愿破 13 万。</description>
     </item>
   </channel>
 </rss>
