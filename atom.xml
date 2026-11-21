@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 21 Nov 2026 04:04:22 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 08:03:30 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月21日：黎曼猜想又被“证明”了？</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-21/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-21/</guid>
+      <pubDate>Fri, 20 Nov 2026 16:00:00 GMT</pubDate>
+      <description>广义黎曼猜想疑似被证明引爆 Hacker News 与 V2EX，许愿式编程、免费远程桌面 Ferry 与能改写自身权重的模型等 11 条极客热议与新玩意。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月21日：金价大跳水，有人一次买了85万金条</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-16/</guid>
       <pubDate>Sun, 15 Nov 2026 16:00:00 GMT</pubDate>
       <description>《大乘期才有逆袭系统》完结四年后破十万订，《绍宋》均订涨至13万以上；《妖尾：我才不要当会长》完结，方向感大神新书《诸天从醉梦开始》上线。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月16日：国模之争，DeepSeek 被喊梁圣</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-16/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-16/</guid>
-      <pubDate>Sun, 15 Nov 2026 16:00:00 GMT</pubDate>
-      <description>国模之争吵翻 V2EX：DeepSeek Harness 被喊梁圣；Qwen4-Max 登上 HN，Claude Code 修起了 1994 年的老吉普。</description>
     </item>
   </channel>
 </rss>
