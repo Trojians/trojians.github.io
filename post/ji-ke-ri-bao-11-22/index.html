@@ -1,0 +1,565 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width" />
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+
+    <title>极客日报 · 11月22日：黎曼猜想被 Lean 验证了 | 白雾的分享小站</title>
+
+    
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#292a2d" media="(prefers-color-scheme: dark)">
+
+    
+    <link rel="shortcut icon" href="https://trojians.github.io/favicon.ico?v=1696896717615">
+    
+    <link rel="stylesheet" href="/styles/icons.css">
+    <link rel="stylesheet" href="/styles/main.css?v=20261002">
+
+    
+
+    <script>
+    // 自动为所有 target="_blank" 的链接添加 rel="noopener noreferrer"
+    document.addEventListener('DOMContentLoaded', function() {
+        var links = document.querySelectorAll('a[target="_blank"]');
+        links.forEach(function(link) {
+            var rel = link.getAttribute('rel') || '';
+            if (rel.indexOf('noopener') === -1) {
+                rel += ' noopener';
+            }
+            if (rel.indexOf('noreferrer') === -1) {
+                rel += ' noreferrer';
+            }
+            link.setAttribute('rel', rel.trim());
+        });
+    });
+</script>
+
+
+
+    <script>
+    // 快捷键 Alt+S 打开搜索页
+    document.addEventListener('keydown', function (e) {
+        if (e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey &&
+            (e.key === 's' || e.key === 'S')) {
+            var ae = document.activeElement;
+            var tag = (ae && ae.tagName) || '';
+            if (/^(INPUT|TEXTAREA|SELECT)$/.test(tag) || (ae && ae.isContentEditable)) return;
+            var p = window.location.pathname;
+            if (p === '/search' || p === '/search/') return;
+            e.preventDefault();
+            window.location.href = '/search/';
+        }
+    });
+</script>
+
+<script>
+    // declaraction of document.ready() function.
+    (function () {
+        var ie = !!(window.attachEvent && !window.opera);
+        var wk = /webkit\/(\d+)/i.test(navigator.userAgent) && (RegExp.$1 < 525);
+        var fn = [];
+        var run = function () {
+            for (var i = 0; i < fn.length; i++) fn[i]();
+        };
+        var d = document;
+        d.ready = function (f) {
+            if (!ie && !wk && d.addEventListener)
+                return d.addEventListener('DOMContentLoaded', f, false);
+            if (fn.push(f) > 1) return;
+            if (ie)
+                (function () {
+                    try {
+                        d.documentElement.doScroll('left');
+                        run();
+                    } catch (err) {
+                        setTimeout(arguments.callee, 0);
+                    }
+                })();
+            else if (wk)
+                var t = setInterval(function () {
+                    if (/^(loaded|complete)$/.test(d.readyState))
+                        clearInterval(t), run();
+                }, 0);
+        };
+    })();
+
+
+    document.ready(
+        function () {
+            var _Blog = window._Blog || {};
+
+            const getSystemTheme = () => {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    return 'dark';
+                }
+                return 'light';
+            };
+
+            const configDefault = 'light';
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme');
+            const initialTheme = currentTheme || configDefault || getSystemTheme();
+            const isDark = initialTheme === 'dark';
+
+            const updateButtons = (dark) => {
+                const sunBtn = document.getElementById("theme-toggle-sun");
+                const moonBtn = document.getElementById("theme-toggle-moon");
+                const mobileSunBtn = document.getElementById("mobile-theme-toggle-sun");
+                const mobileMoonBtn = document.getElementById("mobile-theme-toggle-moon");
+
+                if (dark) {
+                    if (sunBtn) sunBtn.style.display = 'none';
+                    if (moonBtn) moonBtn.style.display = 'inline-block';
+                    if (mobileSunBtn) mobileSunBtn.style.display = 'none';
+                    if (mobileMoonBtn) mobileMoonBtn.style.display = 'inline-block';
+                } else {
+                    if (sunBtn) sunBtn.style.display = 'inline-block';
+                    if (moonBtn) moonBtn.style.display = 'none';
+                    if (mobileSunBtn) mobileSunBtn.style.display = 'inline-block';
+                    if (mobileMoonBtn) mobileMoonBtn.style.display = 'none';
+                }
+            };
+
+            const updateThemeColor = (dark) => {
+                const themeColor = dark ? '#292a2d' : '#ffffff';
+                const metaTags = document.querySelectorAll('meta[name="theme-color"]');
+                if (metaTags.length > 0) {
+                    // 保留第一个，移除其他的，避免重复
+                    for (let i = 1; i < metaTags.length; i++) {
+                        metaTags[i].remove();
+                    }
+                    metaTags[0].setAttribute('content', themeColor);
+                    metaTags[0].removeAttribute('media');
+                } else {
+                    const meta = document.createElement('meta');
+                    meta.name = 'theme-color';
+                    meta.content = themeColor;
+                    document.head.appendChild(meta);
+                }
+            };
+
+            const applyTheme = (dark) => {
+                const body = document.getElementsByTagName('body')[0];
+                if (dark) {
+                    body.classList.add('dark-theme');
+                } else {
+                    body.classList.remove('dark-theme');
+                }
+                updateButtons(dark);
+                updateThemeColor(dark);
+            };
+
+            // Initial application
+            applyTheme(isDark);
+            if (!currentTheme) {
+                window.localStorage && window.localStorage.setItem('theme', initialTheme);
+            }
+
+            _Blog.toggleTheme = function () {
+                const toggleFunc = (e) => {
+                    // Prevent bubbling if needed, though buttons are distinct now
+                    if (e) e.stopPropagation();
+
+                    const body = document.getElementsByTagName('body')[0];
+                    const isCurrentlyDark = body.classList.contains('dark-theme');
+
+                    if (isCurrentlyDark) {
+                        body.classList.remove('dark-theme');
+                        updateButtons(false);
+                        window.localStorage && window.localStorage.setItem('theme', 'light');
+                    } else {
+                        body.classList.add('dark-theme');
+                        updateButtons(true);
+                        window.localStorage && window.localStorage.setItem('theme', 'dark');
+                    }
+                };
+
+                const sunBtn = document.getElementById("theme-toggle-sun");
+                const moonBtn = document.getElementById("theme-toggle-moon");
+                const mobileSunBtn = document.getElementById("mobile-theme-toggle-sun");
+                const mobileMoonBtn = document.getElementById("mobile-theme-toggle-moon");
+
+                if (sunBtn) sunBtn.addEventListener('click', toggleFunc);
+                if (moonBtn) moonBtn.addEventListener('click', toggleFunc);
+                if (mobileSunBtn) mobileSunBtn.addEventListener('click', toggleFunc);
+                if (mobileMoonBtn) mobileMoonBtn.addEventListener('click', toggleFunc);
+            };
+            _Blog.toggleTheme();
+
+            if (window.matchMedia && !configDefault) {
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+                    const newTheme = e.matches ? 'dark' : 'light';
+                    applyTheme(e.matches);
+                    window.localStorage && window.localStorage.setItem('theme', newTheme);
+                });
+            }
+        }
+    );
+</script>
+
+<script>
+    // Reading Progress Component
+    document.addEventListener('DOMContentLoaded', () => {
+        const progressValue = document.querySelector('.reading-value');
+        const progressCircle = document.querySelector('.progress-ring__circle');
+        const container = document.querySelector('.reading-progress-container');
+
+        // Exit if elements don't exist (e.g., not on a post page)
+        if (!progressValue || !progressCircle || !container) {
+            return;
+        }
+
+        // SVG Circle setup
+        const radius = progressCircle.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
+
+        progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
+        progressCircle.style.strokeDashoffset = circumference;
+
+        function setProgress(percent) {
+            const safePercent = Math.min(100, Math.max(0, percent));
+            progressValue.textContent = `${Math.round(safePercent)}%`;
+            const offset = circumference - (safePercent / 100) * circumference;
+            progressCircle.style.strokeDashoffset = offset;
+        }
+
+        function onScroll() {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+            if (scrollHeight <= 0) {
+                setProgress(0);
+                return;
+            }
+
+            const scrollPercent = (scrollTop / scrollHeight) * 100;
+            setProgress(scrollPercent);
+
+            // Show/Hide logic: Show if scrolled more than 100px
+            if (scrollTop > 100) {
+                container.classList.add('show');
+            } else {
+                container.classList.remove('show');
+            }
+        }
+
+        // Initialize
+        onScroll();
+
+        // Listen for scroll events
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        // Recalculate on resize
+        window.addEventListener('resize', onScroll);
+    });
+</script>
+
+
+
+
+    
+
+    
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</head>
+
+    <body>
+
+        <script>
+    (function () {
+        const getSystemTheme = () => {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                return 'dark';
+            }
+            return 'light';
+        };
+
+        const configDefault = 'light';
+        const savedTheme = localStorage.getItem('theme');
+        const theme = savedTheme || configDefault || getSystemTheme();
+
+        if (theme === 'dark') {
+            document.body.classList.add('dark-theme');
+        }
+
+        if (!savedTheme) {
+            localStorage.setItem('theme', theme);
+        }
+    })();
+</script>
+<header class="mod-head">
+    <div class="mod-head__left">
+        <div class="mod-head__logo">
+            <a href="/">
+                
+                
+                    <img class="avatar" alt="avatar" src="https://trojians.github.io/images/avatar.png?v=1696896717615">
+                
+            </a>
+        </div>
+    </div>
+
+    <div class="mod-head__right">
+        <span>
+            <button id="theme-toggle-sun" class="tiptap-button theme-toggle-sun" aria-label="Switch to dark mode">
+                <svg width="18" height="18" class="tiptap-button-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1C12.5523 1 13 1.44772 13 2V4C13 4.55228 12.5523 5 12 5C11.4477 5 11 4.55228 11 4V2C11 1.44772 11.4477 1 12 1Z" fill="currentColor"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9Z" fill="currentColor"></path>
+                    <path d="M13 20C13 19.4477 12.5523 19 12 19C11.4477 19 11 19.4477 11 20V22C11 22.5523 11.4477 23 12 23C12.5523 23 13 22.5523 13 22V20Z" fill="currentColor"></path>
+                    <path d="M4.22282 4.22289C4.61335 3.83236 5.24651 3.83236 5.63704 4.22289L7.04704 5.63289C7.43756 6.02341 7.43756 6.65658 7.04704 7.0471C6.65651 7.43762 6.02335 7.43762 5.63283 7.0471L4.22282 5.6371C3.8323 5.24658 3.8323 4.61341 4.22282 4.22289Z" fill="currentColor"></path>
+                    <path d="M18.367 16.9529C17.9765 16.5623 17.3433 16.5623 16.9528 16.9529C16.5623 17.3434 16.5623 17.9766 16.9528 18.3671L18.3628 19.7771C18.7533 20.1676 19.3865 20.1676 19.777 19.7771C20.1675 19.3866 20.1675 18.7534 19.777 18.3629L18.367 16.9529Z" fill="currentColor"></path>
+                    <path d="M1 12C1 11.4477 1.44772 11 2 11H4C4.55228 11 5 11.4477 5 12C5 12.5523 4.55228 13 4 13H2C1.44772 13 1 12.5523 1 12Z" fill="currentColor"></path>
+                    <path d="M20 11C19.4477 11 19 11.4477 19 12C19 12.5523 19.4477 13 20 13H22C22.5523 13 23 12.5523 23 12C23 11.4477 22.5523 11 22 11H20Z" fill="currentColor"></path>
+                    <path d="M7.04704 16.9529C7.43756 17.3434 7.43756 17.9766 7.04704 18.3671L5.63704 19.7771C5.24651 20.1676 4.61335 20.1676 4.22282 19.7771C3.8323 19.3866 3.8323 18.7534 4.22283 18.3629L5.63283 16.9529C6.02335 16.5623 6.65651 16.5623 7.04704 16.9529Z" fill="currentColor"></path>
+                    <path d="M19.777 5.6371C20.1675 5.24657 20.1675 4.61341 19.777 4.22289C19.3865 3.83236 18.7533 3.83236 18.3628 4.22289L16.9528 5.63289C16.5623 6.02341 16.5623 6.65658 16.9528 7.0471C17.3433 7.43762 17.9765 7.43762 18.367 7.0471L19.777 5.6371Z" fill="currentColor"></path>
+                </svg>
+            </button>
+            <button id="theme-toggle-moon" class="tiptap-button theme-toggle-moon" aria-label="Switch to light mode">
+                <svg width="18" height="18" class="tiptap-button-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 11.5955 21.7564 11.2309 21.3827 11.0761C21.009 10.9213 20.5789 11.0069 20.2929 11.2929C19.287 12.2988 17.9226 12.864 16.5 12.864C15.0774 12.864 13.713 12.2988 12.7071 11.2929C11.7012 10.287 11.136 8.92261 11.136 7.5C11.136 6.07739 11.7012 4.71304 12.7071 3.70711C12.9931 3.42111 13.0787 2.99099 12.9239 2.61732C12.7691 2.24364 12.4045 2 12 2ZM7.55544 5.34824C8.27036 4.87055 9.05353 4.51389 9.87357 4.28778C9.39271 5.27979 9.13604 6.37666 9.13604 7.5C9.13604 9.45304 9.91189 11.3261 11.2929 12.7071C12.6739 14.0881 14.547 14.864 16.5 14.864C17.6233 14.864 18.7202 14.6073 19.7122 14.1264C19.4861 14.9465 19.1295 15.7296 18.6518 16.4446C17.7727 17.7602 16.5233 18.7855 15.0615 19.391C13.5997 19.9965 11.9911 20.155 10.4393 19.8463C8.88743 19.5376 7.46197 18.7757 6.34315 17.6569C5.21447 16.538 4.4624 15.1126 4.15372 13.5607C3.84504 12.0089 4.00347 10.4003 4.60897 8.93853C5.21447 7.47672 6.23985 6.22729 7.55544 5.34824Z" fill="currentColor"></path>
+                    <path d="M19 2C19.5523 2 20 2.44772 20 3V4H21C21.5523 4 22 4.44772 22 5C22 5.55228 21.5523 6 21 6H20V7C20 7.55228 19.5523 8 19 8C18.4477 8 18 7.55228 18 7V6H17C16.4477 6 16 5.55228 16 5C16 4.44772 16.4477 4 17 4H18V3C18 2.44772 18.4477 2 19 2Z" fill="currentColor"></path>
+                </svg>
+            </button>
+        </span>
+    </div>
+</header>
+<!-- <a href="#" id="back-to-top" style="display: inline;"> ^ </a> -->
+
+            <style>
+                .mod-head.bw-sticky{position:sticky;top:0;z-index:900;background:var(--bg-color,#fff);border-bottom:1px solid var(--border-color,rgba(0,0,0,.06));transition:transform .34s ease;margin-top:0;padding-top:22px}
+                body.dark-theme .mod-head.bw-sticky{background:var(--dark-bg,#292a2d);border-bottom-color:var(--dark-border,#444)}
+                .mod-head.bw-hide{transform:translateY(-110%)}
+                @media (prefers-reduced-motion: reduce){.mod-head.bw-sticky{transition:none}}
+            </style>
+            <script>
+            (function(){
+                var h=document.querySelector('.mod-head'); if(!h) return;
+                h.classList.add('bw-sticky');
+                var lastY=window.scrollY||0, ticking=false;
+                window.addEventListener('scroll', function(){
+                    if(ticking) return; ticking=true;
+                    requestAnimationFrame(function(){
+                        ticking=false;
+                        var y=window.scrollY||0;
+                        if(y>160 && y>lastY+4){ h.classList.add('bw-hide'); }
+                        else if(y<lastY-4 || y<=160){ h.classList.remove('bw-hide'); }
+                        lastY=y;
+                    });
+                }, {passive:true});
+            })();
+            </script>
+
+            <article class="mod-post mod-post__type-post">
+                <header>
+                    <h1 class="mod-post__title">
+                        极客日报 · 11月22日：黎曼猜想被 Lean 验证了
+                    </h1>
+                </header>
+
+                <div class="mod-post__meta">
+                    <time datetime="2026-11-22">
+                        2026-11-22
+                    </time> • 约 6 分钟 •
+                        
+                        
+                        
+                            <a href="/tag/jike">
+                                极客日报
+                            </a>
+                            
+                                    
+                    <span id="busuanzi_container_page_pv" style="display:none"> · 阅读 <span
+                            id="busuanzi_value_page_pv"></span> 次</span>
+                </div>
+
+
+
+                <div class="mod-post__entry wzulli">
+                    
+                            <p class="lead">今天的极客圈被数学圈的大新闻抢了头条：<strong>黎曼猜想的证明通过了 Lean 的形式化验证</strong>；另一边，Gemini 黑五、Apple Watch 八年测评、Java 秋招出路，热闹也都不小。</p>
+<h2>一、V2EX 热议</h2>
+<ul>
+<li>《Google 黑五 1 年 100 刀的活动，和现在 APP 上 15 刀 3 个月的活动能叠加吗？》（程序员 · 51 回）——楼主连问三个实际问题：黑五包年 100 刀能不能和 App 里的 15 刀 3 个月叠加、能不能用 App Store 余额付款、Gemini 封号会不会连坐整个 Google 账号。另一位网友分享了实测流程：先买 2 刀一个月或 5 刀三个月的订阅，再到手机 Gemini App 里切换包年，就能触发 99 刀 Pro 的黑五价，旧订阅还会按剩余时间退款。短评：黑五薅羊毛，算清叠加姿势比盯着价格本身更值钱。<a href="https://www.v2ex.com/t/1258850" target="_blank" rel="noopener">原帖</a></li>
+<li>《为什么没有 AI 攻克医学难题的消息？是因为跨学科吗？》（问与答 · 42 回）——楼主的追问很直白：计算机背后是数学，数学难题 AI 攻得动；医学背后是什么，为什么迟迟没有 AI 攻克癌症、慢病的好消息。帖子把"跨学科"这个直觉继续往下挖：医学难题不只是算力问题，还牵扯机制不清、数据难得、验证周期长。短评：AI 能解方程，不等于能解人体；医学的"难"，难在问题本身就不规整。<a href="https://www.v2ex.com/t/1258845" target="_blank" rel="noopener">原帖</a></li>
+<li>《Apple Watch：戴了 8 年，我的使用测评》（Apple Watch · 24 回）——楼主 2018 年买下第一块 Apple Watch，至今 3186 天，除了洗澡和充电几乎全天佩戴，运动、睡觉都不摘。八年用下来，他的结论很干脆：十分值得，非常推荐尝试智能手表。短评：八年戴一块表，测评的其实不是手表，是"一直戴着"这件事本身。<a href="https://www.v2ex.com/t/1258855" target="_blank" rel="noopener">原帖</a></li>
+</ul>
+<img src="/images/daily/ji-ke-ri-bao-11-22-1.jpg" alt="深夜对着满屏代码的程序员">
+<hr>
+<h2>二、分享创造 · 新玩意</h2>
+<ul>
+<li>《[分享创造] 磁带猫：把 NAS / WebDAV 上的影音整理成私人媒体库，送 20 个兑换码》（分享创造 · 18 回）——作者独立开发的 iOS App，一个能直连 WebDAV 的影音播放器，影片和音乐都放在 NAS 上，它负责把媒体库整理得好看。Plex 和 Emby 他都买过、用过，觉得强大但有几处不顺手，于是自己写了一个。作者还放出 20 个兑换码。短评：别人家的媒体库是搭出来的，自家的媒体库是"不顺手"逼出来的。<a href="https://www.v2ex.com/t/1258790" target="_blank" rel="noopener">原帖</a></li>
+<li>《我做了 Kooyu：一个本地优先的 AI 助手，统一调度你手里所有的编程 CLI》（分享创造 · 4 回）——写代码要同时用 Claude Code、Codex、Gemini CLI、OpenCode 好几个编程 agent，痛点不在某个工具不好用，而在它们各管各的：会话不互通、额度不互通，一个撞上 429 限流，就得手动把上下文搬到另一个里重来。Kooyu 想解决的就是这一层，一个本地优先的统一调度器。短评：工具越多，越需要一个管工具的工具。<a href="https://www.v2ex.com/t/1258880" target="_blank" rel="noopener">原帖</a></li>
+<li>《[开源] 微子中枢 v0.6.1：一键部署 + 远程控制，新增本地 Ollama 和 OpenCode》（分享创造 · 0 回）——作者做的开源一键部署和远程控制面板更新到 v0.6.1，这一版加了本地 Ollama 和 OpenCode：家里电脑上跑的模型，出门在外用 Claude Code、Codex、OpenCode 也能直接调用。短评：把家里的算力随身带走，是很多自建玩家的心愿单。<a href="https://www.v2ex.com/t/1258878" target="_blank" rel="noopener">原帖</a></li>
+</ul>
+<hr>
+<h2>三、NodeSeek × 烧饼社区</h2>
+<ul>
+<li>《iLatency公测，一个新的社区内Ping站，邀你共建》（NodeSeek）——NodeSeek 社区里一个新的 Ping 站进入公测，作者邀请大家一起共建。短评：测速这件小事，也有人愿意认真做成社区工具。<a href="https://www.nodeseek.com/post-832584-1" target="_blank" rel="noopener">原帖</a></li>
+<li>《美联邦通信委员会拟禁止中国电信运营商直接获取美国互联网电话号码，这个事情对在国内用美国esim的有影响吗？》（NodeSeek）——帖子抛出的是一则政策动向引发的疑问：FCC 拟禁止中国电信运营商直接获取美国互联网电话号码，在国内用美国 eSIM 的人会不会受影响。短评：政策还在"拟"字阶段，影响多大先看细则，别先自己吓自己。<a href="https://www.nodeseek.com/post-1071913-1" target="_blank" rel="noopener">原帖</a></li>
+<li>《本科软件工程主修Java，秋招不理想还有出路吗》（烧饼社区）——本科软工、主修 Java，秋招不理想，楼主在帖子里问还有没有出路。回帖里出主意的不少：有人建议转 agent 方向，有人提到 ToG 内网开发岗不用联网、不用 AI，也有人直接劝考公；也有人提醒，Java 没有想的那么差，但现在不能完全不懂 AI，至少要会用 AI 工具。短评：出路的争论背后，其实是同一个焦虑——AI 来了，旧技能怎么续命。<a href="https://linux.sb/topic/30366" target="_blank" rel="noopener">原帖</a></li>
+</ul>
+<hr>
+<h2>四、海外极客圈 · Hacker News</h2>
+<ul>
+<li>《Lean verification of the Riemann Hypothesis》（Hacker News · 976 分，820 条评论）——11 月 20 日，Levent Alpöge 发布了黎曼猜想证明的 Lean 程序库，足足 1700 万行代码。Lean 与 Mathlib 社区随即发表联合声明：我们完全确信这一证明是正确的。声明列出四项核验标准且全部满足：证明的陈述就是 Mathlib 中经专家审核的黎曼猜想表述；代码库能正常编译；两个独立工具确认被证明的定理正是 Mathlib 的黎曼猜想陈述；导出的原始证明通过了多款独立检查器验证，包括 Lean 官方内核。短评：数学史上最著名的未解之谜之一，第一次由机器检查器盖了章。<a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/" target="_blank" rel="noopener">原帖</a></li>
+<li>《My monitor was cutting my download speed by 75%》（Hacker News · 560 分，266 条评论）——作者家是 2.5G 对称宽带，测速却只有 600Mbps 下行、2.4Gbps 上行。排查了一圈，元凶是接在 Studio Display XDR 后面的 2.5G 网卡：Realtek RTL8156B 芯片每次突发只发 4 个包，显示器 Hub 的确认回执又慢，缓冲区越积越满就丢包，速度直接打了两折多。换了一块 RTL8157 芯片的 5G 网卡，每突发 8 个包，丢包归零，满速回归。短评：网速慢不一定怪宽带，瓶颈可能藏在你最想不到的那根线上。<a href="https://blog.tymscar.com/posts/studiodisplayethernet/" target="_blank" rel="noopener">原帖</a></li>
+</ul>
+<img src="/images/daily/ji-ke-ri-bao-11-22-2.jpg" alt="写满数学公式的黑板">
+<blockquote>从 1700 万行代码验证黎曼猜想，到一块网卡吃掉四分之三的网速——极客的快乐，一半在仰望星空，一半在拆开手边的东西看个究竟。</blockquote>
+<p class="byline">本篇文章由 Muse 编辑并发布。</p>
+
+                </div>
+
+            </article>
+
+
+            
+                
+	<div class="mod-post__foot">
+	 文章标签: 
+     
+        <a href="/tag/jike">极客日报</a>
+     
+     </br>
+	</div>
+
+                    
+
+                        <div class="mod-post__poster">
+                        </div>
+
+                        </div>
+
+                        
+                            
+<br>
+
+<div style="margin-bottom: 10px;">
+    上一篇 : 已经是第一篇文章了~
+</div>
+
+
+
+<div style="margin-bottom: 40px;">
+    下一篇 : <a href="/post/re-bang-ri-bao-11-22">热榜日报 · 11月22日：金价跌破1100元，银行连夜发提示</a>
+</div>
+
+
+</div>	
+
+                                
+
+                                    
+                                        <div class="mod-post__related" style="margin: 2rem 0;">
+                                            <h3 style="font-size: 1rem; margin-bottom: 0.8rem;">相关文章</h3>
+                                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                                
+                                                    <li style="margin-bottom: 0.5rem;">
+                                                        <a href="/post/ji-ke-ri-bao-11-21">极客日报 · 11月21日：黎曼猜想又被“证明”了？</a>
+                                                        <span style="opacity:.62; font-size: 0.85rem;"> · 2026-11-21</span>
+                                                    </li>
+                                                
+                                                    <li style="margin-bottom: 0.5rem;">
+                                                        <a href="/post/ji-ke-ri-bao-11-20">极客日报 · 11月20日：Anthropic 上市，苹果封杀爆火模拟器</a>
+                                                        <span style="opacity:.62; font-size: 0.85rem;"> · 2026-11-20</span>
+                                                    </li>
+                                                
+                                                    <li style="margin-bottom: 0.5rem;">
+                                                        <a href="/post/ji-ke-ri-bao-11-19">极客日报 · 11月19日：Nginx 曝远程代码执行漏洞</a>
+                                                        <span style="opacity:.62; font-size: 0.85rem;"> · 2026-11-19</span>
+                                                    </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    
+
+                                    
+                                        <!-- Reading Progress Component -->
+<div class="reading-progress-container">
+  <span class="reading-label">阅读进度</span>
+  <span class="reading-value">0%</span>
+  <svg class="progress-ring" viewBox="0 0 24 24">
+    <!-- Background Circle -->
+    <circle class="progress-ring__circle-bg" stroke-width="3" fill="transparent" r="10" cx="12" cy="12" />
+    <!-- Progress Circle -->
+    <circle class="progress-ring__circle" stroke-width="3" fill="transparent" r="10" cx="12" cy="12" />
+  </svg>
+</div>
+                                            <footer id="footer" class="footer">
+    <nav>
+        
+            
+                    <a class="menu-item" href="/">
+                        首页
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/search" title="快捷键 Alt+S">
+                        搜索
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/shu-ku">
+                        书库
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/shu-ping">
+                        书单
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/wu-li-shi-shu">
+                        猜书
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/wu-li-jie-long">
+                        接龙
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/dong-tian-jin-du-tiao">
+                        冬天进度条
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/re-bang-li-shi">
+                        热榜历史
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/zi-yuan-he-ji">
+                        资源合集
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+    </nav>
+
+    <div class="Copyright">Copyright &copy; 2026 <a href="https://trojians.github.io">
+                白雾的分享小站
+            </a></div>
+
+    <div class="index_footer">
+        Powered by <a href="https://trojians.github.io" target="_blank">白雾</a> ·
+            <a class="rss" href="/feed.xml" target="_blank" rel="noopener noreferrer">
+                <i class="ri-rss-line"></i> RSS
+            </a>
+    </div>
+</footer>
+
+
+
+
+    </body>
+
+    </html>

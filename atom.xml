@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 22 Nov 2026 04:02:54 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 08:03:40 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月22日：黎曼猜想被 Lean 验证了</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-22/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-22/</guid>
+      <pubDate>Sat, 21 Nov 2026 16:00:00 GMT</pubDate>
+      <description>黎曼猜想证明通过 Lean 形式化验证，Gemini 黑五 99 刀、Apple Watch 八年测评与 Java 秋招出路同登今日极客日报。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月22日：金价跌破1100元，银行连夜发提示</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-17/</guid>
       <pubDate>Mon, 16 Nov 2026 16:00:00 GMT</pubDate>
       <description>两个新号丸子每日推书、虾说推书今天报到，《我有嘉宾》打头阵，13本高评分爽文一次补齐；《诡秘之主》双十一卖了3.26万份，完结六年仍在屠榜。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月17日：卡内基梅隆免费公开 CS 课</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-17/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-17/</guid>
-      <pubDate>Mon, 16 Nov 2026 16:00:00 GMT</pubDate>
-      <description>卡内基梅隆免费公开 CS 课登顶 HN；V2EX 拿对联考大模型、聊 Codex 权限与通勤；烧饼社区为 AI 订阅额度发愁。</description>
     </item>
   </channel>
 </rss>
