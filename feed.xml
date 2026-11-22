@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 22 Nov 2026 08:03:40 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 12:03:35 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 11月22日：我最白、高月、方向感齐开新书</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-22/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-22/</guid>
+      <pubDate>Sat, 21 Nov 2026 16:00:00 GMT</pubDate>
+      <description>起点一周47位作者开新书，我最白、高月、方向感齐回归；白鸦《大乘期才有逆袭系统》首订812逆袭十万均；赤戟推书单442三本齐发。</description>
+    </item>
 
     <item>
       <title>极客日报 · 11月22日：黎曼猜想被 Lean 验证了</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-11-18/</guid>
       <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
       <description>OpenAI 发布 GPT-6.2 Astra 与 Sol 并降价两成，英伟达财报翻倍却撞上 SEC 调查，微软与 Mistral 各自亮出新模型。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 11月17日：新号报到，《我有嘉宾》领衔</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-17/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-17/</guid>
-      <pubDate>Mon, 16 Nov 2026 16:00:00 GMT</pubDate>
-      <description>两个新号丸子每日推书、虾说推书今天报到，《我有嘉宾》打头阵，13本高评分爽文一次补齐；《诡秘之主》双十一卖了3.26万份，完结六年仍在屠榜。</description>
     </item>
   </channel>
 </rss>
