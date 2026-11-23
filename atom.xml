@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 23 Nov 2026 04:01:26 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 08:01:16 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月23日：三年后，程序员还能靠写代码活着吗</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-23/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-23/</guid>
+      <pubDate>Sun, 22 Nov 2026 16:00:00 GMT</pubDate>
+      <description>V 站热议程序员饭碗与 AI 封号玄学，分享创造里有猫咪学英语、跨平台编辑器与本地 OCR，海外则在追问硅谷怎么了。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月23日：129万抗癌药进医保，幼儿园招2岁娃</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-18/</guid>
       <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
       <description>木子心完结、游方老盗开新书，全金属弹壳十一年写下3071万字，赤戟441期三本主推一次看全。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月18日：GPT-6.2 来了，V 友实测说不好用</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-18/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-18/</guid>
-      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
-      <description>GPT-6.2 实测、AI 时代无难题、VPS 批量被墙、Java4Shell 漏洞等 11 条极客动态。</description>
     </item>
   </channel>
 </rss>
