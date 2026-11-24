@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 24 Nov 2026 00:01:09 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 04:05:17 GMT</lastBuildDate>
+
+    <item>
+      <title>热榜日报 · 11月24日：神二十四明早发射，巴铁航天员首飞</title>
+      <link>https://trojians.github.io/post/re-bang-ri-bao-11-24/</link>
+      <guid>https://trojians.github.io/post/re-bang-ri-bao-11-24/</guid>
+      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
+      <description>神舟二十四号明早8时18分发射，首位外籍航天员到访天宫；深圳致信市民、金价跳水超600元、《暮光之城》全系列确认引进。</description>
+    </item>
 
     <item>
       <title>AI 早报 · 11月24日：黄仁勋11天复职，股价暴涨30%</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-19/</guid>
       <pubDate>Wed, 18 Nov 2026 16:00:00 GMT</pubDate>
       <description>Nginx 曝出无需认证的远程代码执行漏洞，V2EX 热议公司全面禁止 AI Coding，GPT-6.2 口碑翻车，另有数学辅导工具、Typst 简历引擎等新玩意。</description>
-    </item>
-
-    <item>
-      <title>热榜日报 · 11月19日：中俄美元首首次同框会晤</title>
-      <link>https://trojians.github.io/post/re-bang-ri-bao-11-19/</link>
-      <guid>https://trojians.github.io/post/re-bang-ri-bao-11-19/</guid>
-      <pubDate>Wed, 18 Nov 2026 16:00:00 GMT</pubDate>
-      <description>中俄美元首深圳首次同框会晤；《GTA 6》发售拿下99分追平历史纪录；酷态科充电头被曝死机烧设备；微软6万人获自愿离职资格；格力成被执行人标的仅150元。</description>
     </item>
   </channel>
 </rss>
