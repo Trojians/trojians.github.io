@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 24 Nov 2026 04:05:17 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 08:06:32 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月24日：黄仁勋杀回来了</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-24/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-24/</guid>
+      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
+      <description>黄仁勋 11 天后复任英伟达 CEO，引爆 HN 与 V2EX；独立浏览器 Ladybird 进入 Alpha，另有一波 AI 乐谱、抓包工具等新玩意。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月24日：神二十四明早发射，巴铁航天员首飞</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-19/</guid>
       <pubDate>Wed, 18 Nov 2026 16:00:00 GMT</pubDate>
       <description>《超魔术士》完结，九千五均订差一步万订；跃千愁被熊孩子吵到请假；两本另类魔修文与十本爽文盘点。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月19日：Nginx 曝远程代码执行漏洞</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-19/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-19/</guid>
-      <pubDate>Wed, 18 Nov 2026 16:00:00 GMT</pubDate>
-      <description>Nginx 曝出无需认证的远程代码执行漏洞，V2EX 热议公司全面禁止 AI Coding，GPT-6.2 口碑翻车，另有数学辅导工具、Typst 简历引擎等新玩意。</description>
     </item>
   </channel>
 </rss>
