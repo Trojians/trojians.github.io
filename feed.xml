@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 25 Nov 2026 04:05:30 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 08:04:32 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月25日：矩阵乘法复杂度再破纪录</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-25/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-25/</guid>
+      <pubDate>Tue, 24 Nov 2026 16:00:00 GMT</pubDate>
+      <description>矩阵乘法指数来到 2.25，V2EX 在聊理发涨价和凌晨改 Bug，还有一波新玩意上架。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月25日：神24升空，巴铁航天员首飞天宫</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-20/</guid>
       <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
       <description>起点留存榜在灰度测试中顶替畅销榜第二位，众多万订作者反对、总编胡说出面解释；净无痕《剑气朝天》完结，高月新书《藩镇》开更，白鸦新书首订破十万。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月20日：Anthropic 上市，苹果封杀爆火模拟器</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-20/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-20/</guid>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
-      <description>Anthropic 登陆纳斯达克、Claude 解出黑洞物理难题、黄仁勋被曝或另创新半导体公司，另有爆火模拟器遭苹果封号威胁等 11 条极客热议与新玩意。</description>
     </item>
   </channel>
 </rss>
