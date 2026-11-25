@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 25 Nov 2026 08:04:32 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 12:03:15 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 11月25日：35亿播放，作者版权费不到40万</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-25/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-25/</guid>
+      <pubDate>Tue, 24 Nov 2026 16:00:00 GMT</pubDate>
+      <description>漫剧《三千庇护》35亿播放、原著作者版权费不到40万；狐尾的笔定下《旧域怪诞》2027年4月15日免费完结；另有赤戟年度盘点与六本重点推书。</description>
+    </item>
 
     <item>
       <title>极客日报 · 11月25日：矩阵乘法复杂度再破纪录</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-11-21/</guid>
       <pubDate>Fri, 20 Nov 2026 16:00:00 GMT</pubDate>
       <description>Anthropic 数学家宣称与 Claude 证明了黎曼猜想，但验证尚未开始；另有笔记本可跑的开源模型、ChatGPT Space 向 Plus 开放、Signal 拦截 AI 读屏。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 11月20日：起点留存榜顶替畅销榜，万订作者集体反对</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-20/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-20/</guid>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
-      <description>起点留存榜在灰度测试中顶替畅销榜第二位，众多万订作者反对、总编胡说出面解释；净无痕《剑气朝天》完结，高月新书《藩镇》开更，白鸦新书首订破十万。</description>
     </item>
   </channel>
 </rss>
