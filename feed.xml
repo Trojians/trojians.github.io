@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Nov 2026 04:02:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 08:03:15 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月26日：1Password 遭入侵，密码库没事</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-26/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-26/</guid>
+      <pubDate>Wed, 25 Nov 2026 16:00:00 GMT</pubDate>
+      <description>1Password 遭入侵但密码库无恙，AI 辅助开发让 BUG 越改越多，GPT-6.2 在代码高尔夫上赢了谷歌工程师。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月26日：财神庙重开，凌晨5点排队沾福气</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-21/</guid>
       <pubDate>Fri, 20 Nov 2026 16:00:00 GMT</pubDate>
       <description>琥珀流开山人绯炎22年只写1773万字年均垫底，完结六年的《诡秘之主》却杀回月票榜第三；净无痕《剑气朝天》完结，高月新书《藩镇》开更，另有两本魏晋历史文与13本完结爽文可追。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月21日：黎曼猜想又被“证明”了？</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-21/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-21/</guid>
-      <pubDate>Fri, 20 Nov 2026 16:00:00 GMT</pubDate>
-      <description>广义黎曼猜想疑似被证明引爆 Hacker News 与 V2EX，许愿式编程、免费远程桌面 Ferry 与能改写自身权重的模型等 11 条极客热议与新玩意。</description>
     </item>
   </channel>
 </rss>
