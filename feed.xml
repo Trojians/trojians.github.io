@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Nov 2026 08:03:15 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 12:02:58 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 11月26日：狐尾的笔回来了，50万字后续全免费</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-26/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-26/</guid>
+      <pubDate>Wed, 25 Nov 2026 16:00:00 GMT</pubDate>
+      <description>狐尾的笔回归，承诺《旧域怪诞》后续 50 万字以上全部免费；姬叉《千秋契》拿下 11 月第 9 个万订，另有 15 部完结玄幻爽文盘点。</description>
+    </item>
 
     <item>
       <title>极客日报 · 11月26日：1Password 遭入侵，密码库没事</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-11-22/</guid>
       <pubDate>Sat, 21 Nov 2026 16:00:00 GMT</pubDate>
       <description>Thinking Machines 发布 26B 循环推理模型 Inkling 2 Mini，笔记本就能跑；Together AI 自曝提示词泄露；腾讯放出 770B 的 Hy4 全部权重；OpenAI 上线 GPT-Live-1.1，语音待机只要 0.02 美元一分钟。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 11月21日：琥珀流开山人22年只写1773万字</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-21/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-21/</guid>
-      <pubDate>Fri, 20 Nov 2026 16:00:00 GMT</pubDate>
-      <description>琥珀流开山人绯炎22年只写1773万字年均垫底，完结六年的《诡秘之主》却杀回月票榜第三；净无痕《剑气朝天》完结，高月新书《藩镇》开更，另有两本魏晋历史文与13本完结爽文可追。</description>
     </item>
   </channel>
 </rss>
