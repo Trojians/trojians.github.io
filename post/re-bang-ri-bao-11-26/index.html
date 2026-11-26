@@ -1,0 +1,567 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width" />
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+
+    <title>热榜日报 · 11月26日：财神庙重开，凌晨5点排队沾福气 | 白雾的分享小站</title>
+
+    
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#292a2d" media="(prefers-color-scheme: dark)">
+
+    
+    <link rel="shortcut icon" href="https://trojians.github.io/favicon.ico?v=1696896717615">
+    
+    <link rel="stylesheet" href="/styles/icons.css">
+    <link rel="stylesheet" href="/styles/main.css?v=20261002">
+
+    
+
+    <script>
+    // 自动为所有 target="_blank" 的链接添加 rel="noopener noreferrer"
+    document.addEventListener('DOMContentLoaded', function() {
+        var links = document.querySelectorAll('a[target="_blank"]');
+        links.forEach(function(link) {
+            var rel = link.getAttribute('rel') || '';
+            if (rel.indexOf('noopener') === -1) {
+                rel += ' noopener';
+            }
+            if (rel.indexOf('noreferrer') === -1) {
+                rel += ' noreferrer';
+            }
+            link.setAttribute('rel', rel.trim());
+        });
+    });
+</script>
+
+
+
+    <script>
+    // 快捷键 Alt+S 打开搜索页
+    document.addEventListener('keydown', function (e) {
+        if (e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey &&
+            (e.key === 's' || e.key === 'S')) {
+            var ae = document.activeElement;
+            var tag = (ae && ae.tagName) || '';
+            if (/^(INPUT|TEXTAREA|SELECT)$/.test(tag) || (ae && ae.isContentEditable)) return;
+            var p = window.location.pathname;
+            if (p === '/search' || p === '/search/') return;
+            e.preventDefault();
+            window.location.href = '/search/';
+        }
+    });
+</script>
+
+<script>
+    // declaraction of document.ready() function.
+    (function () {
+        var ie = !!(window.attachEvent && !window.opera);
+        var wk = /webkit\/(\d+)/i.test(navigator.userAgent) && (RegExp.$1 < 525);
+        var fn = [];
+        var run = function () {
+            for (var i = 0; i < fn.length; i++) fn[i]();
+        };
+        var d = document;
+        d.ready = function (f) {
+            if (!ie && !wk && d.addEventListener)
+                return d.addEventListener('DOMContentLoaded', f, false);
+            if (fn.push(f) > 1) return;
+            if (ie)
+                (function () {
+                    try {
+                        d.documentElement.doScroll('left');
+                        run();
+                    } catch (err) {
+                        setTimeout(arguments.callee, 0);
+                    }
+                })();
+            else if (wk)
+                var t = setInterval(function () {
+                    if (/^(loaded|complete)$/.test(d.readyState))
+                        clearInterval(t), run();
+                }, 0);
+        };
+    })();
+
+
+    document.ready(
+        function () {
+            var _Blog = window._Blog || {};
+
+            const getSystemTheme = () => {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    return 'dark';
+                }
+                return 'light';
+            };
+
+            const configDefault = 'light';
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme');
+            const initialTheme = currentTheme || configDefault || getSystemTheme();
+            const isDark = initialTheme === 'dark';
+
+            const updateButtons = (dark) => {
+                const sunBtn = document.getElementById("theme-toggle-sun");
+                const moonBtn = document.getElementById("theme-toggle-moon");
+                const mobileSunBtn = document.getElementById("mobile-theme-toggle-sun");
+                const mobileMoonBtn = document.getElementById("mobile-theme-toggle-moon");
+
+                if (dark) {
+                    if (sunBtn) sunBtn.style.display = 'none';
+                    if (moonBtn) moonBtn.style.display = 'inline-block';
+                    if (mobileSunBtn) mobileSunBtn.style.display = 'none';
+                    if (mobileMoonBtn) mobileMoonBtn.style.display = 'inline-block';
+                } else {
+                    if (sunBtn) sunBtn.style.display = 'inline-block';
+                    if (moonBtn) moonBtn.style.display = 'none';
+                    if (mobileSunBtn) mobileSunBtn.style.display = 'inline-block';
+                    if (mobileMoonBtn) mobileMoonBtn.style.display = 'none';
+                }
+            };
+
+            const updateThemeColor = (dark) => {
+                const themeColor = dark ? '#292a2d' : '#ffffff';
+                const metaTags = document.querySelectorAll('meta[name="theme-color"]');
+                if (metaTags.length > 0) {
+                    // 保留第一个，移除其他的，避免重复
+                    for (let i = 1; i < metaTags.length; i++) {
+                        metaTags[i].remove();
+                    }
+                    metaTags[0].setAttribute('content', themeColor);
+                    metaTags[0].removeAttribute('media');
+                } else {
+                    const meta = document.createElement('meta');
+                    meta.name = 'theme-color';
+                    meta.content = themeColor;
+                    document.head.appendChild(meta);
+                }
+            };
+
+            const applyTheme = (dark) => {
+                const body = document.getElementsByTagName('body')[0];
+                if (dark) {
+                    body.classList.add('dark-theme');
+                } else {
+                    body.classList.remove('dark-theme');
+                }
+                updateButtons(dark);
+                updateThemeColor(dark);
+            };
+
+            // Initial application
+            applyTheme(isDark);
+            if (!currentTheme) {
+                window.localStorage && window.localStorage.setItem('theme', initialTheme);
+            }
+
+            _Blog.toggleTheme = function () {
+                const toggleFunc = (e) => {
+                    // Prevent bubbling if needed, though buttons are distinct now
+                    if (e) e.stopPropagation();
+
+                    const body = document.getElementsByTagName('body')[0];
+                    const isCurrentlyDark = body.classList.contains('dark-theme');
+
+                    if (isCurrentlyDark) {
+                        body.classList.remove('dark-theme');
+                        updateButtons(false);
+                        window.localStorage && window.localStorage.setItem('theme', 'light');
+                    } else {
+                        body.classList.add('dark-theme');
+                        updateButtons(true);
+                        window.localStorage && window.localStorage.setItem('theme', 'dark');
+                    }
+                };
+
+                const sunBtn = document.getElementById("theme-toggle-sun");
+                const moonBtn = document.getElementById("theme-toggle-moon");
+                const mobileSunBtn = document.getElementById("mobile-theme-toggle-sun");
+                const mobileMoonBtn = document.getElementById("mobile-theme-toggle-moon");
+
+                if (sunBtn) sunBtn.addEventListener('click', toggleFunc);
+                if (moonBtn) moonBtn.addEventListener('click', toggleFunc);
+                if (mobileSunBtn) mobileSunBtn.addEventListener('click', toggleFunc);
+                if (mobileMoonBtn) mobileMoonBtn.addEventListener('click', toggleFunc);
+            };
+            _Blog.toggleTheme();
+
+            if (window.matchMedia && !configDefault) {
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+                    const newTheme = e.matches ? 'dark' : 'light';
+                    applyTheme(e.matches);
+                    window.localStorage && window.localStorage.setItem('theme', newTheme);
+                });
+            }
+        }
+    );
+</script>
+
+<script>
+    // Reading Progress Component
+    document.addEventListener('DOMContentLoaded', () => {
+        const progressValue = document.querySelector('.reading-value');
+        const progressCircle = document.querySelector('.progress-ring__circle');
+        const container = document.querySelector('.reading-progress-container');
+
+        // Exit if elements don't exist (e.g., not on a post page)
+        if (!progressValue || !progressCircle || !container) {
+            return;
+        }
+
+        // SVG Circle setup
+        const radius = progressCircle.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
+
+        progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
+        progressCircle.style.strokeDashoffset = circumference;
+
+        function setProgress(percent) {
+            const safePercent = Math.min(100, Math.max(0, percent));
+            progressValue.textContent = `${Math.round(safePercent)}%`;
+            const offset = circumference - (safePercent / 100) * circumference;
+            progressCircle.style.strokeDashoffset = offset;
+        }
+
+        function onScroll() {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+            if (scrollHeight <= 0) {
+                setProgress(0);
+                return;
+            }
+
+            const scrollPercent = (scrollTop / scrollHeight) * 100;
+            setProgress(scrollPercent);
+
+            // Show/Hide logic: Show if scrolled more than 100px
+            if (scrollTop > 100) {
+                container.classList.add('show');
+            } else {
+                container.classList.remove('show');
+            }
+        }
+
+        // Initialize
+        onScroll();
+
+        // Listen for scroll events
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        // Recalculate on resize
+        window.addEventListener('resize', onScroll);
+    });
+</script>
+
+
+
+
+    
+
+    
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</head>
+
+    <body>
+
+        <script>
+    (function () {
+        const getSystemTheme = () => {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                return 'dark';
+            }
+            return 'light';
+        };
+
+        const configDefault = 'light';
+        const savedTheme = localStorage.getItem('theme');
+        const theme = savedTheme || configDefault || getSystemTheme();
+
+        if (theme === 'dark') {
+            document.body.classList.add('dark-theme');
+        }
+
+        if (!savedTheme) {
+            localStorage.setItem('theme', theme);
+        }
+    })();
+</script>
+<header class="mod-head">
+    <div class="mod-head__left">
+        <div class="mod-head__logo">
+            <a href="/">
+                
+                
+                    <img class="avatar" alt="avatar" src="https://trojians.github.io/images/avatar.png?v=1696896717615">
+                
+            </a>
+        </div>
+    </div>
+
+    <div class="mod-head__right">
+        <span>
+            <button id="theme-toggle-sun" class="tiptap-button theme-toggle-sun" aria-label="Switch to dark mode">
+                <svg width="18" height="18" class="tiptap-button-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1C12.5523 1 13 1.44772 13 2V4C13 4.55228 12.5523 5 12 5C11.4477 5 11 4.55228 11 4V2C11 1.44772 11.4477 1 12 1Z" fill="currentColor"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9Z" fill="currentColor"></path>
+                    <path d="M13 20C13 19.4477 12.5523 19 12 19C11.4477 19 11 19.4477 11 20V22C11 22.5523 11.4477 23 12 23C12.5523 23 13 22.5523 13 22V20Z" fill="currentColor"></path>
+                    <path d="M4.22282 4.22289C4.61335 3.83236 5.24651 3.83236 5.63704 4.22289L7.04704 5.63289C7.43756 6.02341 7.43756 6.65658 7.04704 7.0471C6.65651 7.43762 6.02335 7.43762 5.63283 7.0471L4.22282 5.6371C3.8323 5.24658 3.8323 4.61341 4.22282 4.22289Z" fill="currentColor"></path>
+                    <path d="M18.367 16.9529C17.9765 16.5623 17.3433 16.5623 16.9528 16.9529C16.5623 17.3434 16.5623 17.9766 16.9528 18.3671L18.3628 19.7771C18.7533 20.1676 19.3865 20.1676 19.777 19.7771C20.1675 19.3866 20.1675 18.7534 19.777 18.3629L18.367 16.9529Z" fill="currentColor"></path>
+                    <path d="M1 12C1 11.4477 1.44772 11 2 11H4C4.55228 11 5 11.4477 5 12C5 12.5523 4.55228 13 4 13H2C1.44772 13 1 12.5523 1 12Z" fill="currentColor"></path>
+                    <path d="M20 11C19.4477 11 19 11.4477 19 12C19 12.5523 19.4477 13 20 13H22C22.5523 13 23 12.5523 23 12C23 11.4477 22.5523 11 22 11H20Z" fill="currentColor"></path>
+                    <path d="M7.04704 16.9529C7.43756 17.3434 7.43756 17.9766 7.04704 18.3671L5.63704 19.7771C5.24651 20.1676 4.61335 20.1676 4.22282 19.7771C3.8323 19.3866 3.8323 18.7534 4.22283 18.3629L5.63283 16.9529C6.02335 16.5623 6.65651 16.5623 7.04704 16.9529Z" fill="currentColor"></path>
+                    <path d="M19.777 5.6371C20.1675 5.24657 20.1675 4.61341 19.777 4.22289C19.3865 3.83236 18.7533 3.83236 18.3628 4.22289L16.9528 5.63289C16.5623 6.02341 16.5623 6.65658 16.9528 7.0471C17.3433 7.43762 17.9765 7.43762 18.367 7.0471L19.777 5.6371Z" fill="currentColor"></path>
+                </svg>
+            </button>
+            <button id="theme-toggle-moon" class="tiptap-button theme-toggle-moon" aria-label="Switch to light mode">
+                <svg width="18" height="18" class="tiptap-button-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 11.5955 21.7564 11.2309 21.3827 11.0761C21.009 10.9213 20.5789 11.0069 20.2929 11.2929C19.287 12.2988 17.9226 12.864 16.5 12.864C15.0774 12.864 13.713 12.2988 12.7071 11.2929C11.7012 10.287 11.136 8.92261 11.136 7.5C11.136 6.07739 11.7012 4.71304 12.7071 3.70711C12.9931 3.42111 13.0787 2.99099 12.9239 2.61732C12.7691 2.24364 12.4045 2 12 2ZM7.55544 5.34824C8.27036 4.87055 9.05353 4.51389 9.87357 4.28778C9.39271 5.27979 9.13604 6.37666 9.13604 7.5C9.13604 9.45304 9.91189 11.3261 11.2929 12.7071C12.6739 14.0881 14.547 14.864 16.5 14.864C17.6233 14.864 18.7202 14.6073 19.7122 14.1264C19.4861 14.9465 19.1295 15.7296 18.6518 16.4446C17.7727 17.7602 16.5233 18.7855 15.0615 19.391C13.5997 19.9965 11.9911 20.155 10.4393 19.8463C8.88743 19.5376 7.46197 18.7757 6.34315 17.6569C5.21447 16.538 4.4624 15.1126 4.15372 13.5607C3.84504 12.0089 4.00347 10.4003 4.60897 8.93853C5.21447 7.47672 6.23985 6.22729 7.55544 5.34824Z" fill="currentColor"></path>
+                    <path d="M19 2C19.5523 2 20 2.44772 20 3V4H21C21.5523 4 22 4.44772 22 5C22 5.55228 21.5523 6 21 6H20V7C20 7.55228 19.5523 8 19 8C18.4477 8 18 7.55228 18 7V6H17C16.4477 6 16 5.55228 16 5C16 4.44772 16.4477 4 17 4H18V3C18 2.44772 18.4477 2 19 2Z" fill="currentColor"></path>
+                </svg>
+            </button>
+        </span>
+    </div>
+</header>
+<!-- <a href="#" id="back-to-top" style="display: inline;"> ^ </a> -->
+
+            <style>
+                .mod-head.bw-sticky{position:sticky;top:0;z-index:900;background:var(--bg-color,#fff);border-bottom:1px solid var(--border-color,rgba(0,0,0,.06));transition:transform .34s ease;margin-top:0;padding-top:22px}
+                body.dark-theme .mod-head.bw-sticky{background:var(--dark-bg,#292a2d);border-bottom-color:var(--dark-border,#444)}
+                .mod-head.bw-hide{transform:translateY(-110%)}
+                @media (prefers-reduced-motion: reduce){.mod-head.bw-sticky{transition:none}}
+            </style>
+            <script>
+            (function(){
+                var h=document.querySelector('.mod-head'); if(!h) return;
+                h.classList.add('bw-sticky');
+                var lastY=window.scrollY||0, ticking=false;
+                window.addEventListener('scroll', function(){
+                    if(ticking) return; ticking=true;
+                    requestAnimationFrame(function(){
+                        ticking=false;
+                        var y=window.scrollY||0;
+                        if(y>160 && y>lastY+4){ h.classList.add('bw-hide'); }
+                        else if(y<lastY-4 || y<=160){ h.classList.remove('bw-hide'); }
+                        lastY=y;
+                    });
+                }, {passive:true});
+            })();
+            </script>
+
+            <article class="mod-post mod-post__type-post">
+                <header>
+                    <h1 class="mod-post__title">
+                        热榜日报 · 11月26日：财神庙重开，凌晨5点排队沾福气
+                    </h1>
+                </header>
+
+                <div class="mod-post__meta">
+                    <time datetime="2026-11-26">
+                        2026-11-26
+                    </time> • 约 4 分钟 •
+                        
+                        
+                        
+                            <a href="/tag/rebang">
+                                热榜
+                            </a>
+                            
+                                    
+                    <span id="busuanzi_container_page_pv" style="display:none"> · 阅读 <span
+                            id="busuanzi_value_page_pv"></span> 次</span>
+                </div>
+
+
+
+                <div class="mod-post__entry wzulli">
+                    
+                            <p class="lead">今天的热搜一半烟火一半远方：财神庙重开，凌晨5点就有人排队；6G的时间表敲定到了2030年；山姆卖的机票卡，却翻了车。</p>
+<h2>1. “天下第一财神庙”重开，凌晨5点就有人排队</h2>
+<p>11月26日，杭州北高峰<strong>灵顺寺</strong>历经半年全面封闭修缮，重新对外开放。寺庙自今年5月25日起闭门修缮，建筑、消防等基础设施全面检修，工程结束并验收合格后恢复开放。</p>
+<p>重开首日人气爆棚：索道6点30分提前开放，入口一早排起长队，至少要排<strong>90分钟</strong>；有市民凌晨5点起床，7点准时登顶，还有外地游客提前一天赶到杭州。</p>
+<ul><li>寺庙开放时间为早7点至晚5点，无需预约，香花券每人8元；</li><li>索道上行30元、下行20元，可在微信小程序提前购票；</li><li>11月底山上风大温低，建议早8点或下午3点后错峰出行。</li></ul>
+<p>灵顺寺始建于东晋，距今1600多年历史，“天下第一财神庙”的叫法自北宋初年供奉五显财神而来。</p>
+<img src="/images/daily/re-bang-ri-bao-11-26-1.jpg" alt="杭州北高峰灵顺寺">
+<blockquote><p>半年没见，一开门就人山人海。想沾福气可以理解，但别为了抢第一批，把自己冻在山风里。</p></blockquote>
+<h2>2. 蔡磊已进入渐冻症终末期</h2>
+<p>近日，<strong>蔡磊</strong>的妻子段睿表示，蔡磊已进入渐冻症终末期。她坦言无法接受丈夫现在的样子，称上次见面全程无话，“一直在哭，根本控制不住”。消息登上微博热搜第一。</p>
+<p>2019年9月，蔡磊被确诊渐冻症。此后他一边抗争，一边推动渐冻症药物研发与患者互助，成了许多病友眼里的“破冰者”。</p>
+<blockquote><p>不消费苦难，也不轻飘飘地说加油。愿医学的进展能跑赢时间。</p></blockquote>
+<h2>3. 6G要来了：到2030年建成新一代通信网</h2>
+<p>11月26日，工信部联合网信办、发改委印发《新一代通信网建设实施方案》：到<strong>2030年</strong>建成覆盖完善、性能领先的新一代通信网，适时开展6G网络建设，5G-A、万兆光网实现重点区域部署应用。</p>
+<p>新一代通信网以5G-A/6G、万兆光网、卫星互联网为核心支撑，讲究高速泛在、天地一体、云网融合；基础网络方面，要在地级及以上城市城区和沿海重点海区实现超大带宽特性5G-A网络规模覆盖，适时启动6G商用。</p>
+<img src="/images/daily/re-bang-ri-bao-11-26-2.jpg" alt="6G通信网络示意图">
+<blockquote><p>时间表有了，但6G离走进手机还有几年。5G还没用明白的人，不必急着换机。</p></blockquote>
+<h2>4. 山姆3970元机票卡“翻车”，五条评论全是差评</h2>
+<p>11月下旬，北京山姆会员店开售“中国国际航空国内机票4次卡”，售价<strong>3970元</strong>，可兑4次国航国内单程经济舱。山姆App上，该商品目前仅有的五条评论均为差评。</p>
+<p>算笔账就知道问题在哪：3970元折合单程裸票约992.5元，叠加机建、燃油费后单次实际成本突破1100元，而2026年1至10月国内经济舱平均裸票价只有683元。卡还锁定经济舱N舱，须提前3天预订90日内的航班，春节、五一、十一全线禁兑；出票后不支持自愿改签，自愿退票扣掉的权益次数也不返还。</p>
+<p>还有个“先买后看”的坑：哪些航班能兑，购买前看不到，必须先激活才能查询。有消费者激活后发现没有合适航班，想退款却发现订单页面已不显示退款选项。按山姆客服的说法，未兑换可全额退卡，已兑换但4次权益均未使用可联系客服申请全额退款，部分使用则不支持退款。</p>
+<img src="/images/daily/re-bang-ri-bao-11-26-3.jpg" alt="山姆会员商店门店">
+<blockquote><p>超市卖机票不新鲜，难的是把售后也一起“打包”。信任是会员制最贵的资产，翻一次车，攒很久的口碑都要打折。</p></blockquote>
+<h2>5. 别被冲锋衣“无氟”营销带偏</h2>
+<p>北京市消协近日对50个品牌80款冲锋衣开展比较试验：80款样品的PFOS、PFOA检出值均在标准限定范围以内，化学安全总体可控；标称“无氟整理”的产品，外层面料中这两项均须小于<strong>1.0微克/平方米</strong>。</p>
+<p>真正分高下的是洗后的防水耐久：洗涤3次后，66款样品静水压达标，14款接缝处未达标，涉及ROCK CLOUD、诺诗兰、KELME、TECTOP探拓等品牌；6次洗涤后，47款样品表面抗湿性明显下降。</p>
+<ul><li>选购时看执行标准，优先选标注GB/T 32614-2023的产品，Ⅰ级适合专业户外，Ⅱ级满足日常通勤；</li><li>别只看水珠滚落，那只是表面抗湿性，真正的防水还要看静水压和压胶条；</li><li>别为“无氟”二字付过高溢价，在限量范围内即符合标准要求。</li></ul>
+<blockquote><p>冲锋衣防的是雨，不是焦虑。认准标准、摸摸压胶条，比盯着“无氟”两个字管用。</p></blockquote>
+<h2>6. 普京打包深圳炒菜上飞机</h2>
+<p>APEC会议周期间，俄罗斯总统<strong>普京</strong>下榻深圳康莱德酒店。随行团队转达他喜欢中国菜，酒店便安排了潮粤菜。普京点名要了鲜沙姜焗闽东大黄鱼等菜式，离开前还把深圳炒菜打包上了飞机。</p>
+<blockquote><p>一座城市被记住，有时不是因为高楼，而是因为一盘菜、一条干净的街。</p></blockquote>
+<hr>
+<p>今天的热榜，从凌晨5点的财神庙排到打包上飞机的炒菜——热闹归热闹，日子还是要踏踏实实过。</p>
+<p class="byline">本篇文章由 Muse 编辑并发布。</p>
+                </div>
+
+            </article>
+
+
+            
+                
+	<div class="mod-post__foot">
+	 文章标签: 
+     
+        <a href="/tag/rebang">热榜</a>
+     
+     </br>
+	</div>
+
+                    
+
+                        <div class="mod-post__poster">
+                        </div>
+
+                        </div>
+
+                        
+                            
+<br>
+
+<div style="margin-bottom: 10px;">
+    上一篇 : 已经是第一篇文章了~
+</div>
+
+
+
+<div style="margin-bottom: 40px;">
+    下一篇 : <a href="/post/ai-zao-bao-11-26">AI 早报 · 11月26日：OpenAI 称解开五十年数学难题</a>
+</div>
+
+
+</div>	
+
+                                
+
+                                    
+                                        <div class="mod-post__related" style="margin: 2rem 0;">
+                                            <h3 style="font-size: 1rem; margin-bottom: 0.8rem;">相关文章</h3>
+                                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                                
+                                                    <li style="margin-bottom: 0.5rem;">
+                                                        <a href="/post/re-bang-ri-bao-11-25">热榜日报 · 11月25日：神24升空，巴铁航天员首飞天宫</a>
+                                                        <span style="opacity:.62; font-size: 0.85rem;"> · 2026-11-25</span>
+                                                    </li>
+                                                
+                                                    <li style="margin-bottom: 0.5rem;">
+                                                        <a href="/post/re-bang-ri-bao-11-24">热榜日报 · 11月24日：神二十四明早发射，巴铁航天员首飞</a>
+                                                        <span style="opacity:.62; font-size: 0.85rem;"> · 2026-11-24</span>
+                                                    </li>
+                                                
+                                                    <li style="margin-bottom: 0.5rem;">
+                                                        <a href="/post/re-bang-ri-bao-11-23">热榜日报 · 11月23日：129万抗癌药进医保，幼儿园招2岁娃</a>
+                                                        <span style="opacity:.62; font-size: 0.85rem;"> · 2026-11-23</span>
+                                                    </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    
+
+                                    
+                                        <!-- Reading Progress Component -->
+<div class="reading-progress-container">
+  <span class="reading-label">阅读进度</span>
+  <span class="reading-value">0%</span>
+  <svg class="progress-ring" viewBox="0 0 24 24">
+    <!-- Background Circle -->
+    <circle class="progress-ring__circle-bg" stroke-width="3" fill="transparent" r="10" cx="12" cy="12" />
+    <!-- Progress Circle -->
+    <circle class="progress-ring__circle" stroke-width="3" fill="transparent" r="10" cx="12" cy="12" />
+  </svg>
+</div>
+                                            <footer id="footer" class="footer">
+    <nav>
+        
+            
+                    <a class="menu-item" href="/">
+                        首页
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/search" title="快捷键 Alt+S">
+                        搜索
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/shu-ku">
+                        书库
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/shu-ping">
+                        书单
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/wu-li-shi-shu">
+                        猜书
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/wu-li-jie-long">
+                        接龙
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/dong-tian-jin-du-tiao">
+                        冬天进度条
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/re-bang-li-shi">
+                        热榜历史
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/zi-yuan-he-ji">
+                        资源合集
+                    </a>
+                    
+             · 
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+    </nav>
+
+    <div class="Copyright">Copyright &copy; 2026 <a href="https://trojians.github.io">
+                白雾的分享小站
+            </a></div>
+
+    <div class="index_footer">
+        Powered by <a href="https://trojians.github.io" target="_blank">白雾</a> ·
+            <a class="rss" href="/feed.xml" target="_blank" rel="noopener noreferrer">
+                <i class="ri-rss-line"></i> RSS
+            </a>
+    </div>
+</footer>
+
+
+
+
+    </body>
+
+    </html>
