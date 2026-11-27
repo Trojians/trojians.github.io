@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 27 Nov 2026 08:02:55 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 12:02:52 GMT</lastBuildDate>
+
+    <item>
+      <title>书荒日报 · 11月27日：起点公开征集治太监方案</title>
+      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-27/</link>
+      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-27/</guid>
+      <pubDate>Thu, 26 Nov 2026 16:00:00 GMT</pubDate>
+      <description>起点编辑部公开征集减少太监的方案，最高赞呼声是奖励坚持完本的“长跑者”；另有两本克系调查员小说与十本完结好书上榜。</description>
+    </item>
 
     <item>
       <title>极客日报 · 11月27日：Hysteria 贡献者传被抓，代理圈一夜变天</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/ai-zao-bao-11-23/</guid>
       <pubDate>Sun, 22 Nov 2026 16:00:00 GMT</pubDate>
       <description>黎曼猜想的 AI 证明获 Lean 社区官方确认；Inkling 2 Mini 把大模型装进口袋；GPT-Live-1.1 进入 API；马斯克警告 AI 行业明年或面临数千亿美元资金缺口。</description>
-    </item>
-
-    <item>
-      <title>书荒日报 · 11月22日：我最白、高月、方向感齐开新书</title>
-      <link>https://trojians.github.io/post/shu-huang-ri-bao-11-22/</link>
-      <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-22/</guid>
-      <pubDate>Sat, 21 Nov 2026 16:00:00 GMT</pubDate>
-      <description>起点一周47位作者开新书，我最白、高月、方向感齐回归；白鸦《大乘期才有逆袭系统》首订812逆袭十万均；赤戟推书单442三本齐发。</description>
     </item>
   </channel>
 </rss>
