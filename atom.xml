@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Nov 2026 14:14:02 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 00:00:13 GMT</lastBuildDate>
+
+    <item>
+      <title>AI 早报 · 11月27日：一百万颗卫星上天，AI 算力要搬出地球</title>
+      <link>https://trojians.github.io/post/ai-zao-bao-11-27/</link>
+      <guid>https://trojians.github.io/post/ai-zao-bao-11-27/</guid>
+      <pubDate>Thu, 26 Nov 2026 16:00:00 GMT</pubDate>
+      <description>FCC 批准 SpaceX 部署一百万颗 AI 卫星，英伟达暂停向东南亚四国发运服务器，GPT-6.2 Sol 接管 ChatGPT 聊天页。</description>
+    </item>
 
     <item>
       <title>书荒日报 · 11月26日：狐尾的笔回来了，50万字后续全免费</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/re-bang-ri-bao-11-22/</guid>
       <pubDate>Sat, 21 Nov 2026 16:00:00 GMT</pubDate>
       <description>金价一周跌近一成、足金饰品跌破1100元，银行连发风险提示；羽绒服平价断货、贵价断码，新雪季开板、冰雪产业破万亿。</description>
-    </item>
-
-    <item>
-      <title>AI 早报 · 11月22日：26B小模型跑上笔记本，大厂却在漏提示词</title>
-      <link>https://trojians.github.io/post/ai-zao-bao-11-22/</link>
-      <guid>https://trojians.github.io/post/ai-zao-bao-11-22/</guid>
-      <pubDate>Sat, 21 Nov 2026 16:00:00 GMT</pubDate>
-      <description>Thinking Machines 发布 26B 循环推理模型 Inkling 2 Mini，笔记本就能跑；Together AI 自曝提示词泄露；腾讯放出 770B 的 Hy4 全部权重；OpenAI 上线 GPT-Live-1.1，语音待机只要 0.02 美元一分钟。</description>
     </item>
   </channel>
 </rss>
