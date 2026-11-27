@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 27 Nov 2026 04:05:12 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 08:02:55 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月27日：Hysteria 贡献者传被抓，代理圈一夜变天</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-27/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-27/</guid>
+      <pubDate>Thu, 26 Nov 2026 16:00:00 GMT</pubDate>
+      <description>网传 Hysteria 多名贡献者被抓，Claude 之争再起，AI 让自托管重新变好玩。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月27日：电视开机广告没了，U17小将8比0出线</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-22/</guid>
       <pubDate>Sat, 21 Nov 2026 16:00:00 GMT</pubDate>
       <description>起点一周47位作者开新书，我最白、高月、方向感齐回归；白鸦《大乘期才有逆袭系统》首订812逆袭十万均；赤戟推书单442三本齐发。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月22日：黎曼猜想被 Lean 验证了</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-22/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-22/</guid>
-      <pubDate>Sat, 21 Nov 2026 16:00:00 GMT</pubDate>
-      <description>黎曼猜想证明通过 Lean 形式化验证，Gemini 黑五 99 刀、Apple Watch 八年测评与 Java 秋招出路同登今日极客日报。</description>
     </item>
   </channel>
 </rss>
