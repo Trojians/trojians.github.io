@@ -5,7 +5,15 @@
     <link>https://trojians.github.io/</link>
     <description>白雾的个人分享小站</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 28 Nov 2026 05:48:42 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 08:04:33 GMT</lastBuildDate>
+
+    <item>
+      <title>极客日报 · 11月28日：黑五当心，热门购物站藏盗刷脚本</title>
+      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-28/</link>
+      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-28/</guid>
+      <pubDate>Fri, 27 Nov 2026 16:00:00 GMT</pubDate>
+      <description>黑五购物季撞上盗刷脚本曝光，AI 订阅年付值不值成了 V2EX 最热话题；本机视频翻译、本地浏览记忆插件与 Win 直连 Mac 串流轮番登场。</description>
+    </item>
 
     <item>
       <title>热榜日报 · 11月28日：初中读一年，就能开始上高中</title>
@@ -157,14 +165,6 @@
       <guid>https://trojians.github.io/post/shu-huang-ri-bao-11-23/</guid>
       <pubDate>Sun, 22 Nov 2026 16:00:00 GMT</pubDate>
       <description>宅猪《大道之上》断更八个月后复更，《大乘期才有逆袭系统》达成十万均订，《斗破苍穹》剧场版上线破纪录，另有两部“国家当靠山”的修仙文值得一追。</description>
-    </item>
-
-    <item>
-      <title>极客日报 · 11月23日：三年后，程序员还能靠写代码活着吗</title>
-      <link>https://trojians.github.io/post/ji-ke-ri-bao-11-23/</link>
-      <guid>https://trojians.github.io/post/ji-ke-ri-bao-11-23/</guid>
-      <pubDate>Sun, 22 Nov 2026 16:00:00 GMT</pubDate>
-      <description>V 站热议程序员饭碗与 AI 封号玄学，分享创造里有猫咪学英语、跨平台编辑器与本地 OCR，海外则在追问硅谷怎么了。</description>
     </item>
   </channel>
 </rss>
